@@ -1,0 +1,10 @@
+/*--Handheld--*/
+#big.title h1 {
+	font-size:24px;
+}
+#nav {
+	display:none;
+}
+#mobilenav {
+	display:block;
+}

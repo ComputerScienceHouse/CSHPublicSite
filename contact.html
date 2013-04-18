@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    	<meta name="viewport" content="initial-scale=0.5">
+		<title>Computer Science House</title>
+		<link rel="icon" type="image/png" href="images/icon.png">
+		<link rel="stylesheet" type="text/css" href="general.css">
+		<link rel="stylesheet" type="text/css" href="pages.css">
+		<link rel="stylesheet" type="text/css" href="queries.css">
+		<script type="text/javascript" src="smoothscroll.js"></script>
+		<script type="text/javascript" src="detectmobile.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div id="header">
+			<div class="wrapper">
+				<a href="./">
+					<img src="images/logo.png" alt="Computer Science House" width="117" height="50"/>
+				</a>
+				<ul id="nav">
+					<li>
+						<a href="./">Home</a>
+					</li>
+					<li>
+						<a href="about.html">About</a>
+	 					<ul>
+							<li>
+								<a href="projects.html">Projects</a>
+							</li>
+							<li>
+								<a href="alumni.html">Alumni</a>
+							</li>
+							<li>
+								<a href="eboard.html">Eboard</a>
+							</li>
+							<li>
+								<a href="tour.html">Tour</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a href="membership.html">Membership</a>
+						<ul>
+							<li>
+								<a href="traditions.html">Traditions</a>
+							</li>
+							<li>
+								<a href="scholarship.html">Scholarship</a>
+							</li>
+						</ul>
+					</li>
+					<li >
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+				<a href="#footer" class="selected" id="mobilenav">Navigation &#9662;</a>
+			</div>
+		</div>
+		<div id="big" class="title">
+			<div class="wrapper">
+				<h1>
+					Contact Us
+				</h1>
+			</div>
+		</div>
+		<div id="content">
+			<div id="contact">
+				<div id="contact-info">
+					<p>
+						<b>Computer Science House</b><br/>
+						3999 Nathaniel Rochester Hall<br/>
+						Rochester, NY 14623<br/>
+						<br/>
+						<b>Chairman:</b> chairman&#64;csh.rit.edu<br/>
+						<b>Membership:</b> eval&#64;csh.rit.edu<br/>
+						<b>Alumni Contact:</b> history&#64;csh.rit.edu<br/>
+						<b>Scholarship:</b> scholarship&#64;csh.rit.edu<br/>
+						<b>Webmaster:</b> webmaster&#64;csh.rit.edu<br/>
+					</p>
+				</div>
+				<form id="contact-form" action="mail_form.php" method="post">
+					<input type="text" name="f1" placeholder="Name" required="required" data-message="*"/>
+					<br/>
+					<input type="text" name="f2" placeholder="Email Address" required="required" data-message="*"/>
+					<br/>
+					<select id="select_email" name="sendtoemail">
+						<option value="chairman@csh.rit.edu">Chairman</option>
+						<option value="eval@csh.rit.eud">Evaluations</option>
+						<option value="history@csh.rit.edu">History</option>
+						<option value="scholarship@csh.rit.edu">Scholarship</option>
+						<option value="webmaster@csh.rit.edu">Webmaster</option>
+					</select>
+					<br/>
+					<textarea rows="5"  name="f3" cols="20" placeholder="Message" required="required" data-message="*"></textarea>
+					<input type="submit" id="submit-button" value="Send"/>
+				</form>
+			</div>
+		</div>
+		<div id="footer"><div class="wrapper">
+			<ul id="sm">
+				<li>
+					<h3>Site Map</h3>
+				</li>
+				<li>
+					<a href="./">Home</a>
+				</li>
+				<li>
+					<a href="about.html">About</a>
+					<ul>
+						<li>
+							<a href="projects.html">Projects</a>
+						</li>
+						<li>
+							<a href="alumni.html">Alumni</a>
+						</li>
+						<li>
+							<a href="eboard.html">Eboard</a>
+						</li>
+						<li>
+							<a href="tour.html">Tour</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="membership.html">Membership</a>
+					<ul>
+						<li>
+							<a href="traditions.html">Traditions</a>
+						</li>
+						<li>
+							<a href="scholarship.html">Scholarship</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+				<li>
+					<a href="sponsors.html">Sponsors</a>
+				</li>
+			</ul>
+			<ul id="pr">
+				<li>
+					<h3>Public Resources</h3>
+				</li>
+				<li>
+					<a href="http://schedule.csh.rit.edu/" target="_blank">CSH RIT Schedule Maker</a>
+				</li>
+				<li>
+					<a href="https://github.com/ComputerScienceHouse" class="github" target="_blank">CSH on GitHub</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/CSH_History" target="_blank" class="twitter">@CSH_History</a>
+				</li>
+			</ul>
+			<ul id="mr">
+				<li>
+					<h3>Member Resources</h3>
+				</li>
+				<li>
+					<a href="resources/CA-Certificate.crt">CA Certificate</a>
+				</li>
+				<li>
+					<a href="http://members.csh.rit.edu" target="_blank">Members' Portal</a>
+				</li>
+				<li>
+					<a href="resources/CSH constitution.pdf">Constitution</a>
+				</li>
+				<li>
+					<a href="resources/bylaws.pdf">By-laws</a>
+				</li>
+				<li>
+					<a href="https://www.facebook.com/groups/ComputerScienceHouse/" target="_blank" class="facebook">CSH on Facebook</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/OPCOMM" target="_blank" class="twitter">@OPCOMM</a>
+				</li>
+			</ul>
+			<span id="stretch"></div>
+		</div></div>
+		<div class="wrapper">
+			<div id="under">
+				<p>
+					<a href="mailto:webmaster@csh.rit.edu">webmaster@csh.rit.edu</a>
+				</p>
+				<p>
+					Copyright 2013 &copy; Computer Science House
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
