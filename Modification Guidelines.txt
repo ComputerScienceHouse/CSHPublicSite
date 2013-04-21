@@ -47,3 +47,12 @@ The sponsors gallery randomly populates based on an array of images found in cod
 <a href="sponsors-website.com" target="_blank"><img href="images/sponsorLogos/sponsor.png" /></a>
 
 Upon loading the page, 5 random elements from the array will be used.
+
+
+Tour
+----
+- Example page: Tour
+
+Adding items to the slideshows is as easy as adding a <li> with an image inside. Images must be 600x400. Adding a <p> element after the image will automatically style the text as a caption on the image.
+
+New sections (that is, new rooms) should not be added to the page.
