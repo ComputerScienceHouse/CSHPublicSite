@@ -255,7 +255,7 @@ p.note:before{
 #aboutp {
 	padding:0 50px;
 }
-ul#memberlist li {
+ul.memberlist li {
 	padding:0 70px;
 	list-style:disc;
 	list-style-position:inside;

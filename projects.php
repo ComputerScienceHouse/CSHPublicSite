@@ -9,7 +9,7 @@
 <div id="content">
 	<div id="cWrapper">
 		<p>
-			Projects are an integral part of the living, learning experience at Computer Science House. 
+			Projects are an integral part of the living, learning experience at Computer Science House. This is a small sample of our notable projects that our members have created:
 		</p>
 		<ul class="altList">
 			<li>

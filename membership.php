@@ -27,7 +27,7 @@
 		<br />
 		CSH has a number of requirements for its members, made to both maintain involvement and ensure growth as members and professionals. CSH expects its members to:
 	</p>
-	<ul id="memberlist">
+	<ul class="memberlist">
 		<li>
 			Attend weekly committee and House meetings
 		</li>
@@ -47,7 +47,7 @@
 		<strong>Member Benefits</strong><br />
 			CSH's perks more than make up for all the work that goes into membership. All members, both on-floor and off-floor, get the following benefits:
 		</p>
-	<ul id="memberlist">
+	<ul class="memberlist">
 		<li>
 			Access to all of CSH's facilities (i.e. the Project room) and resources (i.e. web hosting and email)
 		</li>

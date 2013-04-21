@@ -20,7 +20,7 @@
 		<br/>
 
 		<h2>Contact</h2>
-		<p>Email <a href="contact.html">scholarship@csh.rit.edu</a> with any questions about the Scholarship Fund.</p>
+		<p>Email <a href="contact.php">scholarship@csh.rit.edu</a> with any questions about the Scholarship Fund.</p>
 		<br/>
 
 		<h2>FAQ</h2>
@@ -37,86 +37,4 @@
 		Yes. Running this program through the Alumni Association allows us to make all donations tax-deductible.
 	</div>
 </div>
-<div id="footer"><div class="wrapper">
-	<ul id="sm">
-		<li>
-			<h3>Site Map</h3>
-		</li>
-		<li>
-			<a href="./">Home</a>
-		</li>
-		<li>
-			<a href="about.html">About</a>
-			<ul>
-				<li>
-					<a href="projects.html">Projects</a>
-				</li>
-				<li>
-					<a href="alumni.html">Alumni</a>
-				</li>
-				<li>
-					<a href="eboard.html">Eboard</a>
-				</li>
-				<li>
-					<a href="tour.html">Tour</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="membership.html">Membership</a>
-			<ul>
-				<li>
-					<a href="traditions.html">Traditions</a>
-				</li>
-				<li>
-					<a href="scholarship.html">Scholarship</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="contact.html">Contact</a>
-		</li>
-		<li>
-			<a href="sponsors.html">Sponsors</a>
-		</li>
-	</ul>
-	<ul id="pr">
-		<li>
-			<h3>Public Resources</h3>
-		</li>
-		<li>
-			<a href="http://schedule.csh.rit.edu/" target="_blank">CSH RIT Schedule Maker</a>
-		</li>
-		<li>
-			<a href="https://github.com/ComputerScienceHouse" class="github" target="_blank">CSH on GitHub</a>
-		</li>
-		<li>
-			<a href="https://twitter.com/CSH_History" target="_blank" class="twitter">@CSH_History</a>
-		</li>
-	</ul>
-	<ul id="mr">
-		<li>
-			<h3>Member Resources</h3>
-		</li>
-		<li>
-			<a href="resources/CA-Certificate.crt">CA Certificate</a>
-		</li>
-		<li>
-			<a href="http://members.csh.rit.edu" target="_blank">Members' Portal</a>
-		</li>
-		<li>
-			<a href="resources/CSH constitution.pdf">Constitution</a>
-		</li>
-		<li>
-			<a href="resources/bylaws.pdf">By-laws</a>
-		</li>
-		<li>
-			<a href="https://www.facebook.com/groups/ComputerScienceHouse/" target="_blank" class="facebook">CSH on Facebook</a>
-		</li>
-		<li>
-			<a href="https://twitter.com/OPCOMM" target="_blank" class="twitter">@OPCOMM</a>
-		</li>
-	</ul>
-	<span id="stretch"></div>
-</div></div>
 <?php include "footer.php"; ?>

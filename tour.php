@@ -62,7 +62,7 @@
 					<li><img src="images/tour/usercenter2.jpg" alt="User Center"><p>The User Center offers plenty of resources to aid members in completing their projects.</p></li>
 					<li><img src="images/tour/usercenter3.jpg" alt="User Center"><p>A member using the User Center's soldering station to work on a project.</p></li>
 					<li><img src="images/tour/usercenter4.jpg" alt="User Center"><p>The whiteboard, bluetooth-enabled media center, and projector system make the User Center a great place for movie nights and technical seminars as well.</p></li>
-					<li><img src="images/tour/usercenter5.jpg" alt="User Center"><p>It is also the location of <a href="projects.html">InfoSys</a>.</p></li>
+					<li><img src="images/tour/usercenter5.jpg" alt="User Center"><p>It is also the location of <a href="projects.php">InfoSys</a>.</p></li>
 				</ul>
 			</div>
 		</div>
