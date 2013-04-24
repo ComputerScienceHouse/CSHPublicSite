@@ -7,5 +7,5 @@
 	$subject = "A message from the public website";
 	$mailheader = "From: $email \r\n";
 	mail($recipient, $subject, $formcontent, $mailheader) or die("Error!");
-	header("Location: thankyou");
+	header("Location: thankyou.php");
 ?>
