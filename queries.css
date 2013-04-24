@@ -232,6 +232,9 @@ on # of lines in #about and imgs size*/
 	#footer .wrapper {
 		width:160px;
 	}
+	#footer{
+		font-size:130%;
+	}
 	*#mr, #pr, #sm {
 		padding-bottom:25px;
 	}
