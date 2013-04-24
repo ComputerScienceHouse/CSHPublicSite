@@ -46,6 +46,9 @@
 					<h3>Public Resources</h3>
 				</li>
 				<li>
+					<a href="membership.php">How to Apply</a>
+				</li>
+				<li>
 					<a href="http://schedule.csh.rit.edu/" target="_blank">CSH RIT Schedule Maker</a>
 				</li>
 				<li>
