@@ -26,7 +26,7 @@
 				<span>
 					<h2><a href="http://schedule.csh.rit.edu/" target="_blank">Schedule Maker</a></h2>
 					<p>
-						Schedule Maker allows RIT students to plan their schedule for upcoming semesters. Users simply enter their course numbers and custom events and a list of all schedules that match their parameters will be shown. Because it is so easy and simple, Schedule Maker is now used by over 90% of RIT students.
+						<a href="http://schedule.csh.rit.edu/" target="_blank">Schedule Maker</a> allows RIT students to plan their schedule for upcoming semesters. Users simply enter their course numbers and custom events and a list of all schedules that match their parameters will be shown. Because it is so easy and simple, Schedule Maker is now used by over 90% of RIT students.
 					</p>
 				</span>
 			</li>
