@@ -223,11 +223,13 @@ on # of lines in #about and imgs size*/
 }
 @media (max-width:650px) {
 /*Adjusts under footer to center and stack*/
-	#under p:first-child, #under p:last-child {
+	#under p {
 		float:none;
+		width:100%;
 		text-align:center;
 		margin:0;
 	}
+	#under p:first-child, #under p:last-child { text-align:center; padding:0;}
 	/*Adjusts #footer to single column when skinny */
 	#footer .wrapper {
 		width:160px;
