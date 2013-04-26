@@ -284,14 +284,16 @@ img.center {
 	color:#bbb;
 	font-size:90%;
 }
-#under p:first-child {
-	margin-left:50px;
+#under p {
+	width:33.33%;
 	float:left;
+	text-align:center;
+	box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-webkit-box-sizing:border-box;
 }
-#under p:last-child {
-	margin-right:50px;
-	float:right;
-}
+#under p:first-child { padding-left:50px; text-align:left; }
+#under p:last-child { padding-right:50px; text-align:right; }
 #under a {
 	color:#bbb;
 }
