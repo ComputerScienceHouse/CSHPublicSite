@@ -50,7 +50,7 @@
 				<ul id="glryLibrary" class="rslides">
 					<li><img src="images/tour/library1.jpg" alt="Library"><p>A couple members enjoying some Bomberman.</p></li>
 					<li><img src="images/tour/library4.png" alt="Library"><p>You can see all 4 arcade cabinets here: Joust, CSH Arcade (member built), Volly, and Ghost in the Machine (member built).</li>
-					<li><img src="images/tour/library5.png" alt="Library"><p>Freshmen member shows off our ancient PDP 8 and PDP 11 faceplate.</p></li>
+					<li><img src="images/tour/library5.png" alt="Library"><p>Freshman member shows off our ancient PDP 8 and PDP 11 faceplate.</p></li>
 				</ul>
 			</div>
 		</div>
