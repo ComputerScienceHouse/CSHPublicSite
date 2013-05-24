@@ -28,7 +28,7 @@
 			<br/>
 			<select id="select_email" name="sendtoemail">
 				<option value="chairman@csh.rit.edu">Chairman</option>
-				<option value="eval@csh.rit.eud">Evaluations</option>
+				<option value="eval@csh.rit.edu">Evaluations</option>
 				<option value="history@csh.rit.edu">History</option>
 				<option value="scholarship@csh.rit.edu">Scholarship</option>
 				<option value="webmaster@csh.rit.edu">Webmaster</option>

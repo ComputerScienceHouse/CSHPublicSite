@@ -15,11 +15,11 @@
 		<link rel="stylesheet" type="text/css" href="general.css">
 		<link rel="stylesheet" type="text/css" href="pages.css">
 		<link rel="stylesheet" type="text/css" href="queries.css">
-		<link href='http://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+		<link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="smoothscroll.js"></script>
 		<script type="text/javascript" src="detectmobile.js"></script>
 		<?php if (calledFrom() == "index" || calledFrom() == "sponsors" || calledFrom() == "tour" || calledFrom() == "alumni") { ?>
-			<script src="http://code.jquery.com/jquery-latest.js"></script>
+			<script src="jquery-latest.js"></script>
 			<script type="text/javascript" src="code.js"></script>
 		<?php } ?>
 		<?php if (calledFrom() == "index") { ?>

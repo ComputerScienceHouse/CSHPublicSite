@@ -39,19 +39,19 @@
 		<div id="row">
 			<noscript>
 				<a href="http://oracle.com">
-					<img src="images/sponsorLogos/oracle.png">
+					<img src="images/sponsorLogos/oracle.png" alt="Oracle">
 				</a>
 				<a href="http://ti.com">
-					<img src="images/sponsorLogos/ti.png">
+					<img src="images/sponsorLogos/ti.png" alt="Texas Instruments">
 				</a>
 				<a href="http://jnj.com">
-					<img src="images/sponsorLogos/johnsonjohnson.png">
+					<img src="images/sponsorLogos/johnsonjohnson.png" alt="Johnson & Johnson">
 				</a>
 				<a href="http://symantec.com">
-					<img src="images/sponsorLogos/symantec.png">
+					<img src="images/sponsorLogos/symantec.png" alt="Symantec">
 				</a>
 				<a href="http://google.com">
-					<img src="images/sponsorLogos/google.png">
+					<img src="images/sponsorLogos/google.png" alt="Google">
 				</a>
 			</noscript>
 		</div>
