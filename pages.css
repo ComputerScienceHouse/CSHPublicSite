@@ -329,25 +329,25 @@ img.membership#second{
 	width:380px;
 	position:relative;
 }
-#contact-form input, #contact-form select, #contact-form textarea {
+#contact-form input.input, #contact-form select.select, #contact-form textarea.textarea {
 	background-color:rgba(0,0,0,.8);
 	line-height:30px;
 	height:30px;
 	padding-left:8px;
 	margin-bottom:20px;
 }
-#contact-form input {
+#contact-form input.input {
 	width:372px;
 	color:white;
 }
-#contact-form textarea {
+#contact-form textarea.textarea {
 	font-family: 'Oxygen', sans-serif;
 	width:372px;
 	height:150px;
 	margin:0;
 	color:white;
 }
-#contact-form select {
+#contact-form select.select {
 	background-color:#323232;
 }
 #select_email{
@@ -358,7 +358,7 @@ img.membership#second{
 	color:#fff;
 	margin:0;
 }
-input#submit-button {
+input.input#submit-button {
 	position:absolute;
 	bottom:-10px;
 	right:-15px;
@@ -369,7 +369,7 @@ input#submit-button {
 	cursor:pointer;
 	margin:0;
 }
-input#submit-button:hover {
+input.input#submit-button:hover {
 	background-color:#498211;
 }
 .error{
