@@ -12,6 +12,7 @@
 		<title>Computer Science House</title>
 		<meta name="viewport" content="initial-scale=0.5">
 		<meta charset="UTF-8">
+		<link rel="icon" href="images/favicon.ico">
 		<link rel="stylesheet" type="text/css" href="general.css">
 		<link rel="stylesheet" type="text/css" href="pages.css">
 		<link rel="stylesheet" type="text/css" href="queries.css">
