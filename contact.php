@@ -41,10 +41,13 @@
 	          $publickey = "6LdMJeISAAAAAHnVuAK_3wMCEcOidQ_09yw0h-4a";
 	          echo recaptcha_get_html($publickey);
 	        ?>
-	        <script type="text/javascript"> 
+	        <script type="text/javascript">
 	        	(function() {
 	        		document.getElementById("recaptcha_response_field").setAttribute("required","required");
 	        	})();
+				var RecaptchaOptions = {
+    				theme : 'clean'
+ 				};
 	        </script>
 	        <br/>
 			<input class="input" type="submit" id="submit-button" value="Send"/>
