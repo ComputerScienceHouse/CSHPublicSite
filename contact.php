@@ -42,12 +42,12 @@
 	          echo recaptcha_get_html($publickey);
 	        ?>
 	        <script type="text/javascript">
+	        	var RecaptchaOptions = {
+    				theme : 'clean'
+ 				};
 	        	(function() {
 	        		document.getElementById("recaptcha_response_field").setAttribute("required","required");
 	        	})();
-				var RecaptchaOptions = {
-    				theme : 'clean'
- 				};
 	        </script>
 	        <br/>
 			<input class="input" type="submit" id="submit-button" value="Send"/>
