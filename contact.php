@@ -21,6 +21,13 @@
 				<b>Webmaster:</b> webmaster&#64;csh.rit.edu<br/>
 			</p>
 		</div>
+
+		<script type="text/javascript">
+			var RecaptchaOptions = {
+				theme : 'white'
+			};
+		</script>
+
 		<form id="contact-form" action="mail_form.php" method="post">
 			<input class="input" type="text" name="f1" placeholder="Name" required="required" data-message="*"/>
 			<br/>
@@ -42,9 +49,6 @@
 	          echo recaptcha_get_html($publickey);
 	        ?>
 	        <script type="text/javascript">
-	        	var RecaptchaOptions = {
-    				theme : 'clean'
- 				};
 	        	(function() {
 	        		document.getElementById("recaptcha_response_field").setAttribute("required","required");
 	        	})();
