@@ -50,7 +50,7 @@
 				<ul id="glryLibrary" class="rslides">
 					<li><img src="images/tour/library1.jpg" alt="Library"><p>A couple members enjoying some Bomberman.</p></li>
 					<li><img src="images/tour/library4.png" alt="Library"><p>You can see all 4 arcade cabinets here: Joust, CSH Arcade (member built), Volly, and Ghost in the Machine (member built).</li>
-					<li><img src="images/tour/library5.png" alt="Library"><p>Freshman member shows off our ancient PDP 8 and PDP 11 faceplate.</p></li>
+					<li><img src="images/tour/library5.png" alt="Library"><p>A member shows off our ancient PDP 8 and PDP 11 faceplate.</p></li>
 				</ul>
 			</div>
 		</div>
@@ -76,10 +76,10 @@
 			</div>
 		</div>
 		<div class="slideshow-container" id="glryServerContainer">
-			<p>CSH's server room serves as a place for members to learn and practice their networking skills. It also serves as a place to host our variety of network services and a spot for user machines to be hosted.</p>
+			<p>CSH's server room serves as a place for members to learn and practice their networking skills. It also serves as a place to host the variety of network services provided to our members.</p>
 			<div class="slideshow-container2">
 				<ul id="glryServer" class="rslides">
-					<li><img src="images/tour/server1.jpg" alt="Server Room"><p>CSH's Server Room houses many servers for both current and alumni members.</p></li>
+					<li><img src="images/tour/server1.jpg" alt="Server Room"><p>CSH's Server Room provides many resources for both current and alumni members.</p></li>
 					<li><img src="images/tour/server2.jpg" alt="Server Room"><p>All members are free to use the servers to experiment and learn with the help of our super-knowledgeable RTPs.</p></li>
 					<li><img src="images/tour/server3.jpg" alt="Server Room"><p>The servers in this room are also used to run all house services, both public and private.</p></li>
 				</ul>
