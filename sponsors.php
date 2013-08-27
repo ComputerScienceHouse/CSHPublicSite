@@ -115,12 +115,17 @@
 			<td>
 				<a href="http://perforce.com" target="_blank"><img src="images/sponsorLogos/perforce.png" alt="Perforce"/></a>
 			</td>
+			<td>
+				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+			</td>
 			<td class="smallHide">
 				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
 			</td>
 			<td class="smallHide">
 				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
 			</td>
+		</tr>
+		<tr>
 			<td class="smallHide">
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
 			</td>
