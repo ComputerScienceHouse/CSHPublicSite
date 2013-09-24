@@ -8,7 +8,7 @@
 </div>
 <div id="content">
 	<p class="gridText">
-		Computer Science House has over 36 years of rich history making us the unique organization we are today, and we have our alumni to thank for that. Over the years our members have tirelessly worked to improve not only our community, but the world of computing as we know it. CSHers have gone on to pursue many incredible careers, from working at multi-billion-dollar corporations to starting their own businesses.
+		Computer Science House has over 38 years of rich history making us the unique organization we are today, and we have our alumni to thank for that. Over the years our members have tirelessly worked to improve not only our community, but the world of computing as we know it. CSHers have gone on to pursue many incredible careers, from working at multi-billion-dollar corporations to starting their own businesses.
 	</p>
 	<table class="grid" cellspacing="0">
 		<tr>
@@ -17,7 +17,7 @@
 			</td>
 			<td colspan="3" class="largeShow">
 				<span>
-					<p>Computer Science House has over 36 years of rich history making us the unique organization we are today, and we have our alumni to thank for that. Over the years our members have tirelessly worked to improve not only our community, but the world of computing as we know it. CSHers have gone on to pursue many incredible careers, from working at multi-billion-dollar corporations to starting their own businesses, including such major companies as <b>Square</b> and <b>Pictometry</b>.</p>
+					<p>Computer Science House has over 38 years of rich history making us the unique organization we are today, and we have our alumni to thank for that. Over the years our members have tirelessly worked to improve not only our community, but the world of computing as we know it. CSHers have gone on to pursue many incredible careers, from working at multi-billion-dollar corporations to starting their own businesses, including such major companies as <b>Square</b> and <b>Pictometry</b>.</p>
 				</span>
 			</td>
 			<td class="smallShow">
@@ -96,6 +96,9 @@
 			</td>
 			<td class="smallHide">
 				<a href="http://yahoo.com" target="_blank"><img src="images/alumniLogos/yahoo.png" alt="Yahoo"/></a>
+			</td>
+			<td>
+				<a href="http://constantcontact.com" target="_blank"><img src="images/alumniLogos/constantcontact.png" alt="Constant Contact"/></a>
 			</td>
 		</tr>
 	</table>
