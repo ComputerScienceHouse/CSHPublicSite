@@ -96,7 +96,7 @@
 				<div class="rolloverImg" id="socialImg"><img src="images/eboard/social.jpg" /></div>
 				<span>
 					<h2>Social</h2>
-					<h3>Reed Swiernik &amp; Christian Beekman</h3>
+					<h3>Christian Beekman &amp; Reed Swiernik </h3>
 					<p>
 						The Social directors (Social) are responsible for planning and running social events for our members, such as diner runs, movie nights, project work weekends, and more.
 					</p>
