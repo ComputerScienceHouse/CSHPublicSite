@@ -28,7 +28,7 @@
 				<div class="rolloverImg" id="evalsImg"><img src="images/eboard/evals.jpg" /></div>
 				<span>
 					<h2>Evaluations</h2>
-					<h3>Brian Lewis</h3>
+					<h3>Tal Cohen</h3>
 					<p>
 						The Evaluations director (Eval) is responsible for connecting with the RIT student community, as well as screening, accepting, and orienting new members. Eval is why current members are here today!
 						<br/><br/>
@@ -96,7 +96,7 @@
 				<div class="rolloverImg" id="socialImg"><img src="images/eboard/social.jpg" /></div>
 				<span>
 					<h2>Social</h2>
-					<h3>Reed Swiernik &amp; Tal Cohen</h3>
+					<h3>Christian Beekman &amp; Reed Swiernik </h3>
 					<p>
 						The Social directors (Social) are responsible for planning and running social events for our members, such as diner runs, movie nights, project work weekends, and more.
 					</p>
