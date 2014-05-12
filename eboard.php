@@ -85,7 +85,7 @@
 				<div class="rolloverImg" id="rdImg"><img src="images/eboard/rd.jpg" /></div>
 				<span>
 					<h2>Research and Development</h2>
-					<h3>Ben Centra</h3>
+					<h3>???</h3>
 					<p>
 						R&amp;D is responsible for organizing seminars and assisting with technical projects, with the goal of encouraging members to learn new skills and gain experience.
 					</p>
