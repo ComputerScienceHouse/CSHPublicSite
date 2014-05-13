@@ -79,9 +79,10 @@
 							<li>
 								<a href="traditions.php">Traditions</a>
 							</li>
-							<li>
+							
+							<!--<li>
 								<a href="scholarship.php">Scholarship</a>
-							</li>
+							</li>-->
 						</ul>
 					</li>
 					<li >
