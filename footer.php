@@ -18,9 +18,6 @@
 						<li>
 							<a href="eboard.php">Eboard</a>
 						</li>
-						<li>
-							<a href="tour.php">Tour</a>
-						</li>
 					</ul>
 				</li>
 				<li>
@@ -30,8 +27,11 @@
 							<a href="traditions.php">Traditions</a>
 						</li>
 						<li>
-							<a href="scholarship.php">Scholarship</a>
+							<a href="tour.php">Tour</a>
 						</li>
+						/*<li>
+							<a href="scholarship.php">Scholarship</a>
+						</li>*/
 					</ul>
 				</li>
 				<li>

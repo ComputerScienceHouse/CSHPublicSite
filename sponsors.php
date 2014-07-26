@@ -35,19 +35,19 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="http://cadence.com" target="_blank"><img src="images/sponsorLogos/cadence.png" alt="Cadence"/></a>
+				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+			</td>
+			<td>
+				<a href="http://www.rochester.edu" target="_blank"><img src="images/sponsorLogos/UofR.png" alt="UofR"/></a>
+			</td>
+			<td>
+				<a href="http://linked.in" target="_blank"><img src="images/sponsorLogos/linkedin.png" alt="LinkedIn"/></a>
 			</td>
 			<td>
 				<a href="http://cisco.com" target="_blank"><img src="images/sponsorLogos/cisco.png" alt="Cisco"/></a>
 			</td>
 			<td>
 				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
-			</td>
-			<td>
-				<a href="http://podi.org" target="_blank"><img src="images/sponsorLogos/podi.png" alt="PODi"/></a>
-			</td>
-			<td>
-				<a href="http://dupont.com" target="_blank"><img src="images/sponsorLogos/dupont.png" alt="DuPont"/></a>
 			</td>
 		</tr>
 		<tr>
@@ -116,13 +116,13 @@
 				<a href="http://perforce.com" target="_blank"><img src="images/sponsorLogos/perforce.png" alt="Perforce"/></a>
 			</td>
 			<td>
-				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+				<a href="http://cadence.com" target="_blank"><img src="images/sponsorLogos/cadence.png" alt="Cadence"/></a>
 			</td>
-			<td class="smallHide">
-				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
+			<td>
+				<a href="http://podi.org" target="_blank"><img src="images/sponsorLogos/podi.png" alt="PODi"/></a>
 			</td>
-			<td class="smallHide">
-				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
+			<td>
+				<a href="http://dupont.com" target="_blank"><img src="images/sponsorLogos/dupont.png" alt="DuPont"/></a>
 			</td>
 		</tr>
 		<tr>
