@@ -29,9 +29,9 @@
 						<li>
 							<a href="tour.php">Tour</a>
 						</li>
-						/*<li>
+						<!--<li>
 							<a href="scholarship.php">Scholarship</a>
-						</li>*/
+						</li>-->
 					</ul>
 				</li>
 				<li>
