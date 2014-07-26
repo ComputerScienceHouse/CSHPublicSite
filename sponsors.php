@@ -18,7 +18,7 @@
 				</span>
 			</td>
 			<td class="smallShow">
-				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
+				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
 			</td>
 			<td class="smallShow">
 				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
@@ -27,7 +27,7 @@
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
 			</td>
 			<td>
-				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
+				<a href="http://symantec.com" target="_blank"><img src="images/sponsorLogos/symantec.png" alt="Symantec"/></a>
 			</td>
 			<td>
 				<a href="http://att.com" target="_blank"><img src="images/sponsorLogos/att.png" alt="AT&T"/></a>
@@ -126,6 +126,12 @@
 			</td>
 		</tr>
 		<tr>
+			<td class="smallHide">
+				<a href="http://amdexcorp.com" target="_blank"><img class="testImg" src="images/sponsorLogos/amdex.png" alt="Amdex"/></a>
+			</td>
+			<td class="smallHide">
+				<a href="http://ti.com" target="_blank"><img src="images/sponsorLogos/ti.png" alt="Texas Instruments"/></a>
+			</td>
 			<td class="smallHide">
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
 			</td>
