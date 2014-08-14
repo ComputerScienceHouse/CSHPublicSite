@@ -69,7 +69,7 @@
 					<a href="http://members.csh.rit.edu" target="_blank">Members' Portal</a>
 				</li>
 				<li>
-					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/constitution.pdf?raw=true">Constitution</a>
+					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/articles.pdf?raw=true">Constitution</a>
 				</li>
 				<li>
 					<a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/bylaws.pdf?raw=true">By-laws</a>
