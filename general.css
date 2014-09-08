@@ -156,7 +156,7 @@ img.center {
 	font-size:80%;
 	background:#222;
 	height:0;
-	line-height:0;
+	line-height:40px;
 	overflow:hidden;
 	padding:0;
 	transition:all 0.3s;
