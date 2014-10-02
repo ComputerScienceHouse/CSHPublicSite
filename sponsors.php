@@ -47,7 +47,7 @@
 				<a href="http://cisco.com" target="_blank"><img src="images/sponsorLogos/cisco.png" alt="Cisco"/></a>
 			</td>
 			<td>
-				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
+				<a href="http://microsoft.com" target="_blank"><img src="images/sponsorLogos/microsoft.png" alt="Microsoft"/></a>
 			</td>
 		</tr>
 		<tr>
@@ -134,6 +134,9 @@
 			</td>
 			<td class="smallHide">
 				<a href="http://xerox.com" target="_blank"><img src="images/sponsorLogos/xerox.png" alt="Xerox"/></a>
+			</td>
+			<td class="smallHide">
+				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
 			</td>
 		</tr>
 	</table>
