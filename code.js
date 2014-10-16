@@ -41,8 +41,8 @@ $(document).ready(function() {
 //Preload footer hover images
 document.addEventListener("DOMContentLoaded", function() { 
 	var images = new Array(
-		"http://www.csh.rit.edu/images/twitter-green.png", 
-		"http://www.csh.rit.edu/images/facebook-green.png", 
-		"http://www.csh.rit.edu/images/github-green.png"); 
+		"https://www.csh.rit.edu/images/twitter-green.png", 
+		"https://www.csh.rit.edu/images/facebook-green.png", 
+		"https://www.csh.rit.edu/images/github-green.png"); 
 	for (var i = 0; i < images.length; i++) { new Image().src=images[i]; } 
 });
