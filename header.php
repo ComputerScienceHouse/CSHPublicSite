@@ -18,7 +18,9 @@
 		<link rel="stylesheet" type="text/css" href="queries.css">
 		<link href='//fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="smoothscroll.js"></script>
-		<script type="text/javascript" src="detectmobile.js"></script>
+        <script type="text/javascript" src="bootstrap.min.js"></script>
+        <script type="text/javascript" src="detectmobile.js"></script>
+               <script type="text/javascript" src="mobile_bs_header.js"></script>
 		<?php if (calledFrom() == "index" || calledFrom() == "sponsors" || calledFrom() == "tour" || calledFrom() == "alumni") { ?>
 			<script src="jquery-latest.js"></script>
 			<script type="text/javascript" src="code.js"></script>
@@ -88,6 +90,6 @@
 						<a href="contact.php" <?php if ( calledFrom() == "contact") { ?>class="selected"<?php } ?>>Contact</a>
 					</li>
 				</ul>
-				<a href="#footer" class="selected" id="mobilenav">Navigation &#9662;</a>
+				
 			</div>
 		</div>

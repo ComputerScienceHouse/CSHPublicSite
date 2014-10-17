@@ -967,6 +967,6 @@ if(DetectTierIphone()){
   var fileref=document.createElement('link');
   fileref.setAttribute('rel', 'stylesheet');
   fileref.setAttribute('type', 'text/css');
-  fileref.setAttribute('href', 'mobile.css');
+  fileref.setAttribute('href', 'mobile_bs_header.css');
   document.getElementsByTagName("head")[0].appendChild(fileref);
 }
