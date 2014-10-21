@@ -89,7 +89,7 @@
 					<a href="contact.php">webmaster@csh.rit.edu</a>
 				</p>
 				<p>
-					<a href="https://github.com/myasonik/CSHPublicSite">Website on Github</a>
+					<a href="https://github.com/computersciencehouse/CSHPublicSite">Website on Github</a>
 				</p>
 				<p>
 					Copyright 2013 &copy; Computer Science House
