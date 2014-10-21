@@ -25,9 +25,9 @@
 			<img src="images/projects/arcade.jpg" alt="CSH Arcade Cabinet" />
 			<img src="images/projects/drink.jpg" alt="Drink" />
 			<img src="images/projects/infosys.jpg" alt="Infosys" />
-			<img src="images/projects/heroine.jpg" alt="Heroine" />
+			<img src="images/projects/schedulemaker.jpg" alt="Schedule Maker" />
 			<p>
-				Personal projects are a big part of CSH culture. Some of our biggest include CSH Arcade, Drink, InfoSys, and Heroine.
+				Personal projects are a big part of CSH culture. Some of our biggest include CSH Arcade, Drink, InfoSys, and Schedule Maker.
 			</p>
 		</div>
 	</div>
