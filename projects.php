@@ -26,7 +26,7 @@
 				<span>
 					<h2>One Project Per Freshman</h2>
 					<p>
-						Currently in its first year of operation, One Project Per Freshman looks to put the necessary tools in the hands of freshman to enable them to learn more about hardware electronics projects. In its current form, an incoming freshman member would be given the choice between a Raspberry Pi or a Arduino with a starter kit to tinker with throughout the year.
+						Currently in its first year of operation, One Project Per Freshman looks to put the necessary tools in the hands of freshman to enable them to learn more about hardware electronics projects without a financial investment on their part. In its current form, an incoming freshman member would be given the choice between a Raspberry Pi or a Arduino with a starter kit to tinker with throughout the year.
 					</p>
 				</span>
 			</li>
