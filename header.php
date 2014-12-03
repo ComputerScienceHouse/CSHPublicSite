@@ -90,10 +90,7 @@
 					</li>
 				</ul>
                 
-               	<div id="mobileNav">
-                	<div id="dropdown" class="dropdown">
-                		<img src="" height="30px" width="30px">
-                	</div>
+
                 
                 
                 </div>
