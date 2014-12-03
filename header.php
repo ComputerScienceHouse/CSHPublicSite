@@ -49,35 +49,35 @@
 	<body>
 		<div id="header">
 			<div class="wrapper">
-				<a href="./">
-					<img src="images/logo.png" alt="Computer Science House" width="117" height="50"/>
+				<a href="/">
+					<img src="/images/logo.png" alt="Computer Science House" width="117" height="50"/>
 				</a>
 				<ul id="nav">
 					<li>
-						<a href="./" <?php if (calledFrom() == "index") { ?>class="selected"<?php } ?> >Home</a>
+						<a href="/" <?php if (calledFrom() == "index") { ?>class="selected"<?php } ?> >Home</a>
 					</li>
 					<li>
-						<a href="about.php" <?php if (calledFrom() == "about") { ?>class="selected"<?php } ?>>About</a>
+						<a href="/about.php" <?php if (calledFrom() == "about") { ?>class="selected"<?php } ?>>About</a>
 	 					<ul>
 							<li>
-								<a href="projects.php">Projects</a>
+								<a href="/projects.php">Projects</a>
 							</li>
 							<li>
-								<a href="alumni.php">Alumni</a>
+								<a href="/alumni.php">Alumni</a>
 							</li>
 							<li>
-								<a href="eboard.php">Eboard</a>
+								<a href="/eboard.php">Eboard</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href="membership.php" <?php if ( calledFrom() == "membership") { ?>class="selected"<?php } ?>>Membership</a>
+						<a href="/membership.php" <?php if ( calledFrom() == "membership") { ?>class="selected"<?php } ?>>Membership</a>
 						<ul>
 							<li>
-								<a href="traditions.php">Traditions</a>
+								<a href="/traditions.php">Traditions</a>
 							</li>
 							<li>
-								<a href="tour.php">Tour</a>
+								<a href="/tour.php">Tour</a>
 							</li>
 							<!--<li>
 								<a href="scholarship.php">Scholarship</a>
@@ -85,7 +85,7 @@
 						</ul>
 					</li>
 					<li >
-						<a href="contact.php" <?php if ( calledFrom() == "contact") { ?>class="selected"<?php } ?>>Contact</a>
+						<a href="/contact.php" <?php if ( calledFrom() == "contact") { ?>class="selected"<?php } ?>>Contact</a>
 					</li>
 				</ul>
 				<a href="#footer" class="selected" id="mobilenav">Navigation &#9662;</a>
