@@ -29,9 +29,6 @@
 						<li>
 							<a href="/tour.php">Tour</a>
 						</li>
-						<!--<li>
-							<a href="/scholarship.php">Scholarship</a>
-						</li>-->
 					</ul>
 				</li>
 				<li>
@@ -61,9 +58,6 @@
 			<ul id="mr">
 				<li>
 					<h3>Member Resources</h3>
-				</li>
-				<li>
-					<a href="resources/CA-Certificate.crt">CA Certificate</a>
 				</li>
 				<li>
 					<a href="http://members.csh.rit.edu" target="_blank">Members' Portal</a>
