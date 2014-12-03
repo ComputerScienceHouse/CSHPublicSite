@@ -1,6 +1,16 @@
-<?php include "header.php"; ?>
-<div id="big" class="title">
-	<div class="wrapper">
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
+<div id="big" class="toptitle">
+	<div class="topwrapper">
 		<h1>
 			Membership
 		</h1>
@@ -68,4 +78,7 @@
 		</li>
 	</ul>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
 <?php include "footer.php"; ?>

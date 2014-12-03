@@ -10,9 +10,10 @@
 <html>
 	<head>
 		<title>Computer Science House</title>
-		<meta name="viewport" content="initial-scale=0.5">
+		<meta name="viewport" content="initial-scale=0.5, user-scalable=no">
 		<meta charset="UTF-8">
 		<link rel="icon" href="images/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="general.css">
         <link rel="stylesheet" type="text/css" href="mobileNav.css">
 		<link rel="stylesheet" type="text/css" href="pages.css">
@@ -48,55 +49,19 @@
 </script>
 	</head>
 	<body>
-		<div id="header">
-			<div class="wrapper">
-				<a href="./">
-					<img src="images/logo.png" alt="Computer Science House" width="117" height="50"/>
+        <div class="nav-header">
+        
+        	<div class="main-logo">
+        		<a href="./">
+					<img src="images/logo-green.png" alt="Computer Science House" width="80" height="80"/> 
 				</a>
-				<ul id="nav">
-					<li>
-						<a href="./" <?php if (calledFrom() == "index") { ?>class="selected"<?php } ?> >Home</a>
-					</li>
-					<li>
-						<a href="about.php" <?php if (calledFrom() == "about") { ?>class="selected"<?php } ?>>About</a>
-	 					<ul>
-							<li>
-								<a href="projects.php">Projects</a>
-							</li>
-							<li>
-								<a href="alumni.php">Alumni</a>
-							</li>
-							<li>
-								<a href="eboard.php">Eboard</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<a href="membership.php" <?php if ( calledFrom() == "membership") { ?>class="selected"<?php } ?>>Membership</a>
-						<ul>
-							<li>
-								<a href="traditions.php">Traditions</a>
-							</li>
-							<li>
-								<a href="tour.php">Tour</a>
-							</li>
-							<!--<li>
-								<a href="scholarship.php">Scholarship</a>
-							</li>-->
-						</ul>
-					</li>
-					<li >
-						<a href="contact.php" <?php if ( calledFrom() == "contact") { ?>class="selected"<?php } ?>>Contact</a>
-					</li>
-				</ul>
-                
-               	<div id="mobileNav">
-                	<div id="dropdown" class="dropdown">
-                		<img src="" height="30px" width="30px">
-                	</div>
-                
-                
-                </div>
-				
-			</div>
-		</div>
+        	</div>
+        	<div class="dropdown-icon-container">
+        		<button id="dropdownIcon"><span class="glyphicon glyphicon-th dropdown-icon"></span>
+                </button>
+        	</div>
+        
+        </div>
+        <span id="dropdownMenu">
+		
+        </span>

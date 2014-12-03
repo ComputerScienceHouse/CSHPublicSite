@@ -1,4 +1,14 @@
-<?php include "header.php"; ?>
+<?php 
+include 'Mobile_Detect.php';
+$device = new Mobile_Detect;
+if ($device->isMobile()) {
+    include 'headerMobile.php';
+}
+else{
+	include 'header.php';	
+}
+
+?>
 <div id="big">
 	<div class="wrapper">
 		<div id="left">
@@ -57,8 +67,15 @@
 		</div>
 	</div>
 </div>
+<!-- Handle the Mobile Navigation -->
+<script src="jquery-latest.js"></script>
+<script src="navController.js"></script>
 <script>
 	//Fit slogan to container
 	$('#fitText').fitText(1.25, {minFontSize:24});
 </script>
+
 <?php include "footer.php"; ?>
+
+
+

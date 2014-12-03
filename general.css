@@ -208,15 +208,14 @@ img.center {
 	box-shadow:inset 0px -5px 5px rgba(0, 0, 0, 0.15);
 	border-bottom:1px solid #498211;
 }
-#big.title {
+#big.toptitle {
 	background-image:url('images/bigbkgdsmall.png');
 	font-family:'Eras', sans-serif;
-	height:60px;
 }
-.title .wrapper {
+.toptitle .topwrapper {
 	padding:0 30px;
 }
-#big.title h1 {
+#big.toptitle h1 {
 	line-height:60px;
 	color:white;
 	font-size:40px !important;
