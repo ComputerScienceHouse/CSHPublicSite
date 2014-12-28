@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.nav-header{
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:120px;
+	background:rgba(255,255,255,.95);
+	border-bottom:6px solid #5ba215;
+	z-index:9999;
+	
+	
+}
+.main-logo{
+	padding-top:15px;
+	padding-bottom:15px;
+	padding-left:20px;
+	
+}
+.dropdown-icon-container{
+	position:fixed;
+	top:0;
+	right:0;
+	padding-right:20px;
+	padding-top:15px;
+	padding-bottom:15px;
+		
+}
+.dropdown-icon{
+	color:#5ba215;
+	font-size:80px;
+	
+}
+.dropdown-menu-container{
+	width:100%;
+	position: fixed;
+	top:120px;
+	left:0px;
+	padding-left:20px;
+	padding-right:20px;
+	background:rgba(255,255,255,.95);
+	border-bottom:8px solid #5ba215;
+	overflow-y: scroll;
+	z-index:9999;
+}
+#navMobile{
+	padding-left:10px;
+	padding-top:15px;
+	font-size: 50px;
+	padding-bottom:15px;
+	
+}
+#navMobile a{
+	color:#5ab215;	
+}
+#navMobile ul{
+	padding-top:5px;
+	font-size:40px;
+	padding-left:40px;
+}
+#navMobile ul a{
+	color:#999;	
+}
+#big.toptitle h1 {
+	padding-top:20px;
+}
