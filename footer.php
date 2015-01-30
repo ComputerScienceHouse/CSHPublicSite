@@ -86,7 +86,7 @@
 					<a href="https://github.com/computersciencehouse/CSHPublicSite">Website on Github</a>
 				</p>
 				<p>
-					Copyright 2013 &copy; Computer Science House
+					Copyright 2015 &copy; Computer Science House
 				</p>
 			</div>
 		</div>
