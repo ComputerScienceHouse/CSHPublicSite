@@ -53,7 +53,7 @@
 				<span>
 					<h2>Harold</h2>
 					<p>
-						With Harold, every member of CSH gets their own personal theme song. Audio clips can be uploaded and selected via a simple web interface and are played when a user touches their iButton (received upon membership) to an appropriate reader.
+						With Harold, every member of CSH gets his or her own theme song. After a user uploads either their song of playlist, all they have to do is touch their iButton or RDIF tag (received upon membership) to the appropriate reader.
 					</p>
 				</span>
 			</li>
