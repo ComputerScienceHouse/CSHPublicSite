@@ -68,6 +68,9 @@
 							<li>
 								<a href="/eboard.php">Eboard</a>
 							</li>
+							<li>
+								<a href="/sponsors.php">Sponsors</a>
+							</li>
 						</ul>
 					</li>
 					<li>
