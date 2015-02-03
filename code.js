@@ -23,6 +23,7 @@ $(document).ready(function() {
 		"<a href='http://dattobackup.com' target='_blank'><img src='images/sponsorLogos/datto.png'></a>",
 		"<a href='http://www.rochester.edu' target='_blank'><img src='images/sponsorLogos/UofR.png'></a>",
 		"<a href='http://linked.in' target='_blank'><img src='images/sponsorLogos/linkedin.png'></a>",
+		"<a href='http://ge.com' target='_blank'><img src='images/sponsorLogos/ge.png'></a>",
 		"<a href='http://microsoft.com' target='_blank'><img src='images/sponsorLogos/microsoft.png'></a>");
 	shuffle(images);
 	$('#row').append(images[0], images[1], images[2], images[3], images[4]);
