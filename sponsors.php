@@ -52,7 +52,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="http://fxcm.com" target="_blank"><img src="images/sponsorLogos/fxcm.png" alt="FXCM"/></a>
+				<a href="http://ge.com" target="_blank"><img src="images/sponsorLogos/ge.png" alt="GE"/></a>
 			</td>
 			<td>
 				<a href="http://google.com" target="_blank"><img src="images/sponsorLogos/google.png" alt="Google"/></a>
@@ -137,6 +137,9 @@
 			</td>
 			<td class="smallHide">
 				<a href="http://citrix.com" target="_blank"><img src="images/sponsorLogos/citrix.png" alt="Citrix"/></a>
+			</td>
+			<td class="smallHide">
+				<a href="http://fxcm.com" target="_blank"><img src="images/sponsorLogos/fxcm.png" alt="FXCM"/></a>
 			</td>
 		</tr>
 	</table>
