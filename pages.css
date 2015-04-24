@@ -101,6 +101,9 @@
 	color:#fff;
 	cursor:pointer;
 }
+#insights_button:hover{
+	background-color:#498211;
+}
 /*Grid*/
 .grid {
 	max-width:1200px;
