@@ -82,6 +82,9 @@
 							<li>
 								<a href="/tour.php">Tour</a>
 							</li>
+							<li>
+								<a href="/insights.php">Insights</a>
+							</li>
 							<!--<li>
 								<a href="scholarship.php">Scholarship</a>
 							</li>-->
