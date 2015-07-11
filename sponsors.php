@@ -35,7 +35,7 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="http://dattobackup.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
+				<a href="https://datto.com" target="_blank"><img src="images/sponsorLogos/datto.png" alt="Datto"/></a>
 			</td>
 			<td>
 				<a href="http://www.rochester.edu" target="_blank"><img src="images/sponsorLogos/UofR.png" alt="UofR"/></a>
