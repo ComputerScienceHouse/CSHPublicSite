@@ -63,7 +63,7 @@
 				<div class="rolloverImg" id="impsImg"><img src="images/eboard/imps.jpg" /></div>
 				<span>
 					<h2>House Improvements</h2>
-					<h3>Maxime Bougeois</h3>
+					<h3>Maxime Bourgeois</h3>
 					<p>
 						The House Improvements (Imps) director is responsible for keeping our living space respectable and comfortable. The Imps director delegates projects that improve the physical aspects of floor, such as painting, cleaning, building, and organizing House's resources. While we may not be the tidiest group of people, we like to take care of our floor, and it shows.
 					</p>
