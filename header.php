@@ -58,6 +58,20 @@
 					<li>
 						<a href="/" <?php if (calledFrom() == "index") { ?>class="selected"<?php } ?> >Home</a>
 					</li>
+
+					<li>
+						<a href="/40th.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
+						<ul>
+							<li> <a href="40thwip.php">Events</a> </li>
+							<li> <a href="40thwip.php">Hotels</a> </li>
+							<li> <a href="40thwip.php">Newsletter</a> </li>
+							<li> <a href="40thwip.php">Event Contact Info</a> </li>
+							<!--
+							<li> <a href="40thitinerary.php">Itinerary</a> </li>
+							<li> <a href="newsletter.php">Newsletter</a> </li> -->
+						</ul>
+					</li>
+
 					<li>
 						<a href="/about.php" <?php if (calledFrom() == "about") { ?>class="selected"<?php } ?>>About</a>
 	 					<ul>
