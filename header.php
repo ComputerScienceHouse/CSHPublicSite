@@ -62,6 +62,7 @@
 					<li>
 						<a href="/40th.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
 						<ul>
+							<li> <a href="40thwip.php">RSVP</a> </li>
 							<li> <a href="40thwip.php">Events</a> </li>
 							<li> <a href="40thwip.php">Hotels</a> </li>
 							<li> <a href="40thwip.php">Newsletter</a> </li>
