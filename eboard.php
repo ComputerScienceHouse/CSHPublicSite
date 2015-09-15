@@ -9,7 +9,7 @@
 <div id="content">
 	<div id="cWrapper">
 		<p>
-		The CSH Executve Board, or <b>E-Board</b>, is a group of directors who manage all aspects of House's affairs. Through weekly meetings and active involvement on floor, the E-Board members keep CSH running smoothly.
+		The CSH Executive Board, or <b>E-Board</b>, is a group of directors who manage all aspects of House's affairs. Through weekly meetings and active involvement on floor, the E-Board members keep CSH running smoothly.
 		</p>
 		<ul class="altList">
 		<!--Eboard images should be square and at least 300x300 pixels-->
