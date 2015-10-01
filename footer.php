@@ -7,6 +7,9 @@
 					<a href="/">Home</a>
 				</li>
 				<li>
+					<a href="/40th.php">40th Information</a>
+				</li>
+				<li>
 					<a href="/about.php">About</a>
 					<ul>
 						<li>

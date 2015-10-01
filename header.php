@@ -58,6 +58,13 @@
 					<li>
 						<a href="/" <?php if (calledFrom() == "index") { ?>class="selected"<?php } ?> >Home</a>
 					</li>
+
+					<li>
+						<a href="/40th.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
+						<ul>
+						</ul>
+					</li>
+
 					<li>
 						<a href="/about.php" <?php if (calledFrom() == "about") { ?>class="selected"<?php } ?>>About</a>
 	 					<ul>
