@@ -3,9 +3,10 @@
 	<div class="wrapper">
 		<div id="left">
 			<p id="fitText">
-				404: Not Found
+				Page Under Construction
 			</p>
-<iframe width="50%" height="315" src="//www.youtube.com/embed/t3otBjVZzT0?controls=0&showinfo=0&autoplay=1" frameborder="0" allowfullscreen></iframe>
+			More information on 40th can be found at <a style="color: white; text-decoration: underline;" href="/40th.php">the 40th page</a>
+
 		</div>
 	</div>
 </div>
