@@ -18,10 +18,10 @@
 			workshops hosted by house members, join in on CSH traditions like Capture the Disk, and much more.
 		</p>
 		<div id="insights_button_wrapper">
-		<a href="http://csh.rit.edu/~mbillow/insights/0515InsightsSchedule.pdf">
+		<a href="http://csh.rit.edu/~mbillow/insights/1015InsightsSchedule.pdf">
 			<div id="insights_button">Schedule</div>
 		</a>
-		<a href="http://csh.rit.edu/~mbillow/insights/RegistrationPacket.pdf">
+		<a href="https://form.jotform.com/52914750434152">
 			<div id="insights_button">Registration Form</div>
 		</a>
 		<a href="mailto:insights@csh.rit.edu">
