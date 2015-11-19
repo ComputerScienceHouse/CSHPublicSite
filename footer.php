@@ -83,7 +83,8 @@
 		<div class="wrapper">
 			<div id="under">
 				<p>
-					<a href="/contact.php">webmaster@csh.rit.edu</a>
+					<?php require_once('hide_email.php'); ?>
+					<a href="/contact.php"><?php echo hide_email("webmaster@csh.rit.edu", false); ?></a>
 				</p>
 				<p>
 					<a href="https://github.com/computersciencehouse/CSHPublicSite">Website on Github</a>
