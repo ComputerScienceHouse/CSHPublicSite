@@ -63,10 +63,10 @@
 						<a href="/40th_chairman_letter.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
 						<ul>
 							<li>
-								<a href="/40th_chairmman_letter.php">Save the Date</a>
+								<a href="/40th_chairman_letter.php">Chairman Letter</a>
 							</li>
 							<li>
-								<a href="/40th_save_the_date.php">Chairman Letter</a>
+								<a href="/40th_save_the_date.php">Save the Date</a>
 							</li>
 						</ul>
 					</li>
