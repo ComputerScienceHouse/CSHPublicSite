@@ -46,7 +46,7 @@
 			<?php
 	          require_once('recaptchalib.php');
 	          $publickey = "6LdMJeISAAAAAHnVuAK_3wMCEcOidQ_09yw0h-4a";
-	          echo recaptcha_get_html($publickey);
+	          echo recaptcha_get_html($publickey, null, true);
 	        ?>
 	        <script type="text/javascript">
 	        	(function() {
