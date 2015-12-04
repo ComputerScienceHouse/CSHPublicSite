@@ -1,4 +1,5 @@
 <?php include "header.php"; ?>
+<?php require_once('hide_email.php'); ?>
 <div id="big" class="title">
 	<div class="wrapper">
 		<h1>
@@ -20,7 +21,7 @@
 		<br/>
 
 		<h2>Contact</h2>
-		<p>Email <a href="contact.php">scholarship@csh.rit.edu</a> with any questions about the Scholarship Fund.</p>
+		<p>Email <a href="contact.php"><?php echo hide_email("scholarship@csh.rit.edu", false); ?></a> with any questions about the Scholarship Fund.</p>
 		<br/>
 
 		<h2>FAQ</h2>
