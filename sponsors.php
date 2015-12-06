@@ -41,7 +41,7 @@
 				<a href="http://www.rochester.edu" target="_blank"><img src="images/sponsorLogos/UofR.png" alt="UofR"/></a>
 			</td>
 			<td>
-				<a href="http://linked.in" target="_blank"><img src="images/sponsorLogos/linkedin.png" alt="LinkedIn"/></a>
+				<a href="https://www.linkedin.com" target="_blank"><img src="images/sponsorLogos/linkedin.png" alt="LinkedIn"/></a>
 			</td>
 			<td>
 				<a href="http://cisco.com" target="_blank"><img src="images/sponsorLogos/cisco.png" alt="Cisco"/></a>
