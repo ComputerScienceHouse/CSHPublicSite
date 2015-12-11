@@ -34,10 +34,10 @@ $(document).ready(function(){
     ];
     
      var used = [];
-    for(i=1;i<29;i++){
+    for(i=0;i<29;i++){
         var item = images[Math.floor(Math.random()*images.length)];
         
-        if(images.indexOf(item) >= 0){
+        if($.inArray(item,used) == -1){
             $('#sponsor'+i).attr("src", item);
             used.push(item);
         }
