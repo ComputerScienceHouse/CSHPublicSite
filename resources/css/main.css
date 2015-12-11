@@ -7,6 +7,11 @@
     body {
         padding-top: 100px;
     }
+    .csh-404-video{
+        margin-bottom:50px;
+        margin-top:50px;
+        
+    }
 
     nav a {
       padding-top: 40px !important;
@@ -253,6 +258,13 @@ nav a:hover, nav a:focus{
     }
     .navbar-nav{
         float:left !important;
+        
+    }
+    .csh-404-video{
+        width:90%;
+        max-width:500px;
+        margin:auto;
+        margin-bottom:20px;
         
     }
     .tour-dropdown-menu{
