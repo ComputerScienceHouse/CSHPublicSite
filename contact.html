@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta property="og:image" content="http://csh.rit.edu/images/CSH_logo_dark.png">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="resources/images/favicon.ico">
+
+    <title>Computer Science House</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="resources/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome core CSS -->
+    <link href="resources/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom CSS - Main -->
+    <link href="resources/css/main.css" rel="stylesheet">
+    <!-- Google Fonts -->
+      <link href="//fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
+      <!-- Alertify CSS -->
+      <link href="resources/css/alertify.css" rel="stylesheet">
+      
+      <!-- Google Analytics -->
+      <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+      <script>
+      
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-75959-4']);
+  _gaq.push(['_setDomainName', 'csh.rit.edu']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+
+      
+      </script>
+      <script src='https://www.google.com/recaptcha/api.js'></script>
+    
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+<div class="desktop-hide" style="padding:30px;"></div>
+    <nav class="navbar navbar-csh navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle csh-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars"></i>
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="resources/images/logo.svg" class="csh-logo"></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav csh-navbar-nav pull-right">
+          <li><a href="index.html"><div class="csh-navbar-nav-shift">Home</div></a></li>
+          
+        <li class="dropdown">
+            <a href="40th_chairman_letter.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="csh-navbar-nav-shift">40 Anniversary<span class="caret"></span></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="40th_chairman_letter.html">Chairman's Letter</a></li>
+            <li><a href="40th_save_the_date.html">Save The Date</a></li>
+          </ul>
+        </li>
+          
+        <li class="dropdown">
+            <a href="about.html" class="dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="csh-navbar-nav-shift">About <span class="caret"></span></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="alumni.html">Alumni</a></li>
+            <li><a href="eboard.html">Eboard</a></li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+        
+          </ul>
+        </li>
+          
+        <li class="dropdown">
+            <a href="membership.html" class="nav-dropdown-toggle dropdown-toggle disabled" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><div class="csh-navbar-nav-shift">Membership<span class="caret"></span></div></a>
+          <ul class="dropdown-menu">
+            <li><a href="traditions.html">Traditions</a></li>
+            <li><a href="tour.html">Tour</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            
+          </ul>
+        </li>
+          
+          <li><a href="contact.html"><div class="csh-navbar-nav-shift link-active">Contact</div></a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron csh-page-header">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
+                <div class="csh-header-text">
+                    Contact
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+    <div class="container csh-body">
+      <!-- Insert Page Content In this Area -->
+        <div class="row">
+        <div class="col-md-8 col-xs-12 col-sm-6">
+            <div class="col-md-12 contact-header">
+                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-comment"></i> Send Us a Message</h3> 
+            </div>
+                <form method="POST" action="resources/php/mailer.php" id="mailerForm" data-toggle="validator">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            
+                            <input type="text" class="form-control csh-form-input" id="name" name="name" placeholder="Your Name*" required="required" />
+                        </div>
+                        <div class="form-group">
+                            
+                            
+                                
+                                <input type="email" class="form-control csh-form-input" id="email" placeholder="Your Email*" name="email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            
+                            <select id="position" name="position" class="form-control csh-form-input" required="required">
+                                
+                                <option selected="true" disabled="disabled" required="required">Position*</option> 
+                                <option value="c">Chairman</option>
+                                <option value="e">Evaluations</option>
+                                <option value="r">Research & Development</option>
+                                <option value="h">History</option>
+                                <option value="s">Social</option>
+                                <option value="w">Webmaster</option>
+                            </select>
+                        </div>
+                        <div class="g-recaptcha csh-recaptcha" data-sitekey="6LfAqxITAAAAAJWap_SlA8Q9wGCAWKAK3LoLLUIo"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control csh-form-input csh-form-textarea" style="resize: none;" rows="9" cols="25" required="required" placeholder="Message*"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary csh-btn pull-right" type="submit" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                    <br><br>
+                </form>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-6">
+            <div class="col-md-12 contact-header">
+                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-home"></i> Reach Out to Us</h3> 
+            </div>
+            <h4 style="text-decoration:underline;">Computer Science House</h4>
+            <p>
+                3999 Nathaniel Rochester Hall
+                <br>
+                Rochester, NY 14623
+            </p>
+            <br><br>
+                
+        </div>
+            </div>
+
+        
+        
+    <!-- End Page Content Here -->
+    </div>
+        <!-- Footer Section -->
+        
+      <div class="sitemap-container">
+          <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h3 style="color:#FFF;">Site Map</h3>
+                <ul class="sitemap">
+                    <li><a href="index.html" class="sitemap-link">Home</a></li>
+                    <li><a href="40th_chairman_letter.html" class="sitemap-link">40th Information</a></li>
+                    <li><a href="about.html" class="sitemap-link">About</a></li>
+                    <ul class="sitemap">
+                        <li><a href="projects.html" class="sitemap-link">Projects</a></li>
+                        <li><a href="alumi.html" class="sitemap-link">Alumni</a></li>
+                        <li><a href="eboard.html" class="sitemap-link">Eboard</a></li>
+                        <li><a href="sponsors.html" class="sitemap-link">Sponsors</a></li>
+                    </ul>
+                    <li><a href="membership.html" class="sitemap-link">Membership</a></li>
+                    <ul class="sitemap">
+                        <li><a href="traditions.html" class="sitemap-link">Traditions</a></li>
+                        <li><a href="tour.html" class="sitemap-link">Tour</a></li>
+                        <li><a href="insights.html" class="sitemap-link">Insights</a></li>
+                    </ul>
+                    <li><a href="contact.html" class="sitemap-link">Contact</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h3 style="color:#FFF;">Public Resources</h3>
+                <ul class="sitemap" >
+                    <li><a href="membership.html" class="sitemap-link">How to Apply</a></li>
+                    <li><a href="http://schedule.csh.rit.edu/" class="sitemap-link">CSH RIT Schedule Maker</a></li>
+                    <li><a href="https://github.com/ComputerScienceHouse" class="sitemap-link"><i class="fa fa-github"></i> CSH on GitHub</a></li>
+                    <li><a href="https://twitter.com/CSH_History" class="sitemap-link"><i class="fa fa-twitter"></i> @CSH_History</a></li>
+                    
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-4">
+                <h3 style="color:#FFF;">Member Resources</h3>
+                <ul class="sitemap" >
+                    <li><a href="http://members.csh.rit.edu/" class="sitemap-link">Member's Portal</a></li>
+                    <li><a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/articles.pdf?raw=true" class="sitemap-link">Constitution</a></li>
+                    <li><a href="https://github.com/ComputerScienceHouse/Constitution/blob/master/bylaws.pdf?raw=true" class="sitemap-link">By-Laws</a></li>
+                    <li><a href="https://www.facebook.com/groups/ComputerScienceHouse/" class="sitemap-link"><i class="fa fa-facebook"></i> CSH on Facebook</a></li>
+                    <li><a href="https://twitter.com/OPCOMM" class="sitemap-link"><i class="fa fa-twitter"></i> @OPCOMM</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+              </div>
+      </div>
+      
+          
+        
+     <!-- /container -->
+      
+    <div class="csh-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 hcenter">
+                    <a href="contact.html" style="color:#FFF">webmaster@csh.rit.edu</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 hcenter">
+                    <a style="color:#FFF" href="">Website on <i class="fa fa-github"></i> Github</a>
+                </div>
+                <div class="col-xs-12 col-sm-4 col-md-4 hcenter">
+                    Copyright 2015 © Computer Science House
+                </div>
+            </div>
+        </div>  
+    </div>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="resources/js/bootstrap.min.js"></script>
+    <!-- Main JS -->
+     <script src="resources/js/main.js"></script>
+    <!-- Alertify JS -->
+      <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.5/dist/js/alertify.js"></script>
+      <!-- Validator JS -->
+     <script src="resources/js/validator.js"></script>
+
+    <!-- Mailer JS -->
+     <script src="resources/js/mailer.js"></script>
+    
+      
+  </body>
+</html>
