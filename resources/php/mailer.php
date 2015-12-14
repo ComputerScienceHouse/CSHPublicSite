@@ -22,22 +22,22 @@ if ($response != null && $response->success) {
     //Send email here
     switch ($position) {
         case 'c':
-            $sendTo = "chairman@csh.rit.edu";
+            $sendTo = $chairmanEmail;
             break;
         case 'e':
-            $sendTo = "eval@csh.rit.edu";
+            $sendTo = $evalsEmail;
             break;
         case 'r':
-            $sendTo = "rd@csh.rit.edu";
+            $sendTo = $rdEmail;
             break;
         case 'h':
-            $sendTo = "history@csh.rit.edu";
+            $sendTo = $historyEmail;
             break;
         case 's':
-            $sendTo = "social@csh.rit.edu";
+            $sendTo = $socialEmail;
             break;
         case 'w':
-            $sendTo = "webmaster@csh.rit.edu";
+            $sendTo = $webmasterEmail;
             break;
         case 'debug':
             $sendTo = $debugEmail;
