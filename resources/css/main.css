@@ -161,7 +161,7 @@
 
 .csh-logo {
     width:150px;
-    margin-top:-18px;
+    margin-top:-22px;
     transition:margin .1s ease-in, width .14s ease-in;
 }
 .csh-form-input{
@@ -200,7 +200,7 @@ textarea, input {
 
 .logo-shrink{
     width:100px;
-    margin-top:-8px;
+    margin-top:-10px;
     
 }
 ::-moz-focus-inner {
