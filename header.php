@@ -60,7 +60,7 @@
 					</li>
 
 					<li>
-						<a href="/40th_chairman_letter.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
+						<a href="/40th.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
 						<ul>
 							<li>
 								<a href="/40th_chairmman_letter.php">Save the Date</a>
