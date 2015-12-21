@@ -1,4 +1,5 @@
 <?php include "header.php"; ?>
+<?php require_once('hide_email.php'); ?>
 <div id="big" class="title">
 	<div class="wrapper">
 		<h1>
@@ -14,11 +15,11 @@
 				3999 Nathaniel Rochester Hall<br/>
 				Rochester, NY 14623<br/>
 				<br/>
-				<b>Chairman:</b> chairman&#64;csh.rit.edu<br/>
-				<b>Membership:</b> eval&#64;csh.rit.edu<br/>
-				<b>Alumni Contact:</b> history&#64;csh.rit.edu<br/>
-				<b>Scholarship:</b> scholarship&#64;csh.rit.edu<br/>
-				<b>Webmaster:</b> webmaster&#64;csh.rit.edu<br/>
+				<b>Chairman:</b> <?php echo hide_email("chairman@csh.rit.edu"); ?><br/>
+				<b>Membership:</b> <?php echo hide_email("eval@csh.rit.edu"); ?><br/>
+				<b>Alumni Contact:</b> <?php echo hide_email("history@csh.rit.edu"); ?><br/>
+				<b>Scholarship:</b> <?php echo hide_email("scholarship@csh.rit.edu"); ?><br/>
+				<b>Webmaster:</b> <?php echo hide_email("webmaster@csh.rit.edu"); ?><br/>
 			</p>
 		</div>
 
@@ -46,7 +47,7 @@
 			<?php
 	          require_once('recaptchalib.php');
 	          $publickey = "6LdMJeISAAAAAHnVuAK_3wMCEcOidQ_09yw0h-4a";
-	          echo recaptcha_get_html($publickey);
+	          echo recaptcha_get_html($publickey, null, true);
 	        ?>
 	        <script type="text/javascript">
 	        	(function() {
