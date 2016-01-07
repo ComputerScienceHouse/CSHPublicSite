@@ -2,6 +2,9 @@
     font-family: 'Eras';
     src: url('../fonts/Eras.woff');
 }
+body{
+    -webkit-font-smoothing: antialiased;
+}
 
 @media(min-width:768px){
     body {
@@ -17,6 +20,10 @@
       padding-top: 40px !important;
       padding-bottom: 40px !important;
       font-size: 18px;
+    }
+    .nav>li>a{
+        padding: 10px 8px;
+        font-size: 18px;
     }
     
     .dropdown-menu a{
@@ -34,7 +41,7 @@
     }
     .csh-navbar-nav-shift{
         position:relative;
-        top:20px;
+        top:22px;
         -webkit-transition: all 0.1s ease-in-out;
         -moz-transition: all 0.1s ease-in-out;
         -o-transition: all 0.1s ease-in-out;
@@ -82,6 +89,7 @@
         
     
     }
+    
     
     .sponsor-image{
         width:90%;
@@ -682,3 +690,20 @@ td,th{
     color:#FFF;
     
 }
+.eboard-thumbnail {
+         height: 250px;
+         width: 250px;
+         margin: 20px auto;
+     }
+ 
+     .eboard-thumbnail img {
+         position: absolute;
+         -webkit-transition: opacity 0.3s ease-in-out;
+         -moz-transition: opacity 0.3s ease-in-out;
+         -o-transition: opacity 0.3s ease-in-out;
+         transition: opacity 0.3s ease-in-out;
+     }
+ 
+     .eboard-thumbnail img.real:hover {
+         opacity: 0;
+     }

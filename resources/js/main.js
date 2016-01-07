@@ -24,11 +24,8 @@ $('.navbar').on('hide.bs.collapse', function(){
     
 });
 $(window).resize(function(){
-    if($(window).width() > 767){
-        $('.nav > .dropdown > ul').addClass('dropdown-menu');
-    }
-    else if($(window).width() <= 767){
-        $('.nav > .dropdown > ul').removeClass('dropdown-menu');
-    }
+
+    $('.navbar-collapse').collapse('hide');
+
     
 })
