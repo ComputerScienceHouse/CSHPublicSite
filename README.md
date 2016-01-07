@@ -3,6 +3,9 @@ CSHPublicSite
 
 Foreward facing CSH website - csh.rit.edu
 
+###Building###
+This project uses pyBuilder, a light-weight Python HTML complier. For more information on how to use it, visit: https://github.com/brandonhudson/pyBuilder
+
 ###Contributing###
 
 ####Pull Requests###
