@@ -28,4 +28,28 @@ $(window).resize(function(){
     $('.navbar-collapse').collapse('hide');
 
     
-})
+});
+$(document).ready(function(){
+    //Set Active Class on Current Page Navbar
+    // place on div with '.navbarActive' class
+    // page="FILENAME.html"
+    // for multiple pages:
+    //    page="FILE1.html,FILE2.html,FILE3.html"
+    pageName = document.location.pathname.match(/[^\/]+$/)[0]; 
+    $('.navbarActive').each(function(){
+        var element = $(this);
+        pageString = element.attr("page");
+        pageArray = pageString.split(",");
+       
+        for(i=0;i<pageArray.length;i++){
+            if(pageArray[i] == pageName){
+                element.addClass("link-active")
+                break;
+            }
+        }
+    });
+    
+    
+    //$('[page="'+pageName+'"]').addClass("link-active");
+    
+});
