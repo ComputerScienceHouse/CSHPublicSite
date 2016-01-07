@@ -11,5 +11,3 @@ If you have an idea for a feature or have a bug that you'd like to fix, please f
 ####Issue Tracking####
 Please make use of github's issue tracker for this repo.
 
-####Building####
-This website utilizes a light-weight build script I wrote called pyBuilder. For usage, visit: 
