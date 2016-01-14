@@ -1,6 +1,7 @@
 import glob
 import codecs
 import os 
+import sys
 
 """
 * Builds the HTML
@@ -49,11 +50,26 @@ def buildFile(fileNameIn,fileIn):
 * Params: None
 """
 def main():
+    if(len(sys.argv) < 2):
+        print("usage: pyBuilder.py path/to/file.html")
+        print("or")
+        print("usage: pyBuilder.py *")
+        return 0;
+    elif(sys.argv[1] is None):
+        print("usage: pyBuilder.py path/to/file.html")
+        print("or")
+        print("usage: pyBuilder.py *")
+        return 0;
+    elif(sys.argv[1] == ""):
+        print("usage: pyBuilder.py path/to/file.html")
+        print("or")
+        print("usage: pyBuilder.py *")
+        return 0;
+    
     print("pyBuilder - HTML")
     print("================")
-    fileName = input('build: ')
     print()
-    if(fileName == '*'):
+    if(len(sys.argv) > 2):
         
         fileArray = glob.glob("*.html");
         for i in range (0,len(fileArray)):
@@ -62,6 +78,7 @@ def main():
             openFile = codecs.open(fileName, 'r+')
             buildFile(fileName,openFile)
     else:
+        fileName = sys.argv[1]
         print("opening "+fileName+"...")
         openFile = codecs.open(fileName, 'r+')
         buildFile(fileName,openFile)
