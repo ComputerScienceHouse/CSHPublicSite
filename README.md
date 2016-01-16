@@ -14,5 +14,6 @@ If you have an idea for a feature or have a bug that you'd like to fix, please f
 ####Issue Tracking####
 - Fix issue with tours.html not properly loading
 - Change tours dropdown color to white text when selected
+<br>
 Please make use of github's issue tracker for this repo.
 
