@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <include file="resources/templates/_header.html"></include>
+
+  <body>
+<div class="desktop-hide" style="padding:30px;"></div>
+    <include file="resources/templates/_navbar.html"></include>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron csh-page-header">
+        <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
+                <div class="csh-header-text">
+                    Contact
+                </div>
+            </div>
+        </div>
+            </div>
+    </div>
+
+    <div class="container csh-body">
+      <!-- Insert Page Content In this Area -->
+        <div class="row">
+        <div class="col-md-8 col-xs-12 col-sm-6">
+            <div class="col-md-12 contact-header">
+                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-comment"></i> Send Us a Message</h3> 
+            </div>
+                <form method="POST" action="resources/php/mailer.php" id="mailerForm" data-toggle="validator">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            
+                            <input type="text" class="form-control csh-form-input" id="name" name="name" placeholder="Your Name*" required="required" />
+                        </div>
+                        <div class="form-group">
+                            
+                            
+                                
+                                <input type="email" class="form-control csh-form-input" id="email" placeholder="Your Email*" name="email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            
+                            <select id="position" name="position" class="form-control csh-form-input" required="required">
+                                
+                                <option selected="true" disabled="disabled" required="required">Position*</option> 
+                                <option value="c">Chairman</option>
+                                <option value="e">Evaluations</option>
+                                <option value="r">Research & Development</option>
+                                <option value="h">History</option>
+                                <option value="s">Social</option>
+                                <option value="w">Webmaster</option>
+                            </select>
+                        </div>
+                        <div class="g-recaptcha csh-recaptcha" data-sitekey="6LfAqxITAAAAAJWap_SlA8Q9wGCAWKAK3LoLLUIo"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <textarea name="message" id="message" class="form-control csh-form-input csh-form-textarea" style="resize: none;" rows="9" cols="25" required="required" placeholder="Message*"></textarea>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary csh-btn pull-right" type="submit" id="btnContactUs">
+                            Send Message</button>
+                    </div>
+                </div>
+                    <br><br>
+                </form>
+        </div>
+        <div class="col-md-4 col-xs-12 col-sm-6">
+            <div class="col-md-12 contact-header">
+                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-home"></i> Reach Out to Us</h3> 
+            </div>
+            <h4 style="text-decoration:underline;">Computer Science House</h4>
+            <p>
+                3999 Nathaniel Rochester Hall
+                <br>
+                Rochester, NY 14623
+            </p>
+            <br><br>
+                
+        </div>
+            </div>
+
+        
+        
+    <!-- End Page Content Here -->
+    </div>
+        <include file="resources/templates/_footer.html"></include>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <include file="resources/templates/_coreJS.html"></include>
+    <!-- Alertify JS -->
+      <script src="https://cdn.rawgit.com/alertifyjs/alertify.js/v1.0.5/dist/js/alertify.js"></script>
+      <!-- Validator JS -->
+     <script src="resources/js/validator.js"></script>
+
+    <!-- Mailer JS -->
+     <script src="resources/js/mailer.js"></script>
+    
+      
+  </body>
+</html>
