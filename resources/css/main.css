@@ -678,6 +678,9 @@ td,th{
     color:#FFF;
     
 }
+.csh-active > .csh-active-link{
+    color:#FFFFFF;
+}
 .csh-active:hover,.csh-active:focus{
     background-color: #B0197E;
     border-color:#B0197E;

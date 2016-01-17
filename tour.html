@@ -30,14 +30,14 @@
     <span class="caret"></span>
   </button>
   <ul class="dropdown-menu tour-dropdown-menu tour-mobile-btn-group" aria-labelledby="dropdownMenu1">
-    <li id="lounge" class="csh-active"><a href="#" onclick="switchImage('lounge')">Lounge</a></li>
-    <li id="software"><a href="#" onclick="switchImage('software')">Software Room</a></li>
-    <li id="library"><a href="#" onclick="switchImage('library')">Library</a></li>
-    <li id="user"><a href="#" onclick="switchImage('user')">User Center</a></li>
-    <li id="conference"><a href="#" onclick="switchImage('conference')">Conference Room</a></li>
-    <li id="server"><a href="#" onclick="switchImage('server')">Server Room</a></li>
-    <li id="project"><a href="#" onclick="switchImage('project')">Project Room</a></li>
-    <li id="dorm"><a href="#" onclick="switchImage('dorm')">Dorm Room</a></li>
+    <li id="lounge" class="csh-active"><a href="#" onclick="switchImage('lounge')" class="csh-active-link">Lounge</a></li>
+    <li id="software"><a href="#" onclick="switchImage('software')" class="csh-active-link">Software Room</a></li>
+    <li id="library"><a href="#" onclick="switchImage('library')" class="csh-active-link">Library</a></li>
+    <li id="user"><a href="#" onclick="switchImage('user')" class="csh-active-link">User Center</a></li>
+    <li id="conference"><a href="#" onclick="switchImage('conference')" class="csh-active-link">Conference Room</a></li>
+    <li id="server"><a href="#" onclick="switchImage('server')" class="csh-active-link">Server Room</a></li>
+    <li id="project"><a href="#" onclick="switchImage('project')" class="csh-active-link">Project Room</a></li>
+    <li id="dorm"><a href="#" onclick="switchImage('dorm')" class="csh-active-link">Dorm Room</a></li>
   </ul>
 </div>
             </div>
@@ -325,8 +325,9 @@
         <include file="resources/templates/_footer.html"></include>
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
+    <!-- Core Javascript -->
     <include file="resources/templates/_coreJS.html"></include>
+    <!-- Tour.JS -->
+    <script src="resources/js/tour.js"></script>
   </body>
 </html>
