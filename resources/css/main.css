@@ -503,6 +503,9 @@ p{
     background:#222;
     padding:10px;
 }
+.sitemap-ul-container{
+    margin-left:-40px;
+}
 
 .sitemap {
     list-style-type: none;
