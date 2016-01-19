@@ -161,6 +161,9 @@ body{
     .csh-page-header {
         height:100px;
     } 
+    .quick-links-container{
+        padding-left:30px;
+    }
 }
 .navbar-csh {
     border-top:5px solid #E11C52;
@@ -353,7 +356,9 @@ nav a:hover, nav a:focus{
         margin-bottom:10px;
         
     }
-    
+    .quick-links-container{
+        margin-bottom:50px;
+    }
 }
 @media(min-width:768px) and (max-width:992px){
     .navbar > .container{
@@ -377,6 +382,9 @@ nav a:hover, nav a:focus{
         float:right;
         padding-right:15%;
         
+    }
+    .quick-links-container{
+        padding-left:30px;
     }
     
     
@@ -710,3 +718,14 @@ td,th{
      .eboard-thumbnail img.real:hover {
          opacity: 0;
      }
+
+.information-update-text {
+    margin-bottom:10px;
+}
+@media(min-width:768px){
+    
+    .information-update-container{
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
