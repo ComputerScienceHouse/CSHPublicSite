@@ -89,7 +89,13 @@ body{
         
     
     }
-    
+       .insights-btn{
+        font-size:25px;
+        margin: 0px auto 10px auto;
+        display: block;
+        min-width: 90%;
+        padding: 10px 10px 10px 10px;
+    }
     
     .sponsor-image{
         width:90%;
@@ -103,10 +109,9 @@ body{
 	   -o-transform: translate(-50%, 0%);
 	   transform: translate(-50%, 0%);
     }
-    .insights-btn{
-        font-size:25px;
-    }
-    
+
+
+       
     nav a{
         transition: padding .1s ease-in, height .1s ease-in, font-size .1s ease-in, margin .1s ease-in;
         -webkit-transition: padding .1s ease-in, height .1s ease-in, font-size .1s ease-in, margin .1s ease-in;
@@ -329,7 +334,11 @@ nav a:hover, nav a:focus{
         margin-top:2px;
     }
     .insights-btn{
-        font-size:12px;
+        font-size:25px;
+        margin: 0px auto 10px auto;
+        display: block;
+        min-width: 90%;
+        padding: 10px 10px 10px 10px;
     }
     .mobile-hide{
         display:none;
@@ -595,12 +604,6 @@ h4,h3{
     border-bottom:2px solid #B0197E;
 }
 
-.insights-header {
-    width:90%;
-    max-width:600px;
-    margin-top:20px;
-    margin-bottom:40px;
-}
 .csh-btn{
     background-color:#B0197E;
     border:2px solid #FFF;
@@ -763,10 +766,47 @@ td,th{
 .information-update-text {
     margin-bottom:10px;
 }
+
+.insights-header{
+        background-image: url('../images/insights-header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 200px;
+}
+.insights-date{
+        font-family: "Oxygen", sans-serif;
+        font-size: 2em;
+        text-align: center;
+        color: #FFF;
+        text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+}
+
+.date-title{
+        font-size: 0.9em;
+        font-weight: bold;
+        padding-top: 20px;
+}
+
+
 @media(min-width:768px){
     
     .information-update-container{
         padding-left:10px;
         padding-right:10px;
     }
+    .insights-header{
+        height:300px;
+    }
+
+    .insights-date{
+        font-size: 3em;
+    }
+    .date-title{
+        padding-top: 35px;
+        font-size: 1.2em;
+    }
 }
+
+
