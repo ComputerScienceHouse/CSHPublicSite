@@ -245,6 +245,47 @@ nav a:hover, nav a:focus{
 
 }
 
+.event-calendar {
+    padding: 0;
+}
+
+.event-calendar .tab-content {
+    padding: 0 20px 10px 20px;
+}
+
+.event-calendar a {
+    color: #B0197E;
+}
+
+.event-calendar a:hover {
+    color: #9c1670;
+}
+
+.event-calendar ul > li > a {
+    border: 0 !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #e6e6e6 !important;
+    border-radius: 0 !important;
+    background-color: #f2f2f2;
+}
+
+.event-calendar ul > li > a:hover,
+.event-calendar ul > li > a:focus,
+.event-calendar ul > li.active > a:hover,
+.event-calendar ul > li.active > a:focus {
+    background-color: #e6e6e6;
+}
+
+.event-calendar ul > li > a:focus,
+.event-calendar ul > li.active > a:focus {
+    color: #B0197E;
+}
+
+.event-calendar ul > li.active > a {
+    color: #B0197E;
+    background-color: #e6e6e6;
+}
+
 
 @media(max-width:767px){
    .csh-logo{
