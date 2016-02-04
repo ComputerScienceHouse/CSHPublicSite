@@ -35,7 +35,15 @@ $(document).ready(function(){
     // page="FILENAME.html"
     // for multiple pages:
     //    page="FILE1.html,FILE2.html,FILE3.html"
-    pageName = document.location.pathname.match(/[^\/]+$/)[0]; 
+    if(document.location.pathname.match(/[^\/]+$/) != null){
+        pageName = document.location.pathname.match(/[^\/]+$/)[0]; 
+    }
+    else{
+        // If in / directory and not on page, set to index
+        pageName = "index.html";
+    }
+    
+    console.log(pageName); //debug
     $('.navbarActive').each(function(){
         var element = $(this);
         pageString = element.attr("page");

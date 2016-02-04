@@ -114,14 +114,6 @@ body{
         
         
     }
-    nav.navbar{
-        -webkit-transition: height 0.1s ease-in-out;
-        -moz-transition: height 0.1s ease-in-out;
-        -o-transition: height 0.1s ease-in-out;
-        -ms-transition: height 0.1s ease-in-out;
-        transition: height 0.1s ease-in-out;
-        
-    }
 
     nav.navbar.shrink {
       min-height: 35px;
@@ -161,6 +153,9 @@ body{
     .csh-page-header {
         height:100px;
     } 
+    .quick-links-container{
+        padding-left:30px;
+    }
 }
 .navbar-csh {
     border-top:5px solid #E11C52;
@@ -170,7 +165,7 @@ body{
 .csh-logo {
     width:150px;
     margin-top:-22px;
-    transition:margin .1s ease-in, width .14s ease-in;
+    transition: width .035s ease-in;
 }
 .csh-form-input{
     border:2px solid rgba(225,28,82,0.1);
@@ -193,7 +188,7 @@ body{
     
 }
 .csh-form-input:hover, .csh-form-input:focus, .csh-form-input:active{
-    border-color:#E11C52;
+    border-color:#B0197E;
     outline:none;
     -webkit-appearance: none;
     -webkit-box-shadow:none;
@@ -353,7 +348,9 @@ nav a:hover, nav a:focus{
         margin-bottom:10px;
         
     }
-    
+    .quick-links-container{
+        margin-bottom:50px;
+    }
 }
 @media(min-width:768px) and (max-width:992px){
     .navbar > .container{
@@ -377,6 +374,9 @@ nav a:hover, nav a:focus{
         float:right;
         padding-right:15%;
         
+    }
+    .quick-links-container{
+        padding-left:30px;
     }
     
     
@@ -495,6 +495,9 @@ p{
     background:#222;
     padding:10px;
 }
+.sitemap-ul-container{
+    margin-left:-40px;
+}
 
 .sitemap {
     list-style-type: none;
@@ -569,10 +572,15 @@ h4,h3{
     
 }
 .csh-btn:hover, .csh-btn:focus{
-    background-color:#740c52;
+    background-color:#861360;
     border-color:#FFF;
     color:#FFF;
     
+}
+.csh-btn:active{
+    background-color: #701050;
+    border-color:#FFF;
+    color:#FFF;
 }
 .grid{
     max-width: 100%;
@@ -710,3 +718,14 @@ td,th{
      .eboard-thumbnail img.real:hover {
          opacity: 0;
      }
+
+.information-update-text {
+    margin-bottom:10px;
+}
+@media(min-width:768px){
+    
+    .information-update-container{
+        padding-left:10px;
+        padding-right:10px;
+    }
+}
