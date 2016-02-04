@@ -33,14 +33,12 @@ $(document).ready(function(){
         'resources/images/sponsorLogos/fxcm.png'    
     ];
     
-     var used = [];
     for(i=0;i<29;i++){
-        var item = images[Math.floor(Math.random()*images.length)];
+        var index = Math.floor(Math.random()*images.length)
+        var item = images[index];
+        $('#sponsor'+i).attr("src", item);
+        images.splice(index,1);
         
-        if($.inArray(item,used) == -1){
-            $('#sponsor'+i).attr("src", item);
-            used.push(item);
-        }
         
         
         
