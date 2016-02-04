@@ -15,8 +15,17 @@
             <li><a href="40th_chairman_letter.php">Chairman Letter</a></li>
             <li><a href="40th_save_the_date.php">Save the Date</a></li>
             <li><a href="http://goo.gl/ai5p9Y">Hotel Reservations</a></li>
+            <li><a href="40th_events.php">Event Overview</a></li>
          </ul>
       </div>
+      <div class="40thupdate" style="float: left; width: 70%;">
+         <br />
+         <h5>
+            <p>1/30/2016</p>
+         </h5>
+         <p class="40th_info"><p>Added an <a href="40th_events.php">event overview</a> summarizing the planned events for the weekend.</p></div>
+
+
       <div class="40thupdate" style="float: left; width: 70%;">
          <br />
          <h5>

@@ -63,11 +63,15 @@
 						<a href="/40th.php" <?php if ( calledFrom() == "40th") { ?>class="selected"<?php } ?>>40th Anniversary</a>
 						<ul>
 							<li>
+								<a href="/40th_events.php">Events</a>
+							</li>
+							<li>
 								<a href="/40th_chairman_letter.php">Chairman Letter</a>
 							</li>
 							<li>
 								<a href="/40th_save_the_date.php">Save the Date</a>
 							</li>
+
 						</ul>
 					</li>
 
