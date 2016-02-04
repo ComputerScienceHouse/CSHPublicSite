@@ -20,7 +20,7 @@
 	<div style="padding-left: 10px;">
 		<h2>Plates</h2>
 		<p style="padding-left: 5px">
-			After Capture the Disk is finished its time to get plates!  Small groups will organize and go to various restaurants.&nbsp;&nbsp;Whether you like Mark's, Nick Tahou's, Steve T, or another place entirely this is the time to undo any kind of remotely healthy exercise Capture the Disk provided.
+			After Capture the Disk is finished it's time to get plates!  Small groups will organize and go to various restaurants.&nbsp;&nbsp;Whether you like Mark's, Nick Tahou's, Steve T, or another place entirely this is the time to undo any kind of remotely healthy exercise Capture the Disk provided.
 		</p>
 	</div>
 	<br />
