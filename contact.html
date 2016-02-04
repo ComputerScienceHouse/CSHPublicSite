@@ -3,7 +3,6 @@
   <include file="resources/templates/_header.html"></include>
 
   <body>
-<div class="desktop-hide" style="padding:30px;"></div>
     <include file="resources/templates/_navbar.html"></include>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -24,7 +23,7 @@
         <div class="row">
         <div class="col-md-8 col-xs-12 col-sm-6">
             <div class="col-md-12 contact-header">
-                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-comment"></i> Send Us a Message</h3> 
+                <h3 class="mobile-center-text" style="color:#222; margin-left:-15px;"><i class="fa fa-comment"></i> Send Us a Message</h3> 
             </div>
                 <form method="POST" action="resources/php/mailer.php" id="mailerForm" data-toggle="validator">
                 <div class="row">
@@ -43,7 +42,7 @@
                             
                             <select id="position" name="position" class="form-control csh-form-input" required="required">
                                 
-                                <option selected="true" disabled="disabled" required="required">Position*</option> 
+                                <option selected="true" disabled="disabled">Position</option> 
                                 <option value="c">Chairman</option>
                                 <option value="e">Evaluations</option>
                                 <option value="r">Research & Development</option>
@@ -60,7 +59,7 @@
                         </div>
                     </div>
                     <div class="col-md-12">
-                        <button type="submit" class="btn btn-primary csh-btn pull-right" type="submit" id="btnContactUs">
+                        <button type="submit" class="btn csh-btn pull-right" type="submit" id="btnContactUs">
                             Send Message</button>
                     </div>
                 </div>
@@ -69,7 +68,7 @@
         </div>
         <div class="col-md-4 col-xs-12 col-sm-6">
             <div class="col-md-12 contact-header">
-                <h3 class="mobile-center-text" style="color:#222"><i class="fa fa-home"></i> Reach Out to Us</h3> 
+                <h3 class="mobile-center-text" style="color:#222; margin-left:-15px;"><i class="fa fa-home"></i> Reach Out to Us</h3> 
             </div>
             <h4 style="text-decoration:underline;">Computer Science House</h4>
             <p>
