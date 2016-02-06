@@ -64,6 +64,9 @@ function switchImage(room){
     else if(room == "server"){
             imageHTML = $.server;
 
+            // Photosphere instead of carousel, hide controls
+            $('.carousel-control').hide();
+
     }
     else if(room == "project"){
            imageHTML = $.project; 
