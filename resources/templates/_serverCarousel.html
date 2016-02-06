@@ -1,12 +1,13 @@
 <div id="server-room-photosphere"></div>
 <script>
-  var serverRoomPhotosphereViewer = new PhotoSphereViewer({
-    panorama: 'https://members.csh.rit.edu/~smirabito/cshpublicsite/build/resources/images/tour/server_photosphere.jpg',
+var srpsViewer = new PhotoSphereViewer({
+    panorama: 'resources/images/tour/server_photosphere.jpg',
     container: 'server-room-photosphere',
+    loading_img: 'resources/images/photosphere-loading.gif',
     navbar: 'autorotate zoom fullscreen',
-    default_fov: 70,
+    mousewheel: false,
     size: {
-      height: 500
+        height: 500
     }
-  });
+});
 </script>
