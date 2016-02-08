@@ -1,5 +1,9 @@
 // Tour Image Carousel JS
 
+$.get("resources/templates/_carouselPrototype.html", function (data) {
+        $.carouselPrototype = data;
+
+    });
 $.get("resources/templates/_loungeCarousel.html", function (data) {
         $.lounge = data;
     
@@ -50,16 +54,17 @@ function switchImage(room){
         containerElement = $('#photosphere-container');
         containerElement.show();
 
-        // Photosphere, hide carousel and controls
-        $('.image-container').hide();
-        $('.carousel-control').hide();
+        // Photosphere, remove carousel
+        $('.carousel').remove();
     } else {
         // Hide photosphere container
         $('#photosphere-container').hide();
 
-        // Show carousel and controls
-        $('#carouselImages').show();
-        $('.carousel-control').show();
+        // If the carousel doesn't exist in the DOM, add it
+        // Workaround for this bug: https://github.com/angular-ui/bootstrap/issues/1513
+        if ($('.carousel').length == 0) {
+            $('.image-container').append($.carouselPrototype);
+        }
 
         if(room == "lounge"){
                 imageHTML = $.lounge;
