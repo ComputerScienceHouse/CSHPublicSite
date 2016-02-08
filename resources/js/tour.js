@@ -55,6 +55,7 @@ function switchImage(room){
         containerElement.show();
 
         // Photosphere, remove carousel
+        // Part of the workaround for the carousel bug (see below)
         $('.carousel').remove();
     } else {
         // Hide photosphere container
