@@ -98,6 +98,7 @@ function switchImage(room){
     // Workaround for this bug: https://github.com/angular-ui/bootstrap/issues/1513
     if (room !== 'server' && $('.carousel').length == 0) {
         $('.image-container').append($.carouselPrototype.replace('{{images}}', imageHTML));
+        $('.carousel').carousel();
     } else {
         containerElement.html(imageHTML);
     }
