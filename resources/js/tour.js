@@ -82,7 +82,9 @@ function switchImage(room){
     $('#carouselImages').html(imageHTML);
     $('#'+room).addClass('csh-active');
     
-    
+    if(room !== "server"){
+        $('.carousel-control').show();
+    }
     
     
 }
