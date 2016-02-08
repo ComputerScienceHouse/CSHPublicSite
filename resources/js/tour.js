@@ -39,52 +39,63 @@ $.get("resources/templates/_loungeCarousel.html", function (data) {
 // Return: None
 function switchImage(room){
     var imageHTML;
+    var containerElement = $('#carouselImages');
     $('.tourTextActive').hide();
     $('.tourTextActive').removeClass('tourTextActive');
-    if(room == "lounge"){
-        imageHTML = $.lounge;
 
+    if(room == "server"){
+        imageHTML = $.server;
+        
+        // Show Photosphere container
+        containerElement = $('#photosphere-container');
+        containerElement.show();
+
+        // Photosphere, hide carousel and controls
+        $('.image-container').hide();
+        $('.carousel-control').hide();
+    } else {
+        // Hide photosphere container
+        $('#photosphere-container').hide();
+
+        // Show carousel and controls
+        $('#carouselImages').show();
+        $('.carousel-control').show();
+
+        if(room == "lounge"){
+                imageHTML = $.lounge;
+
+        }
+        else if(room == "software"){
+                imageHTML = $.software;
+
+        }
+        else if(room == "library"){
+                imageHTML = $.library;
+
+        }
+        else if(room == "user"){
+                imageHTML = $.user;
+
+        }
+        else if(room == "conference"){
+                imageHTML = $.conference;
+
+        }
+        else if(room == "project"){
+               imageHTML = $.project; 
+
+        }
+        else if(room == "dorm"){
+                imageHTML = $.dorm;
+
+        }
     }
-    else if(room == "software"){
-            imageHTML = $.software;
-
-    }
-    else if(room == "library"){
-            imageHTML = $.library;
-
-    }
-    else if(room == "user"){
-            imageHTML = $.user;
-
-    }
-    else if(room == "conference"){
-            imageHTML = $.conference;
-
-    }
-    else if(room == "server"){
-            imageHTML = $.server;
-
-            // Photosphere instead of carousel, hide controls
-            $('.carousel-control').hide();
-
-    }
-    else if(room == "project"){
-           imageHTML = $.project; 
-
-    }
-    else if(room == "dorm"){
-            imageHTML = $.dorm;
-
-    }
+    
     $('.csh-active').removeClass('csh-active');
     $("#"+room+"Text").show();
     $("#"+room+"Text").addClass("tourTextActive");
-    $('#carouselImages').html(imageHTML);
+    containerElement.html(imageHTML);
     $('#'+room).addClass('csh-active');
-    
-    if(room !== "server"){
-        $('.carousel-control').show();
-    }
     
     
 }
