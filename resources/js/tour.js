@@ -60,12 +60,6 @@ function switchImage(room){
         // Hide photosphere container
         $('#photosphere-container').hide();
 
-        // If the carousel doesn't exist in the DOM, add it
-        // Workaround for this bug: https://github.com/angular-ui/bootstrap/issues/1513
-        if ($('.carousel').length == 0) {
-            $('.image-container').append($.carouselPrototype);
-        }
-
         if(room == "lounge"){
                 imageHTML = $.lounge;
 
@@ -99,7 +93,14 @@ function switchImage(room){
     $('.csh-active').removeClass('csh-active');
     $("#"+room+"Text").show();
     $("#"+room+"Text").addClass("tourTextActive");
-    containerElement.html(imageHTML);
+
+    // If the carousel doesn't exist in the DOM, add it
+    // Workaround for this bug: https://github.com/angular-ui/bootstrap/issues/1513
+    if (room !== 'server' && $('.carousel').length == 0) {
+        $('.image-container').append($.carouselPrototype.replace('{{images}}', imageHTML));
+    } else {
+        containerElement.html(imageHTML);
+    }
     $('#'+room).addClass('csh-active');
     
     
