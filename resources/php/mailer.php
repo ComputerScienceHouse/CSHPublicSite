@@ -39,11 +39,8 @@ if ($response != null && $response->success) {
         case 'w':
             $sendTo = $webmasterEmail;
             break;
-        case 'debug':
-            $sendTo = $debugEmail;
-            break;
         default:
-            $sendTo = "chairman@csh.rit.edu";
+            $sendTo = $chairmanEmail;
             break;
                 
     }

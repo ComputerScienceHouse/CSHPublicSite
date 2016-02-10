@@ -1,7 +1,8 @@
 
     // process the form
     $('#mailerForm').validator().submit(function(event) {
-
+ event.preventDefault(); // avoid to execute the actual submit of the form.
+            
         // get the form data
         // there are many ways to get this data using jQuery (you can use the class or id also)
         var name = $('input[name=name]').val();
@@ -47,8 +48,7 @@
          });
     
     
-
-    event.preventDefault(); // avoid to execute the actual submit of the form.
+return false;
         
             
         }

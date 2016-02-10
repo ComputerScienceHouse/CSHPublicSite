@@ -43,7 +43,6 @@ $(document).ready(function(){
         pageName = "index.html";
     }
     
-    console.log(pageName); //debug
     $('.navbarActive').each(function(){
         var element = $(this);
         pageString = element.attr("page");
