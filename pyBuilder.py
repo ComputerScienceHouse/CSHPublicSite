@@ -6,6 +6,32 @@ import shutil
 import errno
 
 
+"""
+* Parses template metadata provided by user in file
+* Params line - string - config line string
+* Returns Hashmap of parsed data (key->value)
+
+"""
+def parseTemplateInformation(line):
+    # parse line for id and type
+    lineArr = line.split("{[")
+    #print("INIT SPLIT: "+lineArr[1]) #debug
+    lineArr = lineArr[1].split("]}")
+    #print("Second SPLIT: "+lineArr[0]) #debug
+    parameterString = lineArr[0]
+    parameterArr = parameterString.split(",")
+    for item in parameterArr:
+        paramArr = item.split("=")
+        key = paramArr[0].rstrip()
+        key = key.lstrip()
+        value = paramArr[1].rstrip()
+        value = value.lstrip()
+        print("Param: (key) "+key+", (value) "+value) #debug
+        #add to hashmap here
+    
+    
+    return
+
 def walklevel(some_dir, level):
     some_dir = some_dir.rstrip(os.path.sep)
     assert os.path.isdir(some_dir)
@@ -63,6 +89,11 @@ def buildFile(fileNameIn,fileIn):
             includeFile = open(fileName, 'r')
             for i,line in enumerate(includeFile):
                 #print(line) #debug
+                
+                if "{[" in line:
+                    information = parseTemplateInformation(line)
+                    print(information) #debug
+                
                 builtFile.write(line)
         else:
             builtFile.write(line)
