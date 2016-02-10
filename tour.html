@@ -3,7 +3,7 @@
     <include file="resources/templates/_header.html"></include>
 
   <body>
-
+  <link rel="stylesheet" href="resources/css/photo-sphere-viewer.min.css">
     <include file="resources/templates/_navbar.html"></include>
 
     <!-- Main jumbotron for a primary marketing message or call to action -->
@@ -25,7 +25,7 @@
         
             <div class="text-center">
         <div class="dropdown">
-  <button class="btn btn-default csh-btn dropdown-toggle tour-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="btn csh-btn dropdown-toggle tour-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Select a Room
     <span class="caret"></span>
   </button>
@@ -70,7 +70,7 @@
             <p>Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.</p>
         </span>
         
-        
+        <div id="photosphere-container"></div>
         
         <div class="image-container">
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -312,11 +312,10 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-            <br>
             </div>
         
         
-        
+        <br>
 </div>
 
         
@@ -329,5 +328,10 @@
     <include file="resources/templates/_coreJS.html"></include>
     <!-- Tour.JS -->
     <script src="resources/js/tour.js"></script>
+    <!-- Photoshere Viewer -->
+    <script src="resources/js/threejs/three.min.js"></script>
+    <script src="resources/js/threejs/canvasrenderer.min.js"></script>
+    <script src="resources/js/threejs/projector.min.js"></script>
+    <script src="resources/js/photo-sphere-viewer.min.js"></script>
   </body>
 </html>
