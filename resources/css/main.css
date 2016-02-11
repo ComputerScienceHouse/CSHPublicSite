@@ -504,6 +504,18 @@ p{
     font-size:30px;
 }
 
+.link-text,
+.link-text:visited,
+.link-text:hover,
+.link-text:active{
+	color: #B0197E;
+	text-decoration: none;
+}
+
+.link-text:hover{
+	color: #701050;
+}
+
 .strike {
     display: block;
     text-align: center;
