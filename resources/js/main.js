@@ -58,5 +58,8 @@ $(document).ready(function(){
     
     
     //$('[page="'+pageName+'"]').addClass("link-active");
+
+    // Initialize tooltips
+    $('[data-toggle="tooltip"]').tooltip();
     
 });
