@@ -3,7 +3,6 @@
 // Handle mail submission and captcha
 
 require 'key.php';
-require 'recaptchalib.php';
 
 
 //** MAIN **//
@@ -14,11 +13,31 @@ $position = $_POST['position'];
 $message = $_POST['message'];
 $g = $_POST['g-recaptcha-response'];
 
-$reCaptcha = new ReCaptcha($secretKey);
+//URL for Google Recaptcha API Endpoint
+$url = 'https://www.google.com/recaptcha/api/siteverify';
 
-$response = $reCaptcha->verifyResponse($_SERVER["REMOTE_ADDR"], $g);
+// Construct POST Data:
+// Usage:
+// secret - string - reCaptcha Secret Key
+// response - google reCaptcha response from POST
+// remoteip - string - user's IP address
+$data = array('secret' => $secretKey, 'response' => $g, 'remoteip' => $_SERVER["REMOTE_ADDR"]);
 
-if ($response != null && $response->success) {
+// Construct POST request
+$options = array(
+    'http' => array(
+        'header'  => "Content-type: application/x-www-form-urlencoded\r\n",
+        'method'  => 'POST',
+        'content' => http_build_query($data)
+    )
+);
+$context  = stream_context_create($options);
+$result = file_get_contents($url, false, $context);
+
+
+$result = json_decode($result);
+
+if ($result != null && $result['success'] == true) {
     //Send email here
     switch ($position) {
         case 'c':
