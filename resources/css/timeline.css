@@ -28,7 +28,7 @@
     content: "";
     width: 3px;
     height: 100%;
-    background: #303030;
+    background: #e11c52;
     left: 50%;
     top: 0;
     position: absolute;
@@ -47,7 +47,7 @@
 }
 
 #timeline .timeline-item .timeline-icon {
-    background: #303030;
+    background: #e11c52;
     width: 50px;
     height: 50px;
     position: absolute;
@@ -96,7 +96,7 @@
 #timeline .timeline-item .timeline-content h2 {
     padding: 15px;
 	font-size: initial;
-    background: #303030;
+    background: #e11c52;
     color: #fff;
     margin: -20px -20px 0 -20px;
     font-weight: 500;
@@ -125,7 +125,7 @@
     height: 0;
     border-top: 7px solid transparent;
     border-bottom: 7px solid transparent;
-    border-left: 7px solid #303030;
+    border-left: 7px solid #e11c52;
 }
 
 #timeline .timeline-item .timeline-content.right {
@@ -137,7 +137,7 @@
     right: 45%;
     left: inherit;
     border-left: 0;
-    border-right: 7px solid #303030;
+    border-right: 7px solid #e11c52;
 }
 
 @media screen and (max-width: 768px) {
@@ -159,7 +159,7 @@
         left: 10%;
         margin-left: -6px;
         border-left: 0;
-        border-right: 7px solid #303030;
+        border-right: 7px solid #e11c52;
     }
 
     #timeline .timeline-item .timeline-icon {

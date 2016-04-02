@@ -163,7 +163,7 @@ body{
     }
 }
 .navbar-csh {
-    border-top:5px solid #01910A;
+    border-top:5px solid #E11C52;
     background:#FFF;
 }
 
@@ -173,7 +173,7 @@ body{
     transition: width .035s ease-in;
 }
 .csh-form-input{
-    border:2px solid rgba(0,0,0,0.1);
+    border:2px solid rgba(225,28,82,0.1);
     border-radius:4px;
     
     -webkit-appearance: none;
@@ -193,7 +193,7 @@ body{
     
 }
 .csh-form-input:hover, .csh-form-input:focus, .csh-form-input:active{
-    border-color:#01910A;
+    border-color:#B0197E;
     outline:none;
     -webkit-appearance: none;
     -webkit-box-shadow:none;
@@ -234,7 +234,7 @@ nav a:hover, nav a:focus{
     background-color: #FFF;
 }
 .csh-jumbotron{
-    background-color:#01910A;
+    background-color:#B0197E;
     background-image: url('../images/bigbkgd.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -242,7 +242,7 @@ nav a:hover, nav a:focus{
 
 }
 .csh-page-header{
-    background-color:#01910A;
+    background-color:#B0197E;
     background-image: url('../images/bigbkgd.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -259,7 +259,7 @@ nav a:hover, nav a:focus{
 }
 
 .event-calendar a {
-    color: #01910A;
+    color: #B0197E;
 }
 
 .event-calendar a:hover {
@@ -283,11 +283,11 @@ nav a:hover, nav a:focus{
 
 .event-calendar ul > li > a:focus,
 .event-calendar ul > li.active > a:focus {
-    color: #01910A;
+    color: #B0197E;
 }
 
 .event-calendar ul > li.active > a {
-    color: #01910A;
+    color: #B0197E;
     background-color: #e6e6e6;
 }
 
@@ -461,7 +461,7 @@ body{
     font-family: "Oxygen", sans-serif;
 }
 h2{
-    color:#01910A;
+    color:#B0197E;
     
 }
 hr{
@@ -500,7 +500,7 @@ p{
 
 .csh-sponsors-text {
     background-color: white;
-    color:#01910A;
+    color:#B0197E;
     font-size:30px;
 }
 
@@ -508,7 +508,7 @@ p{
 .link-text:visited,
 .link-text:hover,
 .link-text:active{
-	color: #01910A;
+	color: #B0197E;
 	text-decoration: none;
 }
 
@@ -576,7 +576,7 @@ p{
 }
 
 .csh-footer {
-    background:#01910A;
+    background:#B0197E;
     color:#FFF;
     padding:20px 20px;
 }
@@ -585,7 +585,7 @@ p{
         
     }
 h4,h3{
-    color:#01910A;
+    color:#B0197E;
     
 }
 
@@ -613,11 +613,11 @@ h4,h3{
     
 }
 .navbar{
-    border-bottom:2px solid #01910A;
+    border-bottom:2px solid #B0197E;
 }
 
 .csh-btn{
-    background-color:#01910A;
+    background-color:#B0197E;
     color:#FFF;
     transition: background-color .1s ease-in;
     -webkit-transition: background-color .1s ease-in;
@@ -627,12 +627,12 @@ h4,h3{
     
 }
 .csh-btn:hover, .csh-btn:focus{
-    background-color:#017f09;
+    background-color:#861360;
     color:#FFF;
     
 }
 .csh-btn:active{
-    background-color: #016508;
+    background-color: #701050;
     color:#FFF;
 }
 .grid{
@@ -701,7 +701,7 @@ td,th{
 }
 
 .a-accent, .a-accent:hover, .a-accent:focus {
-    color:#303030;
+    color:#E11C52;
 }
 
 .csh-recaptcha {
@@ -734,8 +734,8 @@ td,th{
     margin:auto;
 }
 .csh-active{
-    background-color:#01910A;
-    border-color:#01910A;
+    background-color:#B0197E;
+    border-color:#B0197E;
     color:#FFF;
     
 }
@@ -743,13 +743,13 @@ td,th{
     color:#FFFFFF;
 }
 .csh-active:hover,.csh-active:focus{
-    background-color: #01910A;
-    border-color:#01910A;
+    background-color: #B0197E;
+    border-color:#B0197E;
     color:#FFF;
     
 }
 .btn-primary.disabled:hover,.btn-primary.disabled:focus{
-    background-color: #03860C;
+    background-color: #740c52;
     border-color:#FFF;
     color:#FFF;
     
@@ -821,7 +821,7 @@ td,th{
 .event-heading{
     font-size:25px;
     color:#FFF;
-    background-color:#303030;
+    background-color:#E11C52;
     
     
 }
@@ -833,7 +833,7 @@ td,th{
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
 }
 .event-name{
-    color:#303030;
+    color:#E11C52;
 }
 
 /*
@@ -850,11 +850,11 @@ td,th{
 .panel.panel-csh .panel-heading {
     font-size:25px;
     color:#FFF;
-    background-color:#303030;
+    background-color:#E11C52;
 }
 
 .btn-rsvp {
-    background: #303030;
+    background: #e11c52;
     color:#FFF;
     font-size:25px;
     transition: all .1s ease-in;
