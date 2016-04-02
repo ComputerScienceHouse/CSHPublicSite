@@ -1,0 +1,31 @@
+<!-- Core JS for each page -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="resources/js/bootstrap.min.js"></script>
+<!-- Main JS -->
+<script src="resources/js/main.js"></script> 
+<!-- Google Analytics -->
+<script>
+!function(h,a,r,o,l,d){h.GoogleAnalyticsObject=r;h[r]||(h[r]=function(){
+(h[r].q=h[r].q||[]).push(arguments)});h[r].l=+new Date;l=a.createElement(o);
+d=a.getElementsByTagName(o)[0];l.src='//www.google-analytics.com/analytics.js';
+d.parentNode.insertBefore(l,d)}(window,document,'ga','script');
+ga('create','UA-75959-4','csh.rit.edu');ga('send','pageview');
+</script>
+<script>
+    
+        $("img").dblclick(function() {
+            var normalSrc = $(this).attr("src");
+            $(this).attr("src","resources/images/eboard/april_fools.jpg");
+            
+            var self = $(this);
+            
+            setTimeout(function(){
+                
+                self.attr("src",normalSrc);
+                
+            },3000);
+            
+        });
+       
+      
+    </script> 
