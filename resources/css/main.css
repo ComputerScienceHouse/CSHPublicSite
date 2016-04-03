@@ -618,7 +618,6 @@ h4,h3{
 
 .csh-btn{
     background-color:#B0197E;
-    border:2px solid #FFF;
     color:#FFF;
     transition: background-color .1s ease-in;
     -webkit-transition: background-color .1s ease-in;
@@ -629,13 +628,11 @@ h4,h3{
 }
 .csh-btn:hover, .csh-btn:focus{
     background-color:#861360;
-    border-color:#FFF;
     color:#FFF;
     
 }
 .csh-btn:active{
     background-color: #701050;
-    border-color:#FFF;
     color:#FFF;
 }
 .grid{
@@ -855,3 +852,29 @@ td,th{
     color:#FFF;
     background-color:#E11C52;
 }
+
+.btn-rsvp {
+    background: #e11c52;
+    color:#FFF;
+    font-size:25px;
+    transition: all .1s ease-in;
+    -webkit-transition: all .1s ease-in;
+    -moz-transition: all .1s ease-in;
+    -o-transition: all .1s ease-in;
+    -ms-transition: all .1s ease-in;
+    
+}
+.btn-rsvp:hover,.btn-rsvp:focus{
+    background: #ca1949;
+    color:#FFF;
+    
+}
+.btn-rsvp:active{
+    background: #b41641;
+    color:#FFF;
+    
+}
+
+
+
+
