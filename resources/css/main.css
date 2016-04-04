@@ -50,6 +50,19 @@ body{
         
         
     }
+    .csh-navbar-donate {
+        margin-left: 10px;
+        top: 50px;
+    }
+    .csh-navbar-donate a {
+        font-size: 18px;
+    }
+    .csh-navbar-donate a {
+        padding: 6px 12px !important;
+    }
+    .csh-navbar-donate .tooltip {
+        min-width: 200px;
+    }
     .image-container{
         margin:auto;
         width:80%;
@@ -129,6 +142,13 @@ body{
       padding-top: 15px !important;
       padding-bottom: 15px !important;
       font-size: 15px;
+    }
+
+    nav.shrink .csh-navbar-donate a {
+        padding: 6px 12px !important;
+        font-size: 15px;
+        position: relative;
+        top: 6px;
     }
 
     nav.shrink .navbar-brand {
@@ -634,6 +654,15 @@ h4,h3{
 .csh-btn:active{
     background-color: #701050;
     color:#FFF;
+}
+.csh-btn-inverse {
+    background-color: #e11c52;
+}
+.csh-btn-inverse:hover, .csh-btn-inverse:focus {
+    background-color:#b61641;
+}
+.csh-btn-inverse:active {
+    background-color: #9f1439;
 }
 .grid{
     max-width: 100%;
