@@ -34,10 +34,9 @@ $options = array(
 $context  = stream_context_create($options);
 $result = file_get_contents($url, false, $context);
 
+$result = json_decode($result,true);
 
-$result = json_decode($result);
-
-if ($result != null && $result['success'] == true) {
+if (isset($result) && $result['success'] == "true") {
     //Send email here
     switch ($position) {
         case 'c':
