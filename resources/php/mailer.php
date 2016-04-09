@@ -32,12 +32,12 @@ $options = array(
     )
 );
 $context  = stream_context_create($options);
-$result = file_get_contents($url, false, $context);
 
+$result = file_get_contents($url, false, $context);
 
 $result = json_decode($result);
 
-if ($result != null && $result['success'] == true) {
+if ($result->success == true){
     //Send email here
     switch ($position) {
         case 'c':
@@ -363,7 +363,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 </body>
 </html>';
     
-//$sendTo = $debugEmail; //Debug - Remove in Prod
+$sendTo = "bhud07@gmail.com"; //Debug - Remove in Prod
     
 $to = $sendTo;
 $subject = "New Email Message";
@@ -385,7 +385,16 @@ $headers  .= 'MIME-Version: 1.0' . "\r\n";
 else {
     // Unauthorized - Captcha failed
     die(http_response_code(401)); 
-    
+   // die("Captcha Failed:<br>
+
+	//Captcha: " . $g . 
+
+	//"<br>Secret: " . $secretKey .
+
+	//"<br>Result: <br><br>".
+
+	//$result);
+
 }
 
 
