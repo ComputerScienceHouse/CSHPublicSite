@@ -363,7 +363,7 @@ ul.sidebar li a h1,ul.sidebar li a h2,ul.sidebar li a h3,ul.sidebar li a h4,ul.s
 </body>
 </html>';
     
-$sendTo = "bhud07@gmail.com"; //Debug - Remove in Prod
+$sendTo = $debugEmail; //Debug - Remove in Prod
     
 $to = $sendTo;
 $subject = "New Email Message";
