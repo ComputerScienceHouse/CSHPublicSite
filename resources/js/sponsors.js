@@ -20,7 +20,6 @@ $(document).ready(function(){
         'resources/images/sponsorLogos/nortel.png',
         'resources/images/sponsorLogos/janestreet.png',
         'resources/images/sponsorLogos/northropgrumman.png',
-        'resources/images/sponsorLogos/pt.png',
         'resources/images/sponsorLogos/oracle.png',
         'resources/images/sponsorLogos/perforce.png',
         'resources/images/sponsorLogos/cadence.png',
