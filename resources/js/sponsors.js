@@ -20,7 +20,7 @@ $(document).ready(function(){
         'resources/images/sponsorLogos/nortel.png',
         'resources/images/sponsorLogos/janestreet.png',
         'resources/images/sponsorLogos/northropgrumman.png',
-        'resources/images/sponsorLogos/pt.png',
+        'resources/images/sponsorLogos/sonus.png',
         'resources/images/sponsorLogos/oracle.png',
         'resources/images/sponsorLogos/perforce.png',
         'resources/images/sponsorLogos/cadence.png',
@@ -30,7 +30,8 @@ $(document).ready(function(){
         'resources/images/sponsorLogos/ti.png',
         'resources/images/sponsorLogos/xerox.png',
         'resources/images/sponsorLogos/citrix.png',
-        'resources/images/sponsorLogos/fxcm.png'    
+        'resources/images/sponsorLogos/fxcm.png',
+        'resources/images/sponsorLogos/pdhi.png' 
     ];
     
     for(i=0;i<29;i++){
