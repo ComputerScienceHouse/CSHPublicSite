@@ -56,6 +56,8 @@ $(document).ready(function(){
         }
     });
     
+    var d = new Date();
+    $("#currentYear").text(d.getFullYear());
     
     //$('[page="'+pageName+'"]').addClass("link-active");
     
