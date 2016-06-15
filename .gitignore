@@ -29,6 +29,7 @@ resources/php/key.php
 # PDT-specific
 .buildpath
 
+potential_photos/
 
 #################
 ## Visual Studio
