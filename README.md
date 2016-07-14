@@ -1,6 +1,8 @@
 CSHPublicSite
 ================
 
+[![Join the chat at https://gitter.im/ComputerScienceHouse/CSHPublicSite](https://badges.gitter.im/ComputerScienceHouse/CSHPublicSite.svg)](https://gitter.im/ComputerScienceHouse/CSHPublicSite?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Foreward facing CSH website - csh.rit.edu
 
 ###Building###
