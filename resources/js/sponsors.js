@@ -11,7 +11,7 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/linkedin.png', "http://linkedin.com" ],
         ['resources/images/sponsorLogos/microsoft.png', "http://microsoft.com" ],
         ['resources/images/sponsorLogos/cisco.png', "http://cicso.com" ],
-        ['resources/images/sponsorLogos/google.png', "http://googlec.ocom" ],
+        ['resources/images/sponsorLogos/google.png', "http://google.com" ],
         ['resources/images/sponsorLogos/hp.png', "http://hp.com" ],
         ['resources/images/sponsorLogos/johnsonjohnson.png', "http://jnj.com" ],
         ['resources/images/sponsorLogos/lourdesindustries.png', "http://lourdesinc.com" ],
