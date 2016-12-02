@@ -164,7 +164,7 @@ body{
 }
 .navbar-csh {
     border-top:5px solid #E11C52;
-    background:#FFF;
+    background: #FFFFFF;
 }
 
 .csh-logo {
@@ -231,7 +231,7 @@ nav a:hover, nav a:focus{
     
 }
 .navbar-csh .navbar-nav > li > a:hover, .navbar-csh .navbar-nav > li > a:focus {
-    background-color: #FFF;
+    background-color:  #FFFFFF;
 }
 .csh-jumbotron{
     background-color:#B0197E;
@@ -389,14 +389,14 @@ nav a:hover, nav a:focus{
         height:60px;
     }
     .csh-jumbotron-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:2em;
         padding-top:25px;
         text-align: center;
         font-family: 'Eras', sans-serif;
     }
       .csh-header-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:2.5em;
           text-align: center;
           margin-top:-25px;
@@ -434,13 +434,13 @@ nav a:hover, nav a:focus{
         
     }
     .csh-jumbotron-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:3em;
         font-family: 'Eras', sans-serif;
         padding:5%;
     }
     .csh-header-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:3em;
         font-family: 'Eras', sans-serif;
         padding:5%;
@@ -459,13 +459,13 @@ nav a:hover, nav a:focus{
 }
 @media(min-width:993px){
     .csh-jumbotron-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:4em;
         font-family: 'Eras', sans-serif;
         padding-left:5%;
     }
     .csh-header-text {
-        color:#FFF;
+        color: #FFFFFF;
         font-size:4em;
         font-family: 'Eras', sans-serif;
         padding-left:5%;
@@ -501,7 +501,7 @@ p{
 }
 
 .csh-body {
-    background:#FFF;
+    background: #FFFFFF;
     margin-top:-30px;
 }
 
@@ -525,7 +525,7 @@ p{
 }
 
 .csh-sponsors-text {
-    background-color: white;
+    background-color: #FFFFFF;
     color:#B0197E;
     font-size:30px;
 }
@@ -589,21 +589,21 @@ p{
 
 .sitemap {
     list-style-type: none;
-    color:#FFF;
+    color: #FFFFFF;
 }
 
 .sitemap-link {
-    color:#FFF;
+    color: #FFFFFF;
     text-decoration: none;
 }
 .sitemap-link:hover,.sitemap-link:focus{
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 
 .csh-footer {
     background:#B0197E;
-    color:#FFF;
+    color: #FFFFFF;
     padding:20px 20px;
 }
 .hcenter{
@@ -644,7 +644,7 @@ h4,h3{
 
 .csh-btn{
     background-color:#B0197E;
-    color:#FFF;
+    color: #FFFFFF;
     transition: background-color .1s ease-in;
     -webkit-transition: background-color .1s ease-in;
     -o-transition: background-color .1s ease-in;
@@ -654,12 +654,12 @@ h4,h3{
 }
 .csh-btn:hover, .csh-btn:focus{
     background-color:#861360;
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 .csh-btn:active{
     background-color: #701050;
-    color:#FFF;
+    color: #FFFFFF;
 }
 .grid{
     max-width: 100%;
@@ -706,7 +706,7 @@ td,th{
     padding: 4px;
     margin-bottom: 20px;
     line-height: 1.42857143;
-    background-color: #fff;
+    background-color:  #FFFFFF;
     border-radius: 8px;
     opacity: 1;
     transition: opacity .25s ease-in-out;
@@ -762,22 +762,22 @@ td,th{
 .csh-active{
     background-color:#B0197E;
     border-color:#B0197E;
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 .csh-active > .csh-active-link{
-    color:#FFFFFF;
+    color: #FFFFFF;
 }
 .csh-active:hover,.csh-active:focus{
     background-color: #B0197E;
     border-color:#B0197E;
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 .btn-primary.disabled:hover,.btn-primary.disabled:focus{
     background-color: #740c52;
-    border-color:#FFF;
-    color:#FFF;
+    border-color: #FFFFFF;
+    color: #FFFFFF;
     
 }
 
@@ -815,7 +815,7 @@ td,th{
         font-family: "Oxygen", sans-serif;
         font-size: 2em;
         text-align: center;
-        color: #FFF;
+        color:  #FFFFFF;
         text-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
 }
 
@@ -846,7 +846,7 @@ td,th{
 }
 .event-heading{
     font-size:25px;
-    color:#FFF;
+    color: #FFFFFF;
     background-color:#E11C52;
     
     
@@ -875,13 +875,13 @@ td,th{
 
 .panel.panel-csh .panel-heading {
     font-size:25px;
-    color:#FFF;
+    color: #FFFFFF;
     background-color:#E11C52;
 }
 
 .btn-rsvp {
     background: #e11c52;
-    color:#FFF;
+    color: #FFFFFF;
     font-size:25px;
     transition: all .1s ease-in;
     -webkit-transition: all .1s ease-in;
@@ -892,12 +892,12 @@ td,th{
 }
 .btn-rsvp:hover,.btn-rsvp:focus{
     background: #ca1949;
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 .btn-rsvp:active{
     background: #b41641;
-    color:#FFF;
+    color: #FFFFFF;
     
 }
 

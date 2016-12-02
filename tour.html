@@ -1,340 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-    <title>CSH | Tour</title>
-    <include file="resources/templates/_header.html"></include>
-</head>
+        <title>CSH | Tour</title>
+        <include file="resources/templates/_header.html"></include>
+    </head>
+    <body>
+        <link rel="stylesheet" href="resources/css/photo-sphere-viewer.min.css">
+        <include file="resources/templates/_navbar.html"></include>
 
-  <body>
-  <link rel="stylesheet" href="resources/css/photo-sphere-viewer.min.css">
-    <include file="resources/templates/_navbar.html"></include>
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron csh-page-header">
-        <div class="container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
-                <div class="csh-header-text">
-                    Tour
+        <!-- Main jumbotron for a primary marketing message or call to action -->
+        <div class="jumbotron csh-page-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 vcenter">
+                        <div class="csh-header-text">
+                            Tour
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-            </div>
-    </div>
-
-    <div class="container csh-body">
-      <!-- Insert Page Content In this Area -->
-        
-        
+        <div class="container csh-body">
+            <!-- Insert Page Content In this Area -->
             <div class="text-center">
-        <div class="dropdown">
-  <button class="btn csh-btn dropdown-toggle tour-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-    Select a Room
-    <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu tour-dropdown-menu tour-mobile-btn-group" aria-labelledby="dropdownMenu1">
-    <li id="user" class="csh-active"><a href="#" onclick="switchImage('user')" class="csh-active-link">User Center</a></li>
-    <li id="lounge"><a href="#" onclick="switchImage('lounge')" class="csh-active-link">Lounge</a></li>
-    <li id="software"><a href="#" onclick="switchImage('software')" class="csh-active-link">Software Room</a></li>
-    <li id="project"><a href="#" onclick="switchImage('project')" class="csh-active-link">Project Room</a></li>
-    <li id="library"><a href="#" onclick="switchImage('library')" class="csh-active-link">Library</a></li>
-    <li id="server"><a href="#" onclick="switchImage('server')" class="csh-active-link">Server Room</a></li>
-    <li id="conference"><a href="#" onclick="switchImage('conference')" class="csh-active-link">Conference Room</a></li>
-    <li id="dorm"><a href="#" onclick="switchImage('dorm')" class="csh-active-link">Dorm Room</a></li>
-  </ul>
-</div>
+                <div class="dropdown">
+                    <button class="btn csh-btn dropdown-toggle tour-dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Select a Room
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu tour-dropdown-menu tour-mobile-btn-group" aria-labelledby="dropdownMenu1">
+                        <li id="user" class="csh-active">
+                            <a href="#" onclick="switchImage('user')" class="csh-active-link">User Center</a>
+                        </li>
+                        <li id="lounge">
+                            <a href="#" onclick="switchImage('lounge')" class="csh-active-link">Lounge</a>
+                        </li>
+                        <li id="software">
+                            <a href="#" onclick="switchImage('software')" class="csh-active-link">Software Room</a>
+                        </li>
+                        <li id="project">
+                            <a href="#" onclick="switchImage('project')" class="csh-active-link">Project Room</a>
+                        </li>
+                        <li id="library">
+                            <a href="#" onclick="switchImage('library')" class="csh-active-link">Library</a>
+                        </li>
+                        <li id="server">
+                            <a href="#" onclick="switchImage('server')" class="csh-active-link">Server Room</a>
+                        </li>
+                        <li id="conference">
+                            <a href="#" onclick="switchImage('conference')" class="csh-active-link">Conference Room</a>
+                        </li>
+                        <li id="dorm">
+                            <a href="#" onclick="switchImage('dorm')" class="csh-active-link">Dorm Room</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <br>        
-        
-        <span id="loungeText" style="display:none;">
-            <p>The Lounge is CSH's main social hub. This room is used to host movie nights, social events, technical seminars, company visits, and E-Board meetings.</p>
-        </span>
-        <span id="softwareText" style="display:none;">
-            <p>The Software Room is the perfect place for small group tasks. It is a quiet room that is away from the normal hustle and bustle of floor which makes it great for taking phone calls, playing board games, and working on group assignments. The Software Room also houses CSH's book collection as well as a variety of board games.</p>
-        </span>
-        <span id="libraryText" style="display:none;">
-            <p>The Library is CSH's multi-function archive and arcade. It serves as a storage place for all of our historical records and keepsakes as well as a variety of arcade machines, both vintage and custom-built.</p>
-        </span>
-        <span id="userText" class="tourTextActive">
-            <p>The User Center is a productive social room. It is often sought out as a place for members to socialize and get work done. It also serves as a meeting place, a project work room, and a technical seminar room.
-
-</p>
-        </span>
-        <span id="conferenceText" style="display:none;">
-            <p>The Conference Room is ideal for group assignments. Not only is it often the quietest room on floor but it sports multiple white boards as well as a large conference table and couches.</p>
-        </span>
-        <span id="serverText" style="display:none;">
-            <p>CSH's server room serves as a place for members to learn and practice their networking skills. It also serves as a place to host the variety of network services provided to our members.</p>
-        </span>
-        <span id="projectText" style="display:none;">
-            <p>The Project Room is CSH's own custom workshop. It provides the tools and resources necessary for members to complete any project they can imagine.</p>
-        </span>
-        <span id="dormText" style="display:none;">
-            <p>Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.</p>
-        </span>
-        
-        <div id="photosphere-container"></div>
-        
-        <div class="image-container">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-
-    <!-- Wrapper for slides -->
-            
-    <span id="carouselImages">
-            <span id="lounge"> 
-
-      <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/usercenter1.jpg" alt="Lounge 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/usercenter2.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    </div>
-        </span>
-            
-            
-    </span>
-            
-    <!--<span id="lounge"> 
-        
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-
-      <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/lounge1.jpg" alt="Lounge 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/lounge2.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    </div>
-        </span>-->
-        
-    <!--<span id="software" style="display:none;">
-        
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-        
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/software1.jpg" alt="Software Room 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/software2.jpg" alt="Software Room 2" class="img-responsive tour-img">
-      </div>
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="library" style="display:none;">
-        
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-        
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/library1.jpg" alt="Lounge 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/library2.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    <div class="item">
-        <img src="resources/images/tour/library3.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    <div class="item">
-        <img src="resources/images/tour/library4.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    <div class="item">
-        <img src="resources/images/tour/library5.jpg" alt="Lounge 2" class="img-responsive tour-img">
-      </div>
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="user" style="display:none;">
-        
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        <li data-target="#myCarousel" data-slide-to="4"></li>
-    </ol>
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/usercenter1.jpg" alt="User Center 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/usercenter2.jpg" alt="User Center 2" class="img-responsive tour-img">
-      </div>
-    
-      <div class="item">
-        <img src="resources/images/tour/usercenter3.jpg" alt="User Center 3" class="img-responsive tour-img">
-                                                                </div>
-
-      <div class="item">
-        <img src="resources/images/tour/usercenter4.jpg" alt="Flower" class="img-responsive tour-img">
-      </div>
-      <div class="item">
-        <img src="resources/images/tour/usercenter5.jpg" alt="Flower" class="img-responsive tour-img">
-      </div>
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="conference" style="display:none;">
-            
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/conference1.jpg" alt="Conference 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/conference2.jpg" alt="Conference 2" class="img-responsive tour-img">
-      </div>
-    
-      <div class="item">
-        <img src="resources/images/tour/conference3.jpg" alt="Conference 3" class="img-responsive tour-img">
-                                                                </div>
-
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="server" style="display:none;">
-            
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-        
-    </ol>
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/server1.jpg" alt="Server 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/server2.jpg" alt="Server 2" class="img-responsive tour-img">
-      </div>
-    
-      <div class="item">
-        <img src="resources/images/tour/server3.jpg" alt="Server 3" class="img-responsive tour-img">
-                                                                </div>
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="project" style="display:none;">
-            
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-        <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/project1.png" alt="Project 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/project2.png" alt="Project 2" class="img-responsive tour-img">
-      </div>
-    
-      <div class="item">
-        <img src="resources/images/tour/project3.png" alt="Proejct 3" class="img-responsive tour-img">
-                                                                </div>
-
-      <div class="item">
-        <img src="resources/images/tour/project4.png" alt="Project 4" class="img-responsive">
-      </div>
-    </div>        
-            
-    </span>-->
-            
-    <!--<span id="dorm" style="display:none;">
-       
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
-        
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="resources/images/tour/dorm1.jpg" alt="Dorm 1" class="img-responsive tour-img">
-      </div>
-
-      <div class="item">
-        <img src="resources/images/tour/dorm2.jpg" alt="Dorm 2" class="img-responsive tour-img">
-      </div>
-    
-      <div class="item">
-        <img src="resources/images/tour/dorm3.jpg" alt="Dorm 3" class="img-responsive tour-img">
-                                                                </div>
-    </div>        
-            
-    </span>-->
-            
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
+            <br>
+            <span id="loungeText" style="display:none;">
+                <p>
+                    The Lounge is CSH's main social hub. This room is used to host movie nights, social events, technical seminars, company visits, and E-Board meetings.
+                </p>
+            </span>
+            <span id="softwareText" style="display:none;">
+                <p>
+                    The Software Room is the perfect place for small group tasks. It is a quiet room that is away from the normal hustle and bustle of floor which makes it great for taking phone calls, playing board games, and working on group assignments. The Software Room also houses CSH's book collection as well as a variety of board games.
+                </p>
+            </span>
+            <span id="libraryText" style="display:none;">
+                <p>
+                    The Library is CSH's multi-function archive and arcade. It serves as a storage place for all of our historical records and keepsakes as well as a variety of arcade machines, both vintage and custom-built.
+                </p>
+            </span>
+            <span id="userText" class="tourTextActive">
+                <p>
+                    The User Center is a productive social room. It is often sought out as a place for members to socialize and get work done. It also serves as a meeting place, a project work room, and a technical seminar room.
+                </p>
+            </span>
+            <span id="conferenceText" style="display:none;">
+                <p>
+                    The Conference Room is ideal for group assignments. Not only is it often the quietest room on floor but it sports multiple white boards as well as a large conference table and couches.
+                </p>
+            </span>
+            <span id="serverText" style="display:none;">
+                <p>
+                    CSH's server room serves as a place for members to learn and practice their networking skills. It also serves as a place to host the variety of network services provided to our members.
+                </p>
+            </span>
+            <span id="projectText" style="display:none;">
+                <p>
+                    The Project Room is CSH's own custom workshop. It provides the tools and resources necessary for members to complete any project they can imagine.
+                </p>
+            </span>
+            <span id="dormText" style="display:none;">
+                <p>
+                    Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.
+                </p>
+            </span>
+            <div id="photosphere-container"></div>
+            <div class="image-container">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <span id="carouselImages">
+                        <span id="lounge"> 
+                            <div class="carousel-inner" role="listbox">
+                                <div class="item active">
+                                    <img src="resources/images/tour/usercenter1.jpg" alt="Lounge 1" class="img-responsive tour-img">
+                                </div>
+                                <div class="item">
+                                    <img src="resources/images/tour/usercenter2.jpg" alt="Lounge 2" class="img-responsive tour-img">
+                                </div>
+                            </div>
+                        </span>
+                    </span>
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
-        
-        
-        <br>
-</div>
-
-        
-    <!-- End Page Content Here -->
-    </div>
+            <br>
+        </div>
+        <!-- End Page Content Here -->
         <include file="resources/templates/_footer.html"></include>
-
-
-    <!-- Core Javascript -->
-    <include file="resources/templates/_coreJS.html"></include>
-    <!-- Tour.JS -->
-    <script src="resources/js/tour.js"></script>
-    <!-- Photoshere Viewer -->
-    <script src="resources/js/threejs/three.min.js"></script>
-    <script src="resources/js/threejs/canvasrenderer.min.js"></script>
-    <script src="resources/js/threejs/projector.min.js"></script>
-    <script src="resources/js/photo-sphere-viewer.min.js"></script>
-  </body>
+        <!-- Core Javascript -->
+        <include file="resources/templates/_coreJS.html"></include>
+        <!-- Tour.JS -->
+        <script src="resources/js/tour.js"></script>
+        <!-- Photoshere Viewer -->
+        <script src="resources/js/threejs/three.min.js"></script>
+        <script src="resources/js/threejs/canvasrenderer.min.js"></script>
+        <script src="resources/js/threejs/projector.min.js"></script>
+        <script src="resources/js/photo-sphere-viewer.min.js"></script>
+    </body>
 </html>
