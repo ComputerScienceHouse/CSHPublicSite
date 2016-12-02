@@ -916,3 +916,39 @@ td,th{
     
 }
 
+.banner {
+    width: 100%;
+    padding: 5px;
+    z-index: 999;
+    text-align: center;
+    background: #E11C52;
+    color: #FFF;
+    position: fixed;
+    top: 0px;
+    font-size: 12px;
+}
+
+.navbar.banner-active {
+    margin-top: 26px;
+}
+
+a.muted {
+    text-decoration: none !important;
+}
+
+.label-white {
+    background: #FFF;
+}
+
+.label-raised {
+    -webkit-box-shadow: 1px 1px 1px 0px rgba(170,170,170,1);
+    -moz-box-shadow: 1px 1px 1px 0px rgba(170,170,170,1);
+    box-shadow: 1px 1px 1px 0px rgba(170,170,170,1);
+}
+
+
+
+.color.csh-red {
+    color: #E11C52;
+}
+
