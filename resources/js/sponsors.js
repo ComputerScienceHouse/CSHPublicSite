@@ -32,6 +32,7 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/citrix.png', "http://citrix.com" ],
         ['resources/images/sponsorLogos/fxcm.png', "http://fxcm.com" ],
         ['resources/images/sponsorLogos/pdhi.png', "http://pdhi.com" ],
+        ['resources/images/sponsorLogos/datadog.png', "http://www.datadoghq.com/" ],
     ];
 
     for(i=0;i<29;i++){
