@@ -33,7 +33,7 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/fxcm.png', "http://fxcm.com" ],
         ['resources/images/sponsorLogos/pdhi.png', "http://pdhi.com" ],
         ['resources/images/sponsorLogos/datadog.png', "http://www.datadoghq.com/" ],
-        ['resources/images/sponsorLogos/dmarcian.png', "http://dmarcian.com/" ],
+        ['resources/images/sponsorLogos/dmarcian.svg', "http://dmarcian.com/" ],
     ];
 
     for(i=0;i<29;i++){
