@@ -34,6 +34,8 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/pdhi.png', "http://pdhi.com" ],
         ['resources/images/sponsorLogos/datadog.png', "http://www.datadoghq.com/" ],
         ['resources/images/sponsorLogos/dmarcian.svg', "http://dmarcian.com/" ],
+        ['resources/images/sponsorLogos/pritunl.png', "https://pritunl.com/" ],
+        ['resources/images/sponsorLogos/sentry.svg', "https://sentry.io/" ],
     ];
 
     for(i=0;i<29;i++){
