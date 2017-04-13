@@ -32,6 +32,12 @@ resources/php/key.php
 potential_photos/
 
 #################
+## Jetbrains IDEs
+#################
+
+.idea
+
+#################
 ## Visual Studio
 #################
 
@@ -60,7 +66,6 @@ potential_photos/
 *.tlb
 *.tli
 *.tlh
-*.tmp
 *.vspscc
 .builds
 *.dotCover
