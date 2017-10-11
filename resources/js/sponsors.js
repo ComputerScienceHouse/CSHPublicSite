@@ -36,6 +36,7 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/dmarcian.svg', "http://dmarcian.com/" ],
         ['resources/images/sponsorLogos/pritunl.png', "https://pritunl.com/" ],
         ['resources/images/sponsorLogos/sentry.svg', "https://sentry.io/" ],
+        ['resources/images/sponsorLogos/slack.png', "https://slack.com/" ],
     ];
 
     for(i=0;i<29;i++){
