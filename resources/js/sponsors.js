@@ -37,9 +37,10 @@ $(document).ready(function(){
         ['resources/images/sponsorLogos/pritunl.png', "https://pritunl.com/" ],
         ['resources/images/sponsorLogos/sentry.svg', "https://sentry.io/" ],
         ['resources/images/sponsorLogos/slack.png', "https://slack.com/" ],
+        ['resources/images/sponsorLogos/passwork.png', "https://passwork.me" ],
     ];
 
-    for(i=0;i<29;i++){
+    for (i = 0; i < images.length; i++) {
         var index = Math.floor(Math.random()*images.length)
         var item = images[index];
         $('#sponsor'+i).attr("src", item[0]);
