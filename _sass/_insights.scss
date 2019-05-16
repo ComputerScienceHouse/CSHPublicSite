@@ -1,0 +1,11 @@
+#insights-page {
+    #insights-dates {
+        text-align: center;
+    }
+    #insights-buttons {
+        text-align: center;
+        & .btn {
+            margin: 0.25em 0;
+        }
+    }
+}

@@ -1,0 +1,66 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+
+$csh-pink: #b0197e;
+$blue: #404b69;
+$gray: #f4f4f6;
+body {
+  background: white;
+}
+
+.container.spaced {
+  padding: 50px 10px;
+}
+
+.gray-wrapper {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: $gray;
+  &.padded {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+
+img.rounded {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 15px darken($gray, 20%);
+}
+
+img.center-vertically {
+  width: 80%;
+  height: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo-grid {
+  & img {
+    width: 100%;
+    margin-top: 1.5em;
+    transition: 0.3s opacity;
+    &:hover {
+      opacity: 0.75;
+    }
+    @media (max-width: 992px) {
+      margin-top: 1em;
+    }
+  }
+}
+
+@import "csh";
+@import "typography";
+@import "nav";
+@import "slider";
+@import "about";
+@import "projects";
+@import "sponsors";
+@import "splash";
+@import "eboard";
+@import "tour";
+@import "insights";
+@import "footer";
