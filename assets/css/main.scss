@@ -38,6 +38,11 @@ img.center-vertically {
   transform: translateY(-50%);
 }
 
+img.padded-gray {
+    padding: 10%;
+    background: #EEEEEE;
+}
+
 .logo-grid {
   & img {
     width: 100%;
