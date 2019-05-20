@@ -11,12 +11,12 @@
 }
 
 nav {
-    transition: 0.2s font-size;
     & .navbar-brand {
-        transition: 0.2s max-height;
+        transition: 0.4s max-height, 0.4s margin;
         max-height: 100px;
         padding-top: 15px;
         padding-bottom: 15px;
+        margin: 10px 0;
         background-image: url('/assets/images/csh-logo.svg');
         background-repeat: no-repeat;
         background-size: contain;
@@ -69,10 +69,9 @@ nav {
         display: block;
     }
     &.condensed {
-        font-size: 0.8em;
-        padding: 0.33rem 1rem;
         .navbar-brand {
             max-height: 40px;
+            margin: 5px 0;
         }
         & .dropdown-menu {
             font-size: 1.2em;
