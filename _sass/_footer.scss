@@ -1,17 +1,42 @@
 footer {
-    font-size: 0.75em;
+    font-size: 0.7em;
     text-align: center;
-    background: $csh-pink;
     color: white;
-    padding: 20px 0;
+    & .footer-top {
+        background: $blue;
+        color: white;
+        & a {
+            margin: 0 10px;
+            white-space: nowrap;
+        }
+    }
+    & .footer-bottom {
+        background: $csh-pink;
+    }
+    & .footer-top,
+    & .footer-bottom {
+        padding: 20px 0;
+    }
     & .container {
         padding-top: 0;
         padding-bottom: 0;
+    }
+    & .site-map {
+        text-align: left;
+        & a {
+            display: block;
+        }
+    }
+    & h2 {
+        margin-top: 0;
     }
     & a {
         color: white;
         &:hover {
             color: white;
+        }
+        &.indented {
+            padding-left: 30px;
         }
         @media(max-width: 992px) {
             text-decoration: underline; // underline links on smaller screens
