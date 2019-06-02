@@ -29,74 +29,88 @@ active: home
     </div>
 </div>
 
-<div class="container spaced" id="homepage-projects">
+<div class="container spaced" id="post-list">
     <div class="row">
         <div class="col-12">
-            <h2 class="header">Things we've done</h2>
+            <h2 class="header">Recent posts</h2>
+        </div>
+        {% for post in site.posts limit:2 %}
+            {% include post.html post=post %}
+        {% endfor %}
+        <div class="col-12">
+            <a class="btn btn-primary" href="/blog">More blog posts</a>
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-lg-4">
-            <p>Personal projects are a big part of CSH culture. Some of our biggest include Schedule Maker, CSH Arcade, Drink, and Harold.</p>
-            <a class="btn btn-primary" href="/about/projects">More projects</a>
+</div>
+
+<div class="gray-wrapper">
+    <div class="container spaced" id="homepage-projects">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="header">Things we've done</h2>
+            </div>
         </div>
-        <div class="col-12 col-lg-8 images">
-            <div class="row">
-                <div class="col-3">
-                    <img class="rounded"  src="/assets/images/projects/schedulemaker.jpg" alt="The logo for CSH Schedule Maker" />
-                </div>
-                <div class="col-3">
-                    <img class="rounded"  src="/assets/images/projects/arcade.jpg" alt="Two custom arcade machines in the CSH library" />
-                </div>
-                <div class="col-3">
-                    <img class="rounded"  src="/assets/images/projects/drink.jpg" alt="Two of CSH's networked vending machines, Drink and Snack.">
-                </div>
-                <div class="col-3">
-                    <img class="rounded"  src="/assets/images/projects/harold.jpg" alt="Harold, a box with a sensor on it, that plays members' music" />
+        <div class="row">
+            <div class="col-12 col-lg-4">
+                <p>Personal projects are a big part of CSH culture. Some of our biggest include Schedule Maker, CSH Arcade, Drink, and HAROLD.</p>
+                <a class="btn btn-primary" href="/about/projects">More projects</a>
+            </div>
+            <div class="col-12 col-lg-8 images">
+                <div class="row">
+                    <div class="col-3">
+                        <img class="rounded"  src="/assets/images/projects/schedulemaker.jpg" alt="The logo for CSH Schedule Maker" />
+                    </div>
+                    <div class="col-3">
+                        <img class="rounded"  src="/assets/images/projects/arcade.jpg" alt="Two custom arcade machines in the CSH library" />
+                    </div>
+                    <div class="col-3">
+                        <img class="rounded"  src="/assets/images/projects/drink.jpg" alt="Two of CSH's networked vending machines, Drink and Snack.">
+                    </div>
+                    <div class="col-3">
+                        <img class="rounded"  src="/assets/images/projects/harold.jpg" alt="Harold, a box with a sensor on it, that plays members' music" />
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="gray-wrapper">
-    <div class="container spaced" id="homepage-sponsors">
-        <div class="row">
-            <div class="col-12">
-                <a href="/about/sponsors">
-                    <h2 class="header">Sponsors</h2>
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-1">
-                <a href="#">
-                <img src="/assets/images/sponsors/ritLarge.png">
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-2">
-                <a href="#">
-                    <img src="/assets/images/sponsors/google.png">
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-3">
-                <a href="#">
-                <img src="/assets/images/sponsors/microsoft.png">
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-4">
-                <a href="#">
-                <img src="/assets/images/sponsors/slack.png">
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-5">
-                <a href="#">
-                <img src="/assets/images/sponsors/hp.png">
-                </a>
-            </div>
-            <div class="col-4 col-lg-2" id="sponsor-6">
-                <a href="#">
-                <img src="/assets/images/sponsors/oracle.png">
-                </a>
-            </div>
+<div class="container spaced" id="homepage-sponsors">
+    <div class="row">
+        <div class="col-12">
+            <a href="/about/sponsors">
+                <h2 class="header">Sponsors</h2>
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-1">
+            <a href="https://rit.edu/">
+            <img src="/assets/images/sponsors/ritLarge.png">
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-2">
+            <a href="https://google.com/">
+                <img src="/assets/images/sponsors/google.png">
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-3">
+            <a href="https://microsoft.com/">
+            <img src="/assets/images/sponsors/microsoft.png">
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-4">
+            <a href="https://slack.com/">
+            <img src="/assets/images/sponsors/slack.png">
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-5">
+            <a href="https://hp.com">
+            <img src="/assets/images/sponsors/hp.png">
+            </a>
+        </div>
+        <div class="col-4 col-lg-2" id="sponsor-6">
+            <a href="https://oracle.com/">
+            <img src="/assets/images/sponsors/oracle.png">
+            </a>
         </div>
     </div>
 </div>
