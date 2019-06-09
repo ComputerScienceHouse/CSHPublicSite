@@ -6,8 +6,13 @@
 $csh-pink: #b0197e;
 $blue: #404b69;
 $gray: #f4f4f6;
+
 body {
   background: white;
+  margin: 0;
+  padding-bottom: 6em;
+  min-height: 100vh;
+  position: relative;
 }
 
 .container.spaced {
@@ -55,6 +60,11 @@ img.padded-gray {
       margin-top: 1em;
     }
   }
+}
+
+a.btn {
+    font-size: 0.75em;
+    margin-bottom: 1em;
 }
 
 @import "typography";
