@@ -1,6 +1,6 @@
 node('jenkins-slave-ruby-centos7') {
     stage('Build') {
-        git url: "https://github.com/ramzallan/CSHPublicSiteV2.git"
+        git url: "https://github.com/ramzallan/CSHPublicSite.git"
         sh "bundle install"
         sh "bundle exec rake build:production"
     }
