@@ -1,0 +1,13 @@
+#homepage-sponsors {
+    padding-bottom: 75px;
+    & img {
+        margin: 15px 0;
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 2px 15px darken($gray, 20%);
+        transition: 0.3s opacity;
+        &:hover {
+            opacity: 0.75;
+        }
+    }
+}

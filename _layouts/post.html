@@ -1,0 +1,32 @@
+---
+layout: default
+active: blog
+---
+<div class="splash">
+    <h1>{{ page.title }}</h1>
+</div>
+
+<div class="container spaced post">
+    <div class="row">
+        <div class="col">
+            <h2 id="details">
+                {% if page.author-image %}
+                <img src="{{ page.author-image }}" />
+                {% endif %}
+                {{ page.author }}
+
+                {% for social in page.author-social %}
+                    <a class="fab fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noreferrer noopener"></a>
+                {% endfor %}
+                <span id="date">{{ page.date | date: "%B %-d, %Y" }}</span>
+            </h2>
+            <hr />
+            {% if page.image %}
+                <img src="{{ page.image }}" />
+            {% endif %}
+            {{ content }}
+            <hr />
+            <a class="btn btn-primary" href="/blog/">More blog posts</a>
+        </div>
+    </div>
+</div>

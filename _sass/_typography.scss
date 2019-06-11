@@ -1,0 +1,34 @@
+html {
+  font-size: calc(1em + 2vmax);
+}
+
+@media(min-width: 992px) {
+  html {
+    font-size: calc(1em + 1vmin);
+  }
+}
+
+body {
+    font-family: 'Poppins', 'Roboto', sans-serif;
+    color: $blue;
+}
+
+h2 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1em;
+}
+
+.long-form {
+    color: #333;
+    line-height: 1.5;
+    font-size: 0.8em;
+    margin: 1em 0;
+}
+
+.row.spaced {
+    margin-top: 2em;
+}

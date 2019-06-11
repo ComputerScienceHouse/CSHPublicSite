@@ -1,19 +1,30 @@
-CSHPublicSite
-================
+# CSHPublic Site - [csh.rit.edu](https://csh.rit.edu)
 
-Forward facing CSH website - [csh.rit.edu](https://csh.rit.edu/)
+The public facing website for [Rochester Institute of Technology](https://rit.edu/)'s [Computer Science House](https://csh.rit.edu).
 
-### Building
-This project uses pyBuilder, a light-weight Python HTML compiler. For more information on how to use it, visit: [brandonhudson/pyBuilder](https://github.com/brandonhudson/pyBuilder)
+## Overview
 
-### Contributing
+This site is written using [Jekyll](https://jekyllrb.com/), a static site generator built with Ruby, and uses Sass and JavaScript ES6.
 
-#### Pull Requests
-If you have an idea for a feature or have a bug that you'd like to fix, please fork this repo to a private repo of your own. If your contribution is more than some small tweak, create a branch. Do your thing, and then submit a pull request.
+## Local Development
 
-#### Issue Tracking
-- Fix issue with tours.html not properly loading
-- Change tours dropdown color to white text when selected
-<br>
-Please make use of GitHub's issue tracker for this repo.
+#### Prerequisites:
+1. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+2. [Bundler](https://bundler.io/) (`gem install bundler`)
 
+#### Instructions
+1. `bundle install`
+2. `bundle exec jekyll serve`
+
+The site should now serve locally at `localhost:4000`, and auto-build when you change/create files in the repo!
+
+## Contributing
+
+1. [Fork](https://help.github.com/en/articles/fork-a-repo) this repository
+    - Optionally create a new [git branch](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) if your change is more than a small tweak (`git checkout -b BRANCH-NAME-HERE`)
+3. Make your changes locally, commit, and push to your fork
+4. Create a [Pull Request](https://help.github.com/en/articles/about-pull-requests) on this repo for our Webmasters to review
+
+## Questions/Concerns
+
+Please file an [Issue](https://github.com/ComputerScienceHouse/CSHPublicSite/issues/new) on this repository or contact [webmaster@csh.rit.edu](mailto:webmaster@csh.rit.edu) with inquiries about the site.

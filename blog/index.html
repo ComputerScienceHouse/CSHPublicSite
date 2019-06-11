@@ -1,0 +1,12 @@
+---
+layout: page
+title: Blog
+active: blog
+---
+
+<div class="container spaced" id="post-list">
+    <div class="row">
+        {% for post in site.posts %}
+            {% include post.html post=post %}
+        {% endfor %}
+</div>

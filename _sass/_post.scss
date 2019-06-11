@@ -1,0 +1,62 @@
+.post {
+    img {
+        max-width: 100%;
+        margin: 20px 0;
+    }
+    a.btn {
+        margin-top: 20px;
+    }
+    #details {
+        font-size: 1em;
+        img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+        a {
+            text-decoration: none;
+        }
+        #date {
+            margin-left: 20px;
+        }
+    }
+    h3 {
+        font-size: 1.5em;
+    }
+}
+
+#post-list {
+    a.btn {
+        margin-top: 20px;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+    }
+    h2 {
+        margin-top: 0;
+    }
+    .card {
+        margin: 10px 0;
+    }
+    .card-header {
+        padding: 10px 20px;
+        a {
+            text-decoration: underline;
+        }
+    }
+    .card-body {
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        background-color: $csh-pink;
+    }
+}
