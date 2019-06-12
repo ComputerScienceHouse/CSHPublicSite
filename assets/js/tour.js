@@ -1,7 +1,7 @@
 const content = {
     'dorm': {
         'title': 'Dorm Room',
-        'photos': ['/assets/images/tour/dorm/1.jpg', 'https://placehold.it/1203x803'],
+        'photos': ['/assets/images/tour/dorm/1.jpg'],
         'description': 'Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.',
     },
     'user-center': {
