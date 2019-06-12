@@ -7,6 +7,7 @@ footer {
     text-align: center;
     color: white;
     & .footer-top {
+        padding: 20px 0;
         background: $blue;
         color: white;
         & a {
@@ -15,11 +16,8 @@ footer {
         }
     }
     & .footer-bottom {
+        padding: 8px 0;
         background: $csh-pink;
-    }
-    & .footer-top,
-    & .footer-bottom {
-        padding: 20px 0;
     }
     & .container {
         padding-top: 0;
