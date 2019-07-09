@@ -19,7 +19,8 @@ $size: 350px;
         height: 400px;
         & h1 {
             font-size: 2em;
-            line-height: 600px;
+            line-height: 1;
+            padding-top: 50%;
         }
     }
 }

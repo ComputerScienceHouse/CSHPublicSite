@@ -6,33 +6,38 @@ footer {
     font-size: 0.7em;
     text-align: center;
     color: white;
+    img {
+      width: 100%;
+      max-width: 300px;
+      margin-bottom: 10px;
+    }
     & .footer-top {
         padding: 20px 0;
-        background: $blue;
+        background: $csh-pink;
         color: white;
         & a {
             margin: 0 10px;
             white-space: nowrap;
         }
     }
-    & .footer-bottom {
+    .footer-bottom {
         padding: 8px 0;
-        background: $csh-pink;
+        background: $blue;
     }
-    & .container {
+    .container {
         padding-top: 0;
         padding-bottom: 0;
     }
-    & .site-map {
+    .site-map {
         text-align: left;
         & a {
             display: block;
         }
     }
-    & h2 {
+    h2 {
         margin-top: 0;
     }
-    & a {
+    a {
         color: white;
         &:hover {
             color: white;

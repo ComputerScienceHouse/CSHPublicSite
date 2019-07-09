@@ -44,6 +44,10 @@
     }
     .card {
         margin: 10px 0;
+        transition: 0.3s opacity;
+        &:hover {
+          opacity: 0.75;
+        }
     }
     .card-header {
         padding: 10px 20px;

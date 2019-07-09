@@ -3,7 +3,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 99;
     box-shadow: none;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
@@ -17,13 +17,10 @@ nav {
         padding-top: 15px;
         padding-bottom: 15px;
         margin: 10px 0;
-        background-image: url('/assets/images/csh-logo.svg');
+        background-image: url('/assets/images/csh_logo_square.svg');
         background-repeat: no-repeat;
         background-size: contain;
         background-position: left center;
-        @media(max-width: 992px) {
-            max-height: 150px;
-        }
     }
     & img {
         display: inline;
@@ -58,7 +55,8 @@ nav {
         }
     }
     & .dropdown-menu {
-        min-width: 0px; // override csh bootstrap
+        min-width: 170px;
+        width: auto;
         padding: 10px;
         background: rgba(0, 0, 0, 0.6);
         & li {
@@ -75,6 +73,15 @@ nav {
         }
         & .dropdown-menu {
             font-size: 1.2em;
+        }
+    }
+    @media(max-width: 992px) {
+        .navbar-brand {
+            max-height: 50px;
+        }
+        .navbar-toggler-icon {
+          width: 30px;
+          height: 30px;
         }
     }
 }
