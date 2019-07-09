@@ -16,7 +16,7 @@ active: blog
                 {{ page.author }}
 
                 {% for social in page.author-social %}
-                    <a class="fab fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noreferrer noopener"></a>
+                    <a class="fab fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noopener"></a>
                 {% endfor %}
                 <span id="date">{{ page.date | date: "%B %-d, %Y" }}</span>
             </h2>

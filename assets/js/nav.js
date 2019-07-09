@@ -1,4 +1,5 @@
 $(document).ready(() => {
+    $('nav .dropdown-toggle').click(e => e.preventDefault()); // prevent scrolling for href=#
     if ($('nav').length) {
         $(window).scroll(() => {
             if ($(window).width() < 1000) { // don't condense nav on smaller screens
