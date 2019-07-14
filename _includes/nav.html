@@ -18,8 +18,8 @@
                 <li class="dropdown">
                     <a href="#" class="{% if page.active contains 'membership' %}active {% endif %}dropdown-toggle" aria-expanded="false">Membership</a>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a {% if page.active == 'membership-intro' %}class="active"{% endif %} href="/membership/intro-process.html">New Members</a></li>
                         <li><a {% if page.active == 'membership' %}class="active"{% endif %} href="/membership/">Overview</a></li>
+                        <li><a {% if page.active == 'membership-intro' %}class="active"{% endif %} href="/membership/intro-process.html">New Members</a></li>
                         <li><a {% if page.active == 'membership-traditions' %}class="active"{% endif %} href="/membership/traditions.html">Traditions</a></li>
                         <li><a {% if page.active == 'membership-tour' %}class="active"{% endif %} href="/membership/tour.html">Tour</a></li>
                         <!--<li><a {% if page.active == 'membership-insights' %}class="active"{% endif %} href="/membership/insights.html">Insights</a></li>-->
