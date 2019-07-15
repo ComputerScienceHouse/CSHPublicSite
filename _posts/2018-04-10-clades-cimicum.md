@@ -6,6 +6,7 @@ categories:
     - debugger,c
 description: A small debugger that can read memory from another process.
 author: Collin Tod
+image: https://csh.rit.edu/~squables/Blog_Pics/cc.png
 author-image: https://avatars2.githubusercontent.com/u/9722413?s=400&u=58f02226ffe89fa4f69ad4a7f89f07efb1b72f4f&v=4
 author-bio: First year computer science student at Rochester Institute of Technology
 author-email: squables@csh.rit.edu
@@ -21,16 +22,16 @@ A while back, I found [this](https://github.com/scvalencia/MNIST_ASCII_challenge
 1. Using ptrace to attach to the process and read its memory (This is what GDB does to a child proces)
 2. Manually stopping the process and reading from its mem file in `/proc`
 
-I chose the latter of the two options because I wanted a bit of a challenge. 
+I chose the latter of the two options because I wanted a bit of a challenge.
 
 # How To Use It
-Program usage 
+Program usage
 
 ```sh
 debugger PID offset nbytes
 ```
 
-where `PID` is the process ID of the target process, `offset` is the address in the virtual memory of the process that you wish to read from, and `nbytes` is the number of bytes to read from the target process 
+where `PID` is the process ID of the target process, `offset` is the address in the virtual memory of the process that you wish to read from, and `nbytes` is the number of bytes to read from the target process
 
 # How It Works
 
@@ -44,7 +45,7 @@ Firstly, the process that is to be examined (from here on out the target process
 
 Secondly, you must be root to read the memory of another process in this way. It would be extremely unsafe for non-root or super users to be able to read the memory of any process on a machine at any time.
 
-Thirdly, and maybe most importantly, you must know the exact memory address of the memory you want to access. This is because attempting to accesss an address in virtual memory that is not mapped to a physical address by `/proc/PID/maps` will result in an IO error. This makes sense, because there is no physical representation of the area of memory attemting to be accessed. Thus, you must be extremely familiar with the target process in order to effectively use this method. 
+Thirdly, and maybe most importantly, you must know the exact memory address of the memory you want to access. This is because attempting to accesss an address in virtual memory that is not mapped to a physical address by `/proc/PID/maps` will result in an IO error. This makes sense, because there is no physical representation of the area of memory attemting to be accessed. Thus, you must be extremely familiar with the target process in order to effectively use this method.
 
 # How I Solved the Captcha Problem
 
@@ -54,5 +55,5 @@ The biggest challenge for this problem was actually finding the memory address o
 
 Pretty much everything that I know about the `/proc` folder, and how stack frames work.
 
-# The Project 
+# The Project
 The project is hosted [here](https://github.com/squablyScientist/Clades-Cimicum). The `master` branch is the general debugger, whilst the `injection` branch is the solution for the captcha challenge.
