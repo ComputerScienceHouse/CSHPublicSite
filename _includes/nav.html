@@ -9,6 +9,7 @@
                     <a href="#" class="{% if page.active contains 'about' %}active {% endif %}dropdown-toggle" aria-expanded="false">About</a>
                     <ul class="dropdown-menu" role="menu">
                         <li><a {% if page.active == 'about' %}class="active"{% endif %} href="/about/">About CSH</a></li>
+                        <li><a {% if page.active == 'about-faq' %}class="active"{% endif %} href="/about/faq.html">FAQ</a></li>
                         <li><a {% if page.active == 'about-projects' %}class="active"{% endif %} href="/about/projects.html">Projects</a></li>
                         <li><a {% if page.active == 'about-alumni' %}class="active"{% endif %} href="/about/alumni.html">Alumni</a></li>
                         <li><a {% if page.active == 'about-eboard' %}class="active"{% endif %} href="/about/eboard.html">Eboard</a></li>
