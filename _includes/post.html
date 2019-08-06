@@ -1,6 +1,6 @@
 {% if include.post %}
     {% assign post = include.post %}
-    {% assign image = "/assets/images/logo_background.png" %}
+    {% assign image = "https://assets.csh.rit.edu/pubsite/logo_background.png" %}
     {% if post.image %}
         {% assign image = post.image %}
     {% else %}
@@ -26,7 +26,7 @@
         <div class="card-header h-25">
             No post provided.
         </div>
-        <div class="card-body" style="background-color: #b0197e; background-image: url('/assets/images/logo_background.png');"> </div>
+        <div class="card-body" style="background-color: #b0197e; background-image: url('https://assets.csh.rit.edu/pubsite/logo_background.png');"> </div>
     </div>
 </div>
 {% endif %}
