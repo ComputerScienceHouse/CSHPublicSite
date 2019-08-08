@@ -1,0 +1,23 @@
+{
+  "name": "cshpublicsite",
+  "version": "3.0.0",
+  "description": "The public facing website for [Rochester Institute of Technology](https://rit.edu/)'s [Computer Science House](https://csh.rit.edu).",
+  "main": "_site/index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git"
+  },
+  "scripts": {
+    "lh": "lighthousebot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ComputerScienceHouse/CSHPublicSite.git"
+  },
+  "author": "",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/ComputerScienceHouse/CSHPublicSite/issues"
+  },
+  "homepage": "https://csh.rit.edu"
+}
