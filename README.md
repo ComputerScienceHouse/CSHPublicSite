@@ -1,4 +1,4 @@
-# CSHPublic Site - [csh.rit.edu](https://csh.rit.edu)
+# CSHPublicSite - [csh.rit.edu](https://csh.rit.edu)
 
 The public facing website for [Rochester Institute of Technology](https://rit.edu/)'s [Computer Science House](https://csh.rit.edu).
 
