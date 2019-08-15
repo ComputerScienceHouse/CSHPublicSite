@@ -1,0 +1,32 @@
+{% if include.post %}
+    {% assign post = include.post %}
+    {% assign image = "https://assets.csh.rit.edu/pubsite/logo_background.png" %}
+    {% if post.image %}
+        {% assign image = post.image %}
+    {% else %}
+        {% assign hash = post.title | md5 | regex_replace: '[^\d]', '' %}
+    {% endif %}
+    <div class="col-xs-12 col-md-6">
+        <a href="{{ post.url }}">
+        <div class="card">
+            <div class="card-header h-25">
+                    {{ post.title }}
+            </div>
+            <!-- "Random" background color based on a hash of the title text for posts without images-->
+            <div
+                class="card-body"
+                style="{% if hash %}background-color: hsl({{ hash | modulo: 255 }}, 69%, 69%); {% else %}background-color:#b0197e; {% endif %}background-image: url({{ image }});">
+            </div>
+        </div>
+        </a>
+    </div>
+{% else %}
+<div class="col-xs-12 col-md-6">
+    <div class="card">
+        <div class="card-header h-25">
+            No post provided.
+        </div>
+        <div class="card-body" style="background-color: #b0197e; background-image: url('https://assets.csh.rit.edu/pubsite/logo_background.png');"> </div>
+    </div>
+</div>
+{% endif %}

@@ -1,0 +1,29 @@
+#slider {
+    width: 100%;
+    margin-bottom: 0;
+    height: auto;
+    max-height: 80vh;
+    overflow-y: hidden;
+    & img {
+        width: 100%;
+    }
+    background: $gray;
+}
+.slick-prev {
+    left: 10px;
+    z-index: 2;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: white;
+    text-shadow: 0 0 5px black;
+}
+
+.slick-dots {
+    bottom: 10px;
+}

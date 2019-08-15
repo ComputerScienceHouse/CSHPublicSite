@@ -1,0 +1,91 @@
+// override csh-material-bootstrap
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    box-shadow: none;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 0.25em 0.5em;
+}
+
+nav {
+    & .navbar-brand {
+        transition: 0.4s max-height, 0.4s margin;
+        max-height: 100px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 10px 0;
+        background-image: url('https://assets.csh.rit.edu/pubsite/csh_logo_square.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left center;
+    }
+    & img {
+        display: inline;
+    }
+
+    & ul {
+        list-style-type: none;
+        display: inline;
+        padding: 0;
+        & li {
+            display: inline-block;
+            padding: 5px 10px;
+            font-size: 0.75em;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        & a {
+            color: white;
+            letter-spacing: 1px;
+            padding: 2px 0;
+            border-bottom: 3px solid transparent;
+            transition: 0.4s border-color;
+            &:hover {
+                text-decoration: none;
+                color: lighten($csh-pink, 50%);
+                border-color: lighten($csh-pink, 50%);
+            }
+            &.active,
+            &:active {
+                border-color: lighten($csh-pink, 30%);
+            }
+        }
+    }
+    & .dropdown-menu {
+        min-width: 170px;
+        width: auto;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.6);
+        & li {
+            display: block;
+        }
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    &.condensed {
+        .navbar-brand {
+            max-height: 40px;
+            margin: 5px 0;
+        }
+        & .dropdown-menu {
+            font-size: 1.2em;
+        }
+    }
+    @media(max-width: 992px) {
+        .navbar-brand {
+            max-height: 50px;
+        }
+        .navbar-toggler-icon {
+          width: 30px;
+          height: 30px;
+        }
+    }
+}
+
+.btn.dropdown-toggle:before {
+    display: none; // remove beginning caret for dropdowns
+}

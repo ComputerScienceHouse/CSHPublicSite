@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a href="/" class="navbar-brand" aria-label="Return to Computer Science House's Homepage">&nbsp;</a>
+        <button type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"><span class="navbar-toggler-icon"></span></button>
+        <div id="navigation" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="/" {% if page.active == 'home' %}class="active"{% endif %}>Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="{% if page.active contains 'about' %}active {% endif %}dropdown-toggle" aria-expanded="false">About</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a {% if page.active == 'about' %}class="active"{% endif %} href="/about/">About CSH</a></li>
+                        <li><a {% if page.active == 'about-faq' %}class="active"{% endif %} href="/about/faq.html">FAQ</a></li>
+                        <li><a {% if page.active == 'about-projects' %}class="active"{% endif %} href="/about/projects.html">Projects</a></li>
+                        <li><a {% if page.active == 'about-alumni' %}class="active"{% endif %} href="/about/alumni.html">Alumni</a></li>
+                        <li><a {% if page.active == 'about-eboard' %}class="active"{% endif %} href="/about/eboard.html">Eboard</a></li>
+                        <li><a {% if page.active == 'about-sponsors' %}class="active"{% endif %} href="/about/sponsors.html">Sponsors</a></li>
+                        <li><a {% if page.active == 'about-tour' %}class="active"{% endif %} href="/about/tour.html">Tour</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="{% if page.active contains 'membership' %}active {% endif %}dropdown-toggle" aria-expanded="false">Membership</a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a {% if page.active == 'membership' %}class="active"{% endif %} href="/membership/">Overview</a></li>
+                        <li><a {% if page.active == 'membership-intro' %}class="active"{% endif %} href="/membership/intro-process.html">New Members</a></li>
+                        <li><a {% if page.active == 'membership-traditions' %}class="active"{% endif %} href="/membership/traditions.html">Traditions</a></li>
+                        <!--<li><a {% if page.active == 'membership-insights' %}class="active"{% endif %} href="/membership/insights.html">Insights</a></li>-->
+                    </ul>
+                </li>
+                <li class="nav-item"><a {% if page.active == 'blog' %}class="active"{% endif %} href="/blog/">Blog</a></li>
+                <li class="nav-item"><a target="_blank" rel="noopener" href="https://www.rit.edu/giving/ComputerScienceHouse">Donate</a></li>
+                <li class="nav-item"><a {% if page.active == 'contact' %}class="active"{% endif %} href="/contact/">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
