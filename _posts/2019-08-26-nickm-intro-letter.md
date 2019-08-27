@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  A letter to intro members
+title:  A Letter to Prospective Members
 date:   2019-08-26 21:25:00
 categories: intro
 description: An explanation of CSH's intro process and the motivations behind it.
