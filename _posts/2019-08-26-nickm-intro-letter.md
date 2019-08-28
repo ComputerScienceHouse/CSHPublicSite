@@ -35,16 +35,16 @@ interested in what you do. After packet season is over, we’ll count up all of
 the signatures you’ve collected. If you get a passing percentage of signatures,
 congratulations! You’ll receive a CSH account and gain access to all of our
 house computer services. If not, there’s still hope! The packet is just one
-component of your 10 week evaluation.
+component of your 10-week evaluation.
 
-We have a handful of other objectives for you during the 10 week intro process.
+We have a handful of other objectives for you during the 10-week intro process.
 These requirements are intended to introduce you to our house culture and
 traditions, and are things that active members continue to do throughout their
 entire membership. One of the first things we ask you to do is attend some of
 our directorship meetings. Each of our 7 directors hosts a weekly meeting where
 they discuss ongoing projects, upcoming events, or other news that falls in
 their domain. Intro members are expected to attend any 10 directorship meetings
-during the 10 week evaluation period, preferably at least one a week. Another
+during the 10-week evaluation period, preferably at least one a week. Another
 cornerstone of CSH culture is the presentation of technical seminars! Technical
 seminars early in the year are usually given by upperclassmen and tend to focus
 on introducing you to the world of computer science. Common early-year topics
@@ -63,7 +63,7 @@ we require you to attend every house meeting, we also understand that life
 happens. If you can’t make it because you’re sick or out of town, just let
 our Evaluations director know and they’ll write a note about your absence.
 
-At the end of the 10 week intro process, all of the upperclassmen gather
+At the end of the 10-week intro process, all of the upperclassmen gather
 together to vote on intro members. During this meeting, we look at the big
 picture of how well you’ve met the requirements and who you are as a person.
 Did you attend at least 10 directorship meetings? Did you get a good score on
