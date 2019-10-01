@@ -44,6 +44,7 @@ $(document).ready(() => {
             new Sponsor('https://assets.csh.rit.edu/pubsite/sponsors/sentry.svg', 'https://sentry.io/', 'Sentry'),
             new Sponsor('https://assets.csh.rit.edu/pubsite/sponsors/slack.png', 'https://slack.com/', 'Slack'),
             new Sponsor('https://assets.csh.rit.edu/pubsite/sponsors/proxmox.png', 'https://proxmox.com/', 'Proxmox'),
+            new Sponsor('https://assets.csh.rit.edu/pubsite/sponsors/tenable.png', 'https://tenable.com/', 'Tenable'),
         ];
 
         for (let i = 0; i <= 6; i++) {
