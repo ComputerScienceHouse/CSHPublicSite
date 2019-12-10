@@ -1,0 +1,19 @@
+
+.csh-hacks-wrapper{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: rgba(217, 184, 206, 1.00);
+  background: rgba(37, 2, 26, 1.0) repeat top/2.5em url("https://assets.csh.rit.edu/cshacks-assets/csh_tilted.png"); 
+  & h2{
+    color: white;
+  }
+
+  & img{
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  @media screen and (max-width: 992px){
+    padding-top: 0px;
+  }
+}
