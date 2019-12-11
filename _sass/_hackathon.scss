@@ -6,10 +6,13 @@
   }
   & img{
     width: 100%;
-    padding-top: 50px;
+    padding-top: 10%;
   }
   @media screen and (max-width: 992px){
-    padding-top: 0px;
+    padding-top: 0px;    
+    img{
+      padding-top: 10px;
+    }
   }
 }
 
