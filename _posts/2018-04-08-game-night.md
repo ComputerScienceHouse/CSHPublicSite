@@ -8,6 +8,8 @@ author: Michael Francis
 author-image: https://avatars0.githubusercontent.com/u/4574480?s=460&v=4
 author-bio: First Year Computer Science Masters Student at Rochester Institute of Technology
 author-email: maf1144@rit.edu
+image: https://assets.csh.rit.edu/pubsite/projects/game-night.png
+image-sm: https://assets.csh.rit.edu/pubsite/projects/game-night.png
 author-social:
     github: https://github.com/mfrancis95
     linkedin: https://www.linkedin.com/in/mfrancis95/
