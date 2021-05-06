@@ -29,6 +29,10 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+    - uses: actions/upload-artifact@master
+      with:
+        name: site
+        path: _site
     - name: Run build
       run: bundle exec jekyll build
     - uses: actions/checkout@v2
@@ -36,6 +40,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - uses: actions/download-artifact@master
+      with:
+        name: site
+        path: _site
     - run: npm install
     - run: npm install -g firebase-tools
     - run: firebase deploy --token ${{ secrets.FirebaseToken }} --non-interactive
