@@ -4,9 +4,7 @@
   "description": "The public facing website for [Rochester Institute of Technology](https://rit.edu/)'s [Computer Science House](https://csh.rit.edu).",
   "main": "_site/index.html",
   "dependencies": {},
-  "devDependencies": {
-    "lighthousebot": "git+https://github.com/ebidel/lighthousebot.git"
-  },
+  "devDependencies": {},
   "scripts": {
     "lh": "lighthousebot"
   },
