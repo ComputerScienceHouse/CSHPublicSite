@@ -8,8 +8,6 @@
 name: Jekyll Build
 
 on:
-  push:
-    branches: [ develop, master ]
   pull_request:
     branches: [ develop, master ]
 
@@ -47,4 +45,12 @@ jobs:
     - run: npm install
     - run: npm install -g firebase-tools
     - run: firebase deploy --token ${{ secrets.FirebaseToken }} --non-interactive
-    - run: npm run lh --perf=85 --a11y=85 --bp=85 --seo=85 https://csh-public-site.web.app
+    - uses: actions/checkout@v2
+    - name: Audit URLs using Lighthouse
+      uses: treosh/lighthouse-ci-action@v7
+      with:
+        urls: https://csh-public-site.web.app
+        budgetPath: ./budget.json # test performance budgets
+        uploadArtifacts: true # save results as an action artifacts
+        temporaryPublicStorage: true # upload lighthouse report to the temporary storage
+
