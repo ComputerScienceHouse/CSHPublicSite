@@ -14,5 +14,6 @@ jobs:
         uses: treosh/lighthouse-ci-action@v7
         with:
           urls: https://wwwtest.csh.rit.edu
+          budgetPath: ./budget.json
           uploadArtifacts: true
           temporaryPublicStorage: true
