@@ -5,9 +5,7 @@
   "main": "_site/index.html",
   "dependencies": {},
   "devDependencies": {},
-  "scripts": {
-    "lh": "lighthousebot"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ComputerScienceHouse/CSHPublicSite.git"
