@@ -27,14 +27,14 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run build
+    - name: Run jekyll build
       run: bundle exec jekyll build
     - uses: actions/upload-artifact@master
       with:
         name: site
         path: _site
     - uses: actions/checkout@v2
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Setup Node
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
@@ -46,7 +46,7 @@ jobs:
     - run: npm install -g firebase-tools
     - run: firebase deploy --token ${{ secrets.FirebaseToken }} --non-interactive
     - uses: actions/checkout@v2
-    - name: Audit URLs using Lighthouse
+    - name: Audit PR using Lighthouse
       uses: treosh/lighthouse-ci-action@v7
       with:
         urls: https://csh-public-site.web.app
