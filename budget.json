@@ -1,14 +1,14 @@
 [
   {
     "path": "/*",
-    "resourceSizes": [
+    "timings": [
       {
-        "resourceType": "document",
-        "budget": 18
+        "metric": "interactive",
+        "budget": 5000
       },
       {
-        "resourceType": "total",
-        "budget": 200
+        "metric": "first-meaningful-paint",
+        "budget": 3000
       }
     ]
   }
