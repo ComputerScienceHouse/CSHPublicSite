@@ -27,8 +27,8 @@ GEM
       pathutil (~> 0.9)
       rouge (>= 1.7, < 4)
       safe_yaml (~> 1.0)
-    jekyll-feed (0.10.0)
-      jekyll (~> 3.3)
+    jekyll-feed (0.15.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-regex-replace (1.1.0)
     jekyll-sass-converter (1.5.2)
       sass (~> 3.4)
@@ -68,7 +68,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (~> 3.8.4)
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.15)
   jekyll-regex-replace
   liquid-md5
   minima (~> 2.5)
