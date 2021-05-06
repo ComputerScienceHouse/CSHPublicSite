@@ -29,5 +29,14 @@ jobs:
       with:
         ruby-version: ${{ matrix.ruby-version }}
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run tests
+    - name: Run build
       run: bundle exec jekyll build
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install
+    - run: npm install -g firebase-tools
+    - run: firebase deploy --token ${{ secrets.FirebaseToken }} --non-interactive
+    - run: npm run lh --perf=85 --a11y=85 --bp=85 --seo=85 https://csh-public-site.web.app
