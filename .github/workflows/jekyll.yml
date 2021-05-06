@@ -12,13 +12,12 @@ on:
     branches: [ develop, master ]
 
 jobs:
-  test:
+  jekyll-build:
 
     runs-on: ubuntu-latest
     strategy:
       matrix:
         ruby-version: ['2.6', '2.7']
-        node-version: ['14']
 
     steps:
     - uses: actions/checkout@v2
@@ -29,28 +28,4 @@ jobs:
         bundler-cache: true # runs 'bundle install' and caches installed gems automatically
     - name: Run jekyll build
       run: bundle exec jekyll build
-    - uses: actions/upload-artifact@master
-      with:
-        name: site
-        path: _site
-    - uses: actions/checkout@v2
-    - name: Setup Node
-      uses: actions/setup-node@v1
-      with:
-        node-version: ${{ matrix.node-version }}
-    - uses: actions/download-artifact@master
-      with:
-        name: site
-        path: _site
-    - run: npm install
-    - run: npm install -g firebase-tools
-    - run: firebase deploy --token ${{ secrets.FirebaseToken }} --non-interactive
-    - uses: actions/checkout@v2
-    - name: Audit PR using Lighthouse
-      uses: treosh/lighthouse-ci-action@v7
-      with:
-        urls: https://csh-public-site.web.app
-        budgetPath: ./budget.json # test performance budgets
-        uploadArtifacts: true # save results as an action artifacts
-        temporaryPublicStorage: true # upload lighthouse report to the temporary storage
 
