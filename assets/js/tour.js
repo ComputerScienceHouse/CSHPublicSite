@@ -29,20 +29,10 @@ const content = {
         'photos': ['https://assets.csh.rit.edu/pubsite/tour/research/1', 'https://assets.csh.rit.edu/pubsite/tour/research/2', 'https://assets.csh.rit.edu/pubsite/tour/research/3', 'https://assets.csh.rit.edu/pubsite/tour/research/4'],
         'description': 'The Research Room is CSH\'s workshop. It houses our two 3D Printers, as well as the tools and materials for members\' electronics projects.',
     },
-    'project-room': {
-        'title': 'Project Room',
-        'photos': ['https://assets.csh.rit.edu/pubsite/tour/project/1', 'https://assets.csh.rit.edu/pubsite/tour/project/2'],
-        'description': 'The Project Room is CSH\'s own custom woodshop. It provides the tools and resources necessary for members to complete any project they can imagine.',
-    },
     'library': {
         'title': 'Library',
         'photos': ['https://assets.csh.rit.edu/pubsite/tour/library/1', 'https://assets.csh.rit.edu/pubsite/tour/library/2'],
         'description': 'The Library is CSH\'s multi-function archive and arcade. It serves as a storage place for all of our historical records and keepsakes as well as a variety of arcade machines, both vintage and custom-built.',
-    },
-    'conference-room': {
-        'title': 'Conference Room',
-        'photos': ['https://placehold.it/1203x803', 'https://placehold.it/1203x803'],
-        'description': 'The Conference Room is ideal for group assignments. Not only is it often the quietest room on floor but it sports multiple white boards as well as a large conference table and couches.',
     },
 };
 
