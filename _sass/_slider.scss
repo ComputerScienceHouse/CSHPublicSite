@@ -1,14 +1,36 @@
+$carousel-scroll-down-button-font-size-larger: 2rem;
+$carousel-scroll-down-button-font-size-smaller: 1.25rem; 
+
 #slider {
     width: 100%;
     margin-bottom: 0;
     height: auto;
-    max-height: 80vh;
     overflow-y: hidden;
     & img {
         width: 100%;
     }
     background: $gray;
 }
+
+#carousel-scroll-down-button:before {
+    content: 'ᐯ';
+    font-size: $carousel-scroll-down-button-font-size-larger;
+    font-weight: bold;
+    text-shadow:0px 0px 10px black, 0px 0px 10px black;
+    @media screen and (max-width: 600px){
+        font-size: $carousel-scroll-down-button-font-size-smaller; 
+    }
+}
+
+#carousel-scroll-down-button {
+    position: absolute;    
+    z-index: 98;
+    left: 50vw;
+    right: 0;
+    width: auto;
+    height: auto;
+}
+
 .slick-prev {
     left: 10px;
     z-index: 2;
