@@ -41,6 +41,12 @@ img.rounded,
   box-shadow: 0 2px 15px darken($gray, 20%);
 }
 
+.card-header {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 img.center-vertically {
   width: 80%;
   height: auto;
