@@ -1,5 +1,5 @@
-$carousel-scroll-down-button-font-size-larger: 2rem;
-$carousel-scroll-down-button-font-size-smaller: 1.25rem; 
+$carousel-scroll-down-button-font-size-larger: 2.5rem;
+$carousel-scroll-down-button-font-size-smaller: 1.75rem; 
 
 #slider {
     width: 100%;
@@ -13,7 +13,7 @@ $carousel-scroll-down-button-font-size-smaller: 1.25rem;
 }
 
 #carousel-scroll-down-button:before {
-    content: 'ᐯ';
+    content: 'ˬ';
     font-size: $carousel-scroll-down-button-font-size-larger;
     font-weight: bold;
     text-shadow:0px 0px 10px black, 0px 0px 10px black;
