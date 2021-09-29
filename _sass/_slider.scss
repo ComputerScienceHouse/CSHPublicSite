@@ -1,5 +1,7 @@
-$carousel-scroll-down-button-font-size-larger: 2.5rem;
-$carousel-scroll-down-button-font-size-smaller: 1.75rem; 
+$carousel-breakpoint: 600px;
+
+$carousel-scroll-down-button-size-larger: 50px;
+$carousel-scroll-down-button-size-smaller: 25px; 
 
 #slider {
     width: 100%;
@@ -12,16 +14,6 @@ $carousel-scroll-down-button-font-size-smaller: 1.75rem;
     background: $gray;
 }
 
-#carousel-scroll-down-button:before {
-    content: 'ˬ';
-    font-size: $carousel-scroll-down-button-font-size-larger;
-    font-weight: bold;
-    text-shadow:0px 0px 10px black, 0px 0px 10px black;
-    @media screen and (max-width: 600px){
-        font-size: $carousel-scroll-down-button-font-size-smaller; 
-    }
-}
-
 #carousel-scroll-down-button {
     position: absolute;    
     z-index: 98;
@@ -29,8 +21,28 @@ $carousel-scroll-down-button-font-size-smaller: 1.75rem;
     right: 0;
     width: auto;
     height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
+#carousel-scroll-down-button:active, #carousel-scroll-down-button:focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+#carousel-scroll-down-button > svg {
+    max-width: $carousel-scroll-down-button-size-larger;
+    height: auto;
+    width: $carousel-scroll-down-button-size-larger;
+    
+}
+@media screen and (max-width: $carousel-breakpoint) {
+    #carousel-scroll-down-button > svg {
+        max-width: $carousel-scroll-down-button-size-smaller;
+    }
+}
 .slick-prev {
     left: 10px;
     z-index: 2;

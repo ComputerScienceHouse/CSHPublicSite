@@ -1,5 +1,5 @@
 const SCROLL_ANIMATION_DURATION = 1000;
-const CAROUSEL_SCROLL_DOWN_BUTTON_OFFSET = {X: -7, Y: -45};
+const CAROUSEL_SCROLL_DOWN_BUTTON_OFFSET = {X: -5, Y: -25};
 
 $(document).ready(() => {
     let slider = $("#slider");
@@ -22,8 +22,8 @@ $(document).ready(() => {
         carousel_scroll_down_button.blur();
     });
 
-    // Position carousel scroll-down button
-    $(window).on("scroll",  () => {
+    // Carousel arrow positioning function
+    let recalculate_arrow_position = () => {
         let sliderBottom = slider.height() + slider.offset().top;
         let windowBottom = $(window).scrollTop() + $(window).height();
         if ($(window).scrollTop() > sliderBottom) {
@@ -36,6 +36,9 @@ $(document).ready(() => {
             }
             carousel_scroll_down_button.css("visibility", "visible");
         }
-    }).scroll();
-    $(window).on("load resize focus blur",()=>$(window).scroll());
+    }
+
+    // Position carousel scroll-down button
+    $(window).on("scroll load resize focus blur", recalculate_arrow_position);
+    recalculate_arrow_position();
 });
