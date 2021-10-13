@@ -3,6 +3,7 @@ const CAROUSEL_SCROLL_DOWN_BUTTON_OFFSET = {X: -5, Y: -25};
 
 $(document).ready(() => {
     let slider = $("#slider");
+    if(slider === null) return;
     if (slider.length) {
         slider.slick({
             dots: true,
@@ -40,5 +41,15 @@ $(document).ready(() => {
 
     // Position carousel scroll-down button
     $(window).on("scroll load resize focus blur", recalculate_arrow_position);
+    // Set interval (necessary for ensuring positioning when resize events don't trigger properly)
+    $(window).on("resize", () => {
+        const maxLoops = 10;
+        let loops = 0;
+        let tempInterval = setInterval(() => {
+            if(loops >= maxLoops) clearInterval(tempInterval);
+            recalculate_arrow_position();
+            loops++;
+        }, 100);
+    });
     recalculate_arrow_position();
 });
