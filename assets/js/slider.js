@@ -3,7 +3,7 @@ const CAROUSEL_SCROLL_DOWN_BUTTON_OFFSET = {X: -5, Y: -25};
 
 $(document).ready(() => {
     let slider = $("#slider");
-    if(slider === null) return;
+    if(slider.length === 0) return;
     if (slider.length) {
         slider.slick({
             dots: true,
@@ -15,6 +15,7 @@ $(document).ready(() => {
     }
     // Setup carousel scroll-down button click event
     let carousel_scroll_down_button = $("#carousel-scroll-down-button");
+    if(carousel_scroll_down_button.length === 0) return;
     let scrollTopOffset = 1;
     carousel_scroll_down_button.on("click", () => {
         let calculateFinalPosition = () => slider.find("img").height() + scrollTopOffset - $("nav").outerHeight();
