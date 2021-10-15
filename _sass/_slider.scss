@@ -34,9 +34,10 @@ $carousel-scroll-down-button-size-smaller: 25px;
 
 #carousel-scroll-down-button > svg {
     max-width: $carousel-scroll-down-button-size-larger;
-    height: auto;
     width: $carousel-scroll-down-button-size-larger;
-    
+    height: auto;
+    -webkit-filter: drop-shadow(0px 0px 2px black);
+    filter: drop-shadow(0px 0px 2px black);
 }
 @media screen and (max-width: $carousel-breakpoint) {
     #carousel-scroll-down-button > svg {
