@@ -1,13 +1,48 @@
+$carousel-breakpoint: 600px;
+
+$carousel-scroll-down-button-size-larger: 50px;
+$carousel-scroll-down-button-size-smaller: 25px; 
+
 #slider {
     width: 100%;
     margin-bottom: 0;
     height: auto;
-    max-height: 80vh;
     overflow-y: hidden;
     & img {
         width: 100%;
     }
     background: $gray;
+}
+
+#carousel-scroll-down-button {
+    position: absolute;    
+    z-index: 98;
+    left: 50vw;
+    right: 0;
+    width: auto;
+    height: auto;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+#carousel-scroll-down-button:active, #carousel-scroll-down-button:focus {
+  outline: 0;
+  -moz-outline-style: none;
+}
+
+#carousel-scroll-down-button > svg {
+    max-width: $carousel-scroll-down-button-size-larger;
+    width: $carousel-scroll-down-button-size-larger;
+    height: auto;
+    -webkit-filter: drop-shadow(0px 0px 2px black);
+    filter: drop-shadow(0px 0px 2px black);
+}
+@media screen and (max-width: $carousel-breakpoint) {
+    #carousel-scroll-down-button > svg {
+        max-width: $carousel-scroll-down-button-size-smaller;
+    }
 }
 .slick-prev {
     left: 10px;
