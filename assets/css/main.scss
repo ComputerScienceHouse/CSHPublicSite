@@ -15,6 +15,10 @@ body {
   background: white;
 }
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
 /* ------------------------ Basic column definitions ------------------------ */
 .col-1 {width: 8.33%;}
@@ -248,10 +252,7 @@ margin: auto;
   #homepage-sponsors img {
     width: 100%;
   }  
-  .top-banner-section {
-    // !WHY DOESNT THIS WORK ???
-    grid-template-rows: 500px;
- }
+
 
 @media screen and (max-width: 992px) {
 
@@ -288,8 +289,7 @@ margin: auto;
 .top-banner-section {
   display: grid;
   grid-template-columns: 1fr;
-  // ! I WOULD LIKE THIS TO BE SCALED BUT MEDIA QUERIES DONT WORK
-  // TODO: Handle this height differently
+
   grid-template-rows: 500px; /*This is the part that changes the height of the banner image*/
   grid-column-gap: 0px;
   grid-row-gap: 0px;
