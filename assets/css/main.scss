@@ -45,6 +45,7 @@ html, body {
   align-items: center;
 }
 
+
 .right-align {
   display: flex;
   justify-content: right;
@@ -159,7 +160,7 @@ margin: auto;
  }
 
  .stat_tag {
-   margin: 0.7em;
+   margin: 0.2em;
  }
  
  .stat_card {
@@ -185,18 +186,19 @@ margin: auto;
       opacity: 0.75;
   }
   
+
   #promo_container {
     display: flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
     flex-wrap: wrap;
-    justify-content: right;
+    justify-content: left;
   }
   #promo_text {
     font-size: 2.6em; 
     color: white; 
     font-family: 'Courier New', Courier, monospace; 
     font-weight: lighter; 
-    padding-right: 2em;
+    padding-right: 5%;
     text-decoration: none;
   }
 
@@ -207,6 +209,14 @@ margin: auto;
   #promo_text a:hover {
     color: #b0197e;
   }
+#promo_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: larger;
+}
+
 
 .joinus {
   color: white;
@@ -215,6 +225,12 @@ margin: auto;
 
 .joinus:hover {
   color: #b0197e;
+}
+
+#promo_logo {
+  height: 500px;
+  // width: 40%;
+  // max-width: 40%;
 }
 
 
@@ -252,7 +268,10 @@ margin: auto;
   #homepage-sponsors img {
     width: 100%;
   }  
-
+  .top-banner-section {
+    grid-template-rows: 400px;
+  }
+ }
 
 @media screen and (max-width: 992px) {
 
@@ -273,6 +292,9 @@ margin: auto;
   #promo_text {
     font-size: 1.6em;
   }
+  .top-banner-section {
+    grid-template-rows: 500px;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -289,8 +311,7 @@ margin: auto;
 .top-banner-section {
   display: grid;
   grid-template-columns: 1fr;
-
-  grid-template-rows: 500px; /*This is the part that changes the height of the banner image*/
+  grid-template-rows: 700px; /*This is the part that changes the height of the banner image*/
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   align-content: center;
@@ -386,7 +407,7 @@ margin: auto;
   .banner-btn-item:visited {
     text-decoration: none;
   }
- }
+ 
 
 $csh-pink: #b0197e;
 $blue: #404b69;
