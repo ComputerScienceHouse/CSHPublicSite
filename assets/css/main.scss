@@ -289,6 +289,12 @@ margin: auto;
   }
  }
 
+@media screen and (max-width:800px) {
+  .dual_container_item {
+    font-size: 0.5em
+  }
+}
+
 @media screen and (max-width: 992px) {
 
   .left_offset {
@@ -311,13 +317,24 @@ margin: auto;
   .top-banner-section {
     grid-template-rows: 500px;
   }
+  .dual_container_item {
+    font-size: 0.8em;
+  }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .dual_container_item {
     font-size: 0.9em;
   }
 }
+
+
+@media screen and (min-width: 3000px) {
+  .dual_container_item {
+    font-size: 0.8em;
+  }
+}
+
 
 /* -------------------- CSS For the top hero image setup -------------------- */
 /* Code is open for use and is cited below and in the HTML.  */
