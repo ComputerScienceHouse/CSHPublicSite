@@ -233,6 +233,11 @@ margin: auto;
   // max-width: 40%;
 }
 
+#bottom_image {
+  display:grid;
+  grid-template-columns: 50% 50%;
+}
+
 
  /* !-------------------------------------------------------------------------- */
  /* !                             My Media Queries                              */
@@ -278,6 +283,9 @@ margin: auto;
   }
   #promo_logo {
     max-width: 50%;
+  }
+  #promo_text {
+    font-size: 1em;
   }
  }
 
@@ -506,5 +514,3 @@ a.btn {
 @import "insights";
 @import "footer";
 @import "hackathon";
-@import "variables";
-@import "card";
