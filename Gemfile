@@ -32,3 +32,7 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 
 gem "rake", "~> 12.3"
+
+gem "bootstrap", "~> 5.1"
+
+gem "bootstrap-sass", "~> 3.4"

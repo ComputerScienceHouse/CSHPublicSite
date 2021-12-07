@@ -5,7 +5,6 @@
 
 // ! MY CSS. MOVE THIS AROUND LATER
 
-
 body {
   width: 100%;
   height: 100%;
@@ -173,7 +172,7 @@ margin: auto;
     font-weight: 600;
  }
 
- #homepage-sponsors img {
+ #my-homepage-sponsors img {
       margin: 15px 0;
       width: 15%;
       border-radius: 8px;
@@ -182,7 +181,7 @@ margin: auto;
       transition: 0.3s opacity;
 
   }
-#homepage-sponsors img:hover {
+#my-homepage-sponsors img:hover {
       opacity: 0.75;
   }
   
@@ -228,7 +227,8 @@ margin: auto;
 }
 
 #promo_logo {
-  height: 500px;
+  // height: 500px;
+  max-width: 50%;
   // width: 40%;
   // max-width: 40%;
 }
@@ -237,6 +237,11 @@ margin: auto;
  /* !-------------------------------------------------------------------------- */
  /* !                             My Media Queries                              */
  /* !-------------------------------------------------------------------------- */
+@media screen and (max-width: 500) {
+  #promo_logo {
+    width: 100%
+  }
+}
 
  @media screen and (max-width: 600px) {
   .dual_container {
@@ -261,15 +266,18 @@ margin: auto;
   .quad_image {
     display: block;
   }
-  #homepage-sponsors {
+  #my-homepage-sponsors {
     display: grid;
     grid-template-columns: 33% 33% 33%;
   }
-  #homepage-sponsors img {
+  #my-homepage-sponsors img {
     width: 100%;
   }  
   .top-banner-section {
     grid-template-rows: 400px;
+  }
+  #promo_logo {
+    max-width: 50%;
   }
  }
 
@@ -498,4 +506,5 @@ a.btn {
 @import "insights";
 @import "footer";
 @import "hackathon";
- 
+@import "variables";
+@import "card";
