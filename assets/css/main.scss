@@ -338,6 +338,11 @@ margin: auto;
   }
 }
 
+@-moz-document url-prefix() {
+  #twitter_embed {
+    display: none;
+  }
+}
 
 /* -------------------- CSS For the top hero image setup -------------------- */
 /* Code is open for use and is cited below and in the HTML.  */
