@@ -216,6 +216,9 @@ margin: auto;
   font-size: larger;
 }
 
+#stats {
+  background-color: #f4f4f6; 
+}
 
 .joinus {
   color: white;
@@ -242,12 +245,21 @@ margin: auto;
  /* !-------------------------------------------------------------------------- */
  /* !                             My Media Queries                              */
  /* !-------------------------------------------------------------------------- */
-@media screen and (max-width: 500) {
-  #promo_logo {
-    width: 100%
+@media screen and (max-width: 500px) {
+  #promocont {
+    display: none;
   }
   #promo_text {
     font-size: 0.4em;
+    justify-self: center;
+  }
+  #promo_center {
+    width: 90%;
+    margin: auto;
+  }
+  #bottom_image {
+    // ! WHY TF WON'T THIS CENTER
+    justify-content: center;
   }
 }
 
@@ -341,6 +353,9 @@ margin: auto;
 @-moz-document url-prefix() {
   #twitter_embed {
     display: none;
+  }
+  #stats {
+    background-color: #eaeafa;
   }
 }
 
