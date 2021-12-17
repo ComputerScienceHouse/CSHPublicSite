@@ -74,3 +74,14 @@
 .fadeIn-bottom{
   top: 80%;
 }
+
+@media screen and (min-width: 700px) {
+  .content-details{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  .content-overlay{
+    opacity: 1;
+  }
+}
