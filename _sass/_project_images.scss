@@ -2,14 +2,14 @@
   position: relative;
   width: 100%;
   // max-width: 400px;
-  // margin: auto;
+  margin: auto;
   overflow: hidden;
 }
 
-.content content-overlay {
+.content-overlay {
   background: rgba(0,0,0,0.7);
   position: absolute;
-  height: 99%;
+  height: 100%;
   width: 100%;
   left: 0;
   top: 0;
@@ -29,14 +29,17 @@
   width: 100%;
 }
 
+.content-background {
+    background: rgba(0, 0, 0, 0.45);
+}
+
 .content-details {
-  background: rgba(0, 0, 0, 0.45);
   position: absolute;
   text-align: center;
   padding-left: 1em;
   padding-right: 1em;
   width: 100%;
-  height: 100%;
+  // height: 100%;
   top: 50%;
   left: 50%;
   opacity: 0;
@@ -58,11 +61,8 @@
   color: #fff;
   font-weight: 500;
   letter-spacing: 0.15em;
-
-  // ! The margins need to be handled differently. Will probably require some js
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-  // padding: auto;
+  margin-bottom: 0.5rem;
+  padding: auto;
   text-transform: uppercase;
 }
 
@@ -75,7 +75,7 @@
   top: 80%;
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (max-width: 700px) {
   .content-details{
     top: 50%;
     left: 50%;
