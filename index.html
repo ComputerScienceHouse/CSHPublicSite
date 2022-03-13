@@ -3,184 +3,197 @@ layout: default
 active: home
 ---
 
-<div style="top:0;position:absolute;display: inline;">
-<!-- Floating scroll-down button -->
-    <button id="carousel-scroll-down-button"  aria-label="Scroll to the end/bottom of the image carousel">
-         <svg xmlns="http://www.w3.org/2000/svg"
-              viewBox="-20 -20 355 155">
-            <path id="carousel-scroll-down-button-path"
-                    fill="none" stroke="white" stroke-width="25" stroke-linecap="round" opacity=".9"
-                    d="M 0 0 C 0 0 141.4 86.1 141.4 86.1 C 141.4 86.1 282.8 0 282.8 0" />
-         </svg>
-    </button>
+<section class="top-banner-section">
+    <div class="banner-image-div">
+    <img class="banner-image" src="assets/images/lounge.png" alt="A photo of the csh lounge" />
+    </div>
+    <div class="banner-overlay-div"></div>
+    <div class="banner-text-div">
+    <div class="banner-text">
+        <p class="banner-h1-text">Welcome to Computer Science House</p>
+        <p class="banner-btn"><a class="banner-btn-item" href="/about/">Learn more &#8594;</a></p>
+    </div>
+    </div>
+</section>        
+
+
+<h2 style="text-align: center; font-size: 1.4em;">Getting more done <span style="color: #b0197e;">after 2am</span> than most people do all day.</h2>
+
+<!-- Triple image set -->
+<div class="width_capped">
+    <div class="container">
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/">
+            <div class="card-text">
+                <h2 class="card-title">About us</h2>
+            </div>
+            <img class="card-image" src="assets/images/disk.png" />
+            </a>
+        </article>
+        </div>
+
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/projects.html">
+            <div class="card-text">
+                <h2 class="card-title">Our projects</h2>
+            </div>
+            <img class="card-image" src="assets/images/drink.png" />
+            </a>
+        </article>
+        </div>
+
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/tour.html">
+            <div class="card-text">
+                <h2 class="card-title">Visit CSH</h2>
+            </div>
+            <img class="card-image" src="assets/images/project_room.png" />
+            </a>
+        </article>
+        </div>
+    </div>              
 </div>
 
-<div id="slider">
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/welcome_back_large.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/welcome_back_large.jpeg" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/welcome_back_large.jpeg" alt="A group of CSHers standing in front of a lake" />
-        </picture>
-    </div>
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/server_room.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/server_room.jpeg" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/server_room.jpeg" alt="A CSH member stands at a terminal in the CSH server room" />
-        </picture>
-    </div>
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/rock.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/rock.jpeg" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/rock.jpeg" alt="CSHers crowd around a rock painted red with a CSH logo on it in white" />
-        </picture>
-    </div>
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/science_house_2019.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/science_house_2019.jpeg" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/science_house_2019.jpeg" alt="A sign that reads Science House with CSHers in the background. Taken at Fall Camping 2019" />
-        </picture>
-    </div>
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/holiday_dinner_2019.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/holiday_dinner_2019.webp" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/holiday_dinner_2019.webp" alt="CSHers pose for a group photo after Holiday Dinner 2019" />
-        </picture>
-    </div>
-    <div>
-        <picture>
-            <source srcset="https://assets.csh.rit.edu/pubsite/fall_camping_group_2019.webp" type="image/webp" />
-            <source srcset="https://assets.csh.rit.edu/pubsite/fall_camping_group_2019.webp" type="image/jpeg" />
-            <img src="https://assets.csh.rit.edu/pubsite/fall_camping_group_2019.webp" alt="A group of CSHers at Fall Camping 2019" />
-        </picture>
-    </div>
-</div>
-<div class="gray-wrapper">
-    <div class="container spaced" id="homepage-about">
-        <div class="row">
-            <div class="col-12 col-lg-6">
-                <picture>
-                    <source srcset="https://assets.csh.rit.edu/pubsite/about_image.webp" type="image/webp" />
-                    <source srcset="https://assets.csh.rit.edu/pubsite/about_image.jpeg" type="image/jpeg" />
-                    <img class="rounded" src="https://assets.csh.rit.edu/pubsite/about_image.jpeg" alt="A group of CSHers at our annual camping trip">
-                </picture>
-            </div>
-            <div class="col-12 col-lg-6">
-                <p>Since 1976, <strong>Computer Science House</strong> has provided a revolutionary living and learning environment for its members. With unique facilities, an emphasis on hands-on learning, and a strong social atmosphere, CSH helps its members grow as professionals and more.</p>
-                <a class="btn btn-primary" href="/about/">More about CSH</a>
-            </div>
-        </div>
-    </div>
+<div  style="background-color: #eaeafa;">
+    <div class="width_capped">
+        <div class="dual_container">
+            <p class="dual_container_item" id="intro_blurb">Since 1976, Computer Science House has 
+                provided a revolutionary living and learning 
+                environment for its members. With unique 
+                facilities, an emphasis on hands-on learning, 
+                and a strong social atmosphere, CSH helps its 
+                members grow as professionals and more.</p>
+                <!-- TODO: Make the thing below a carousel with older group pictures -->
+            <img class="dual_container_item" src="assets/images/welcome_back_large.webp" alt="CSH stands together on a grass field"/>
+        </div>                
+    </div>                
 </div>
 
-<div class="container spaced" id="post-list">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="header">Recent posts</h2>
-        </div>
-        {% for post in site.posts limit:2 %}
-            {% include post.html post=post %}
-        {% endfor %}
-        <div class="col-12">
-            <a class="btn btn-primary" href="/blog/">More blog posts</a>
+<!-- Projects tab -->
+<h3 class="left_offset" style="padding-top: 0.6em;">Things we're working on ...</h3>
+<div class="quad_image">
+    <div class="content">
+        
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/images/server.png" style="width: 100%;" alt="A picture of CSH's server racks"/>
+            <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Server room upgrade</h3>
+              <p>Bringing our servers up to date.</p>
+		<!-- <p>Done in collaboration with wayfair</p> -->
+            </div>
+        
+    </div>
+    <div class="content">
+        
+            <div class="content-overlay"></div>
+            <img class="content-image" src="assets/images/TUNES.png" style="width: 100%;" alt="TUNES, an old jukebox that's being made digital"/>
+            <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">TUNES</h3>
+                <p>Modernizing a jukebox</p>
+            </div>
+       
+    </div>
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="assets/images/infosys.png" style="width: 100%;" alt="A LED matrix that makes up CSH's Infosys"/>
+        <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Infosys</h3>
+            <p>A legacy CSH project that is being modernized.</p>
         </div>
     </div>
-</div>
-
-<div class="gray-wrapper">
-    <div class="container spaced" id="homepage-projects">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="header">Things we've done</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <p>Personal projects are a big part of CSH culture. Some of our biggest include Schedule Maker, CSH Arcade, Drink, and HAROLD.</p>
-                <a class="btn btn-primary" href="/about/projects.html">More projects</a>
-            </div>
-            <div class="col-12 col-lg-8 images">
-                <div class="row">
-                    <div class="col-3">
-                        <a href="https://schedule.csh.rit.edu/" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.jpg" alt="The logo for CSH Schedule Maker" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <picture>
-                            <source srcset="https://assets.csh.rit.edu/pubsite/projects/arcade.webp" type="image/webp" />
-                            <source srcset="https://assets.csh.rit.edu/pubsite/projects/arcade.jpg" type="image/jpeg" />
-                            <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/arcade.jpg" alt="Two custom arcade machines in the CSH library" />
-                        </picture>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://github.com/ramzallan/tonic" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/drink.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/drink.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/drink.jpg" alt="Two of CSH's networked vending machines, Drink and Snack.">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://github.com/nfatkhiyev/Harold" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/harold.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/harold.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/harold.jpg" alt="Harold, a box with a sensor on it, that plays members' music" />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="assets/images/letmein.png" style="width: 100%;" alt="A raspberry pi and pencil sharpener on the wall, CSH's letmein system"/>
+        <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Letmein</h3>
+            <p>A CSH project that is being modernized.</p>
         </div>
     </div>
 </div>
 
-<div class="container spaced" id="homepage-sponsors">
-    <div class="row">
-        <div class="col-12">
-            <a href="/about/sponsors.html">
-                <h2 class="header">Sponsors</h2>
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-1">
-            <a href="https://rit.edu/">
-            <img src="https://assets.csh.rit.edu/pubsite/sponsors/ritLarge.png">
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-2">
-            <a href="https://google.com/">
-                <img src="https://assets.csh.rit.edu/pubsite/sponsors/google.png">
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-3">
-            <a href="https://microsoft.com/">
-            <img src="https://assets.csh.rit.edu/pubsite/sponsors/microsoft.png">
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-4">
-            <a href="https://slack.com/">
-            <img src="https://assets.csh.rit.edu/pubsite/sponsors/slack.png">
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-5">
-            <a href="https://hp.com">
-            <img src="https://assets.csh.rit.edu/pubsite/sponsors/hp.png">
-            </a>
-        </div>
-        <div class="col-4 col-lg-2" id="sponsor-6">
-            <a href="https://oracle.com/">
-            <img src="https://assets.csh.rit.edu/pubsite/sponsors/oracle.png">
-            </a>
-        </div>
+<div  style="padding-top: 0.5em; padding-bottom: 0.5em; margin-bottom: 0%;" id="stats">
+    <h3 class="left_offset" style="padding-top: 0.6em; margin-top: 0em;">Some facts about us ...</h3>
+    <div class="width_capped">
+        
+        <div class="container_stat">
+            <div class="stat_card">
+                <p class="stat_big">72</p>
+                <p class="stat_tag">Active Members</p>
+                <p class="stat_desc">Who make up the heart of our community. </p>
+            </div>
+            <div class="stat_card">
+                <p class="stat_big">3<sup style="font-size: 0.5em;">rd</sup></p>
+                <p class="stat_tag">Greatest Hack</p>
+                <p class="stat_desc">Of all time (as ranked by PCMAG in 2008) was the creation of CSH's internet-connected drink machines.</p>
+            </div>
+            <div class="stat_card">
+                <p class="stat_big">1000+</p>
+                <p class="stat_tag">Alumni</p>
+                <p class="stat_desc">Provide current CSH members with a large network of knowledge and professional connections. </p>
+            </div>
+            <div class="stat_card">
+                <p class="stat_big">25</p>
+                <p class="stat_tag">Rooms on-floor</p>
+                <p class="stat_desc">In RIT's Nathaniel Rochester Hall, a hub of campus life.</p>
+            </div>
+            <div class="stat_card">
+                <p class="stat_big">9</p>
+                <p class="stat_tag">Special-purpose rooms</p>
+                <p class="stat_desc">That provide members with spaces to work on projects, hang out, or study. </p>
+            </div>
+        </div>                     
     </div>
 </div>
+
+<!-- Twitter embed -->
+
+<div style="background-color: #b0197e;" id="twitter_embed">
+    <h3 style="color: white; padding-top: 1em; margin-top: 0em;" class="left_offset">See what we've been up to ...</h3>
+    <div class="centered" style="padding-bottom: 1em; max-width: 90%; margin: auto;">
+        <a class="twitter-timeline" data-width="600" data-height="800" href="https://twitter.com/RITCSH?ref_src=twsrc%5Etfw" alt="Twitter feed. Please disable Firefox strict blocking to see this element. ">Tweets by RITCSH</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+</div>
+
+<!-- Sponsors -->
+
+<div class="width-capped" style="background-color: #f4f4f6;">
+    <h3 class="left_offset" style="padding-top: 0.5em; margin-top: 0em; margin-bottom: 0em;">With a special thanks to our sponsors ...</h3>
+    <div class="container" id="my-homepage-sponsors">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/ritLarge.png" alt="RIT logo">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/google.png" alt="Google logo">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/microsoft.png" alt="Microsoft logo">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/slack.png" alt="Slack logo">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/hp.png" alt="HP Logo">
+        <img src="https://assets.csh.rit.edu/pubsite/sponsors/oracle.png" alt="Oracle">
+    </div>
+</div>
+
+<!-- Banner above footer -->
+<div style="background-color: #1e1e1e;" id="gt511">
+    <div id="bottom_image">
+        <div id="promocont">
+            <img id="promo_logo"src="assets/images/bottom_banner_square.png"/>
+        </div>
+        <div id="promo_center"> 
+            <h3 id="promo_text">Interested?<br>
+                <a href="/membership/intro-process.html" class="joinus">[Join us]</a>
+            </h3>                        
+        </div>  
+    </div>
+</div>  
+
+<div style="background-color: #1e1e1e;" id="lt511">
+  <div id="promo_center"> 
+    <h3 id="promo_text">Interested?<br>
+      <a href="/membership/intro-process.html" class="joinus">[Join us]</a>
+    </h3>                        
+  </div> 
+</div>
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
