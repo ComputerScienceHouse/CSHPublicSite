@@ -51,15 +51,12 @@ $browser-context: 16;
 }
 
 .card {
-  // background-color: $black;
   background-image: linear-gradient(0deg, $csh-blue 0%, $csh-pink 100%);  
   width: $card-size;
   height: $card-size;
   margin: $p-m-default;
-  // border-radius: 8px;
   position: relative;
   overflow: hidden;
-  // backface-visibility: hidden;
 }
 
 .card-image {
@@ -115,12 +112,10 @@ $browser-context: 16;
   &:hover {
     .card-text {
       background-color: rgba($black, .86);
-      // color: $black;
     }
     .card-meta {
       &:before {
         transform: translate(0,0);
-        // background-color: $black;
         opacity: 1;
         @include transition(all 200ms $easeOutQuad);
       }
