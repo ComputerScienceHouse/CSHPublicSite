@@ -41,6 +41,19 @@ img.rounded,
   box-shadow: 0 2px 15px darken($gray, 20%);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.quad_image {
+  display:grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
 .card-header {
   white-space: nowrap;
   overflow: hidden;
@@ -79,6 +92,12 @@ a.btn {
     margin-bottom: 1em;
 }
 
+@media screen and (max-width: 600px) {
+  .quad_image {
+    display: block;
+  }
+}
+
 @import "typography";
 @import "nav";
 @import "slider";
@@ -92,3 +111,5 @@ a.btn {
 @import "insights";
 @import "footer";
 @import "hackathon";
+@import "triple_image";
+@import "project_images.scss";

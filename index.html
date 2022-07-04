@@ -59,6 +59,47 @@ active: home
         </picture>
     </div>
 </div>
+
+<h2 style="text-align: center; font-size: 1.4em;">Getting more done <span style="color: #b0197e;">after 2am</span> than most people do all day.</h2>
+
+<!-- Triple image set -->
+<div class="width_capped">
+    <div class="container">
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/">
+            <div class="card-text">
+                <h2 class="card-title">About us</h2>
+            </div>
+            <img class="card-image" src="https://assets.csh.rit.edu/pubsite/disk.webp" />
+            </a>
+        </article>
+        </div>
+
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/projects.html">
+            <div class="card-text">
+                <h2 class="card-title">Our projects</h2>
+            </div>
+            <img class="card-image" src="https://assets.csh.rit.edu/pubsite/drink.webp" />
+            </a>
+        </article>
+        </div>
+
+        <div id="triple_image_wrapper">
+        <article class="card" role="article">
+            <a class="triple_a" href="/about/tour.html">
+            <div class="card-text">
+                <h2 class="card-title">Visit CSH</h2>
+            </div>
+            <img class="card-image" src="https://assets.csh.rit.edu/pubsite/project_room.webp" />
+            </a>
+        </article>
+        </div>
+    </div>              
+</div>
+
 <div class="gray-wrapper">
     <div class="container spaced" id="homepage-about">
         <div class="row">
@@ -77,70 +118,43 @@ active: home
     </div>
 </div>
 
-<div class="container spaced" id="post-list">
-    <div class="row">
-        <div class="col-12">
-            <h2 class="header">Recent posts</h2>
-        </div>
-        {% for post in site.posts limit:2 %}
-            {% include post.html post=post %}
-        {% endfor %}
-        <div class="col-12">
-            <a class="btn btn-primary" href="/blog/">More blog posts</a>
+<h3 class="left_offset" style="padding-top: 0.6em;">Things we're working on ...</h3>
+<div class="quad_image">
+    <div class="content">
+        
+            <div class="content-overlay"></div>
+            <img class="content-image" src="https://assets.csh.rit.edu/pubsite/server.webp" style="width: 100%;" alt="A picture of CSH's server racks"/>
+            <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">Server room upgrade</h3>
+              <p>Bringing our servers up to date.</p>
+		<!-- <p>Done in collaboration with wayfair</p> -->
+            </div>
+        
+    </div>
+    <div class="content">
+        
+            <div class="content-overlay"></div>
+            <img class="content-image" src="https://assets.csh.rit.edu/pubsite/TUNES.webp" style="width: 100%;" alt="TUNES, an old jukebox that's being made digital"/>
+            <div class="content-details fadeIn-bottom">
+                <h3 class="content-title">TUNES</h3>
+                <p>Modernizing a jukebox</p>
+            </div>
+       
+    </div>
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="https://assets.csh.rit.edu/pubsite/infosys.webp" style="width: 100%;" alt="A LED matrix that makes up CSH's Infosys"/>
+        <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Infosys</h3>
+            <p>A legacy CSH project that is being modernized.</p>
         </div>
     </div>
-</div>
-
-<div class="gray-wrapper">
-    <div class="container spaced" id="homepage-projects">
-        <div class="row">
-            <div class="col-12">
-                <h2 class="header">Things we've done</h2>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-lg-4">
-                <p>Personal projects are a big part of CSH culture. Some of our biggest include Schedule Maker, CSH Arcade, Drink, and HAROLD.</p>
-                <a class="btn btn-primary" href="/about/projects.html">More projects</a>
-            </div>
-            <div class="col-12 col-lg-8 images">
-                <div class="row">
-                    <div class="col-3">
-                        <a href="https://schedule.csh.rit.edu/" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/schedulemaker.jpg" alt="The logo for CSH Schedule Maker" />
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <picture>
-                            <source srcset="https://assets.csh.rit.edu/pubsite/projects/arcade.webp" type="image/webp" />
-                            <source srcset="https://assets.csh.rit.edu/pubsite/projects/arcade.jpg" type="image/jpeg" />
-                            <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/arcade.jpg" alt="Two custom arcade machines in the CSH library" />
-                        </picture>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://github.com/ramzallan/tonic" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/drink.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/drink.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/drink.jpg" alt="Two of CSH's networked vending machines, Drink and Snack.">
-                            </picture>
-                        </a>
-                    </div>
-                    <div class="col-3">
-                        <a href="https://github.com/nfatkhiyev/Harold" target="_blank">
-                            <picture>
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/harold.webp" type="image/webp" />
-                                <source srcset="https://assets.csh.rit.edu/pubsite/projects/harold.jpg" type="image/jpeg" />
-                                <img class="rounded"  src="https://assets.csh.rit.edu/pubsite/projects/harold.jpg" alt="Harold, a box with a sensor on it, that plays members' music" />
-                            </picture>
-                        </a>
-                    </div>
-                </div>
-            </div>
+    <div class="content">
+        <div class="content-overlay"></div>
+        <img class="content-image" src="https://assets.csh.rit.edu/pubsite/letmein.webp" style="width: 100%;" alt="A raspberry pi and pencil sharpener on the wall, CSH's letmein system"/>
+        <div class="content-details fadeIn-bottom">
+            <h3 class="content-title">Letmein</h3>
+            <p>A CSH project that is being modernized.</p>
         </div>
     </div>
 </div>

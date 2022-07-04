@@ -1,0 +1,130 @@
+$card-size: 300px;
+$p-m-default: 20px;
+
+$black: #111;
+$white: #FFF;
+
+$csh-pink: #b0197e;
+$csh-blue: #404b69;
+$gray: #f4f4f6;
+
+// Easing Properties
+$easeOutQuad: cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+// PX to EM
+$browser-context: 16;
+
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+// Transition Mixin
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+
+
+.triple_a {
+  @include transition(all 300ms $easeOutQuad);
+  &:hover {
+    @include transition(all 300ms $easeOutQuad);
+  }
+}
+
+#wrapper {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-image: linear-gradient(0deg, $csh-blue 0%, $csh-pink 100%);  
+  width: $card-size;
+  height: $card-size;
+  margin: $p-m-default;
+  position: relative;
+  overflow: hidden;
+}
+
+.card-image {
+  max-width: 100%;
+  width: 100%;
+  height: $card-size;
+  object-fit: cover;
+  transform: translate(0,0);
+  @include transition(all 400ms $easeOutQuad);
+}
+
+.card-meta {
+  font-size: em(11);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  &:before {
+    content: '';
+    height: 1px;
+    width: 30px;
+    background-color: #fff;
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    backface-visibility: hidden;
+    opacity: 0;
+    transform: translate(0,-10px);
+    @include transition(all 200ms $easeOutQuad);
+  }  
+}
+
+.card-text {
+  color: #FFF;
+  // This next line controls the background opacity
+  background-color: rgba($black, .40);
+  position: absolute;
+  padding: $p-m-default;
+  z-index: 10;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  @include transition(all 200ms $easeOutQuad);
+}
+
+.card-title {
+  margin: 8px 0;
+  font-weight: 300;
+  font-size: em(30);
+}
+
+.card a {
+  &:hover {
+    .card-text {
+      background-color: rgba($black, .86);
+    }
+    .card-meta {
+      &:before {
+        transform: translate(0,0);
+        opacity: 1;
+        @include transition(all 200ms $easeOutQuad);
+      }
+    }
+    
+    .card-image {
+      transform: translate(20px,0);
+      @include transition(all 400ms $easeOutQuad);
+    }    
+  }  
+}
+
