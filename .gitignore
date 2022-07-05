@@ -2,6 +2,7 @@ vendor/
 _site
 .sass-cache
 .jekyll-metadata
+.jekyll-cache
 npm-debug.log
 .bundle/
 node_modules/
