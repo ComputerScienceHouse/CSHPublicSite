@@ -1,0 +1,7 @@
+I"ß<h1 id="summary">Summary</h1>
+<p><a href="https://github.com/zcy3071/CapsuleKiller">Capsule Killer</a> is a first-person shooter that I developed to learn more about the skills and 
+processes involved with game development. Upon launching the game, the player will be met with a main menu that allows them to start a game, 
+view the controls, or exit the game. When a player starts a game, they will spawn in the center of the map and enemies will begin spawning 
+at random locations throughout the map every 2-5 seconds. The enemies move towards the player, doing damage upon collision with the player. 
+The player has the ability to run away from and shoot enemies. The goal of the game is to defeat as many enemies as possible.</p>
+:ET

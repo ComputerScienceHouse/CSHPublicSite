@@ -1,0 +1,3 @@
+I"�<h1 id="what-is-it">What Is It?</h1>
+<p>This program, Clādēs Cimicum, (which means ‘Bane of Bugs’ in Latin) is a very small and simple debugger for interprocess debugging. This is slightly different from that of GDB, since GDB actually creates a child process when debugging. Cladēs Cimicum can read the memory of any running process, without having to be run in some special environment beforehand.</p>
+:ET

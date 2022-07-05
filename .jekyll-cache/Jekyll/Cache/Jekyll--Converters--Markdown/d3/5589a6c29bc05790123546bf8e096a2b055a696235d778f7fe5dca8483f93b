@@ -1,0 +1,19 @@
+I"�
+<h2 id="background">Background</h2>
+<p>Computer Science House purchased a robot chasis from one of our members in the Spring semester of 2017. I had worked on previous versions of the CSH H.E.R.O.I.N project and thought I would be able to make significant strides given we now had a stable robot chassis. So, using robot operating system constructs and several new pieces of hardware/sensors, I added mapping functionality to Kudos.</p>
+
+<h2 id="details">Details</h2>
+<p>First, I needed to install a LiDAR sensor on the robot. Standard off-the-shelf LiDAR solutions, such as the 16-channel Velodyne puck, start at upwards of $5000. Being a student organization, we needed a more financially sensible solution. I decided on using a replacement LiDAR sensor from the NeatoXV robot vacuum cleaner. Once the serial communication between the LiDAR controller board was setup with the Raspberry Pi, ROS development began. The LiDAR scans were “off-boarded” from the robot via the rostopic /laserscan over the network to a VM running on CSH Proxmox. On this VM, a program subscribed to this data and performed an algorithm to simultaneously localize the robot within a map and build the map as the robot moved through its enviornment. A navigation goal could be set for the robot to navigate to, and a path to follow to obtain this goal was computed. From this path, individual robot movements were calculated and streamed to the robot via Computer Science House’s WiFi network. This robot movement was actuated upon by the robot through its move base controller. See the figure below for a drawing of the control topology for Kudos.</p>
+
+<p><img src="http://www.trevorsherrard.com/images/KudosCommProtocol.png" alt="Kudos Control Topology" /></p>
+
+<h2 id="future-iterations">Future Iterations</h2>
+<p>For anyone thinking about working on this project in future student generations, make sure to develop/use a SLAM algorithm that takes its odometry data from encoders. Currently the software setup relies on a fairly consistent LiDAR scan update rate and a large difference between LiDAR scan frames. Unfortunately, most walls are very flat and not very feature-rich. Even more unfortunate, most of CSH is comprised of very flat walls, so Kudos had some difficulty navigating when traveling through long, straight hallways. Kudos has gearboxes that allow for easy install of AndyMark standard encoders.</p>
+
+<h2 id="github-links">GitHub Links</h2>
+<p>Have a look at the project setup and code below!</p>
+
+<p><a href="https://github.com/ComputerScienceHouse/Kudos/tree/master/kudos_csh">Kudos ROS package</a></p>
+
+<p><a href="https://github.com/ComputerScienceHouse/Kudos/tree/master/KudosROS">MoveBase Controller</a></p>
+:ET

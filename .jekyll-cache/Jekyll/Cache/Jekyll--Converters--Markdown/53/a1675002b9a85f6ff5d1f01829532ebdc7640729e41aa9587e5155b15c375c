@@ -1,0 +1,104 @@
+I"]<h1 id="what-is-swiftfall">What is Swiftfall?</h1>
+
+<p>Swiftfall is an API wrapper written in Swift for the API Scryfall.</p>
+
+<p><a href="https://scryfall.com/docs/api">Scryfall</a> is an API which handles information about the card game Magic: The Gathering.</p>
+
+<p>I like Magic the Gathering, but getting tons of information about Magic cards is really annoying, especially if you don’t want to or don’t know how to implement a JSON parser or make requests to a website. Many newer developers would like to combine their passions but it’s not always easy.</p>
+
+<p>Thankfully, <a href="https://github.com/nandascott/Scrython">Scrython</a> does this already, but in Python.</p>
+
+<h3 id="why-swift-was-appealing">Why Swift Was Appealing</h3>
+<ol>
+  <li>Swift’s use of optionals was really appealing. Sometimes you can’t be absolutely sure about whether or not a request has been successful. Optionals allow a developer to handle those situations extremely safely.</li>
+  <li>Swift has a JSON decoder built in and it is appealing to have no dependencies.</li>
+  <li>iOS, Apple TV, Apple Watch, and MacOS development are all far easier in Swift</li>
+  <li>Swift is new, and it is fun to do things never done before</li>
+</ol>
+
+<h1 id="how-do-you-use-swiftfall">How do you use Swiftfall?</h1>
+<p>First, create an executable package. The executable includes a Hello World function by default.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ mkdir MyExecutable
+$ cd MyExecutable
+$ swift package init --type executable
+$ swift build
+$ swift run
+Hello, World!
+</code></pre></div></div>
+
+<p>Next,</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ swift package generate-xcodeproj
+</code></pre></div></div>
+
+<p>This creates the correct package files so you can add dependencies.</p>
+
+<p>Then, add Swiftfall as a dependency for the executable.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import PackageDescription
+
+let package = Package(
+    name: "MyExecutable",
+    dependencies: [
+        // Dependencies declare other packages that this package depends on.
+        // .package(url: /* package url */, from: "1.0.0"),
+        .package(url:"https://github.com/bmbowdish/Swiftfall.git", from: "1.2.0")
+    ],
+    targets: [
+        // Targets are the basic building blocks of a package. A target can define a module or a test suite.
+        // Targets can depend on other targets in this package, and on products in packages which this package depends on.
+        .target(
+            name: "MyExecutable",
+            dependencies: ["Swiftfall"]),
+    ]
+)
+</code></pre></div></div>
+
+<p>Then, run:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ swift package generate-xcodeproj
+</code></pre></div></div>
+
+<p>I believe this is because you need to pull down the new dependencies from the source.</p>
+
+<p>Now you’re ready to use Swiftfall!</p>
+
+<h1 id="actually-using-swiftfall">Actually Using Swiftfall</h1>
+
+<h2 id="getting-a-card">Getting a Card</h2>
+<p><code class="language-plaintext highlighter-rouge">Swiftfall.getCard(fuzzy:String) -&gt; Card? _(Fuzzy search)_</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">Swiftfall.getCard(exact:String) -&gt; Card? _(Exact search)_</code></p>
+
+<p><code class="language-plaintext highlighter-rouge">Swiftfall.getRandomCard() -&gt; Card? _(Random Card)_</code></p>
+
+<p>Ex.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>import Swiftfall
+let card = Swiftfall.getCard(exact:"Black Lotus")
+card?.simplePrint()
+</code></pre></div></div>
+
+<p>Out.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Name: Black Lotus
+Cost: {0}
+Type Line: Artifact
+Oracle Text:
+{T}, Sacrifice Black Lotus: Add three mana of any one color to your mana pool.
+</code></pre></div></div>
+
+<h2 id="other-things">Other Things</h2>
+<p>Swiftfall supports more than just cards. Other items you can retrieve include:</p>
+
+<ul>
+  <li>Sets</li>
+  <li>Rulings</li>
+  <li>Ruling Lists</li>
+  <li>Card Lists</li>
+  <li>Set Lists</li>
+</ul>
+
+<p>You can find more information about <a href="https://github.com/bmbowdish/Swiftfall">Swiftfall on GitHub.com</a></p>
+:ET
