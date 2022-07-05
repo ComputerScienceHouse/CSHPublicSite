@@ -12,8 +12,8 @@ RUN bundle install
 COPY . /site/
 RUN bundle exec rake build:production 
 
-FROM nginx:alpine
+FROM docker.io/galenguyer/nginx:1.21.6-alpine-spa
 
 RUN rm -rf /usr/share/nginx/html/*
-COPY --from=builder /site/_site/ /usr/share/nginx/html
+COPY --from=builder /site/_site/ /usr/share/nginx/html/
 
