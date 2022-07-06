@@ -3,9 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
-$csh-pink: #b0197e;
 $blue: #404b69;
 $gray: #f4f4f6;
+$csh-pink: #b0197e;
+
 
 body {
   width: 100%;
@@ -58,7 +59,7 @@ img.rounded,
  }
  
  .stat_big {
-   color: #b0197e;
+   color: $csh-pink;
    font-size: 2.5em;
    font-weight: 600;
    margin: 0%;
@@ -84,7 +85,6 @@ img.rounded,
 }
 
 .card-header {
-  // white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }

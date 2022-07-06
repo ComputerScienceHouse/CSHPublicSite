@@ -32,3 +32,14 @@ h3 {
 .row.spaced {
     margin-top: 2em;
 }
+
+#headline {
+  font-size: 1.4em;
+}
+@media screen and (max-width: 400px) {
+  #headline {
+    font-size: 1.0em;
+    padding-right: 0.4em;
+    padding-left: 0.4em;
+  }
+}
