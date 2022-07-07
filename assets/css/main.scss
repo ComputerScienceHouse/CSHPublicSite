@@ -79,11 +79,6 @@ img.rounded,
     font-weight: 600;
  }
 
-.quad_image {
-  display:grid;
-  grid-template-columns: 25% 25% 25% 25%;
-}
-
 .card-header {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -121,11 +116,27 @@ a.btn {
     margin-bottom: 1em;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 570px) {
   .quad_image {
     display: block;
   }
 }
+
+@media screen and (min-width: 571px) {
+  .quad_image {
+    display:grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quad_image {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }  
+}
+
+
 
 @import "typography";
 @import "nav";

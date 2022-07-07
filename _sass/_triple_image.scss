@@ -108,23 +108,27 @@ article.card {
   font-size: em(30);
 }
 
-.card a {
-  &:hover {
-    .card-text {
-      background-color: rgba($black, .86);
-    }
-    .card-meta {
-      &:before {
-        transform: translate(0,0);
-        opacity: 1;
-        @include transition(all 200ms $easeOutQuad);
+@media screen and (min-width: 800px) {
+  .card a {
+    &:hover {
+      .card-text {
+        background-color: rgba($black, .60);
       }
-    }
-    
-    .card-image {
-      transform: translate(20px,0);
-      @include transition(all 400ms $easeOutQuad);
-    }    
-  }  
+      .card-meta {
+        &:before {
+          transform: translate(0,0);
+          opacity: 1;
+          @include transition(all 200ms $easeOutQuad);
+        }
+      }
+      
+      .card-image {
+        transform: translate(20px,0);
+        @include transition(all 400ms $easeOutQuad);
+      }    
+    }  
+  }
 }
+
+
 
