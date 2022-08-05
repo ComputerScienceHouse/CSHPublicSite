@@ -9,8 +9,8 @@ categories:
     - Mapping
     - Project
 description: Added LiDAR mapping functionality to Computer Science House's floor robot, Kudos.  
-image: https://assets.csh.rit.edu/pubsite/projects/CSH_Map_2.png
-image-sm: https://assets.csh.rit.edu/pubsite/projects/CSH_Map_2.png
+image: /assets/images/projects/CSH_Map_2.png
+image-sm: /assets/images/projects/CSH_Map_2.png
 author: Trevor Sherrard
 author-image: http://www.trevorsherrard.com/images/profile_pics.jpg
 author-bio: Electrical Engineer, roboticist, computer vision enthusiast. I have a strong passion for seeing my software come alive in my projects.
