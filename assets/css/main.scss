@@ -9,16 +9,29 @@ $csh-pink: #b0197e;
 
 
 body {
+  position: relative
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
-}
-
-body {
-  position: relative;
+  overflow: overlay; // For transparent scrollbar
   background: white;
 }
+
+/* Scrollbar (only supported by some browsers) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.2);
+    border: 3px solid transparent;
+    border-radius: 5px;
+}
+
+
 
 .container.spaced {
   padding-top: 50px;
