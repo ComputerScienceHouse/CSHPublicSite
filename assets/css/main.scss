@@ -3,20 +3,39 @@
 # only Main files contain this front matter, not partials.
 ---
 
-$csh-pink: #b0197e;
 $blue: #404b69;
 $gray: #f4f4f6;
+$csh-pink: #b0197e;
+
 
 body {
+  position: relative;
   width: 100%;
   height: 100%;
   padding: 0;
   margin: 0;
+  overflow: overlay; // For transparent scrollbar
+  background: white;
 }
 
-body {
-  position: relative;
-  background: white;
+/* Scrollbar (only supported by some browsers) */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  box-shadow: inset 0px 0px 10px 10px rgba(0,0,0,0.2);
+  border: 3px solid transparent;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+  border: 2px solid transparent;
 }
 
 .container.spaced {
@@ -41,8 +60,44 @@ img.rounded,
   box-shadow: 0 2px 15px darken($gray, 20%);
 }
 
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.container_stat {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+ }
+ 
+ .stat_big {
+   color: $csh-pink;
+   font-size: 2.5em;
+   font-weight: 600;
+   margin: 0%;
+ }
+
+ .stat_tag {
+   margin: 0.2em;
+ }
+ 
+ .stat_card {
+   text-align: center;
+   width: 200px;
+ }
+
+ .stat_desc {
+    font-size: 0.6em;
+    font-weight: 600;
+ }
+
 .card-header {
-  white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -79,6 +134,28 @@ a.btn {
     margin-bottom: 1em;
 }
 
+@media screen and (max-width: 570px) {
+  .quad_image {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 571px) {
+  .quad_image {
+    display:grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .quad_image {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+  }  
+}
+
+
+
 @import "typography";
 @import "nav";
 @import "slider";
@@ -92,3 +169,5 @@ a.btn {
 @import "insights";
 @import "footer";
 @import "hackathon";
+@import "triple_image";
+@import "project_images.scss";
