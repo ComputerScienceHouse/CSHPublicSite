@@ -6,8 +6,8 @@ categories:
     - debugger,c
 description: A small debugger that can read memory from another process.
 author: Collin Tod
-image: /assets/images/projects/cDebugger.png
-image-sm: /assets/images/projects/cDebugger.png
+image: /projects/cDebugger.png
+image-sm: /projects/cDebugger.png
 author-image: https://avatars2.githubusercontent.com/u/9722413?s=400&u=58f02226ffe89fa4f69ad4a7f89f07efb1b72f4f&v=4
 author-bio: First year computer science student at Rochester Institute of Technology
 author-email: squables@csh.rit.edu

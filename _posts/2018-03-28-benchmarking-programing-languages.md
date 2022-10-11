@@ -5,8 +5,8 @@ date: 2018-03-28
 categories: projects
 description: Testing the speed of separating axis theorem based collision detection in Python, Rust, and Kotlin
 author: Joel Eager
-image: /assets/images/projects/benchmarking.png
-image-sm: /assets/images/projects/benchmarking.png
+image: /projects/benchmarking.png
+image-sm: /projects/benchmarking.png
 author-image: https://avatars1.githubusercontent.com/u/14286106?s=460&v=4
 author-bio: A 3rd year CS student at Computer Science House who enjoys messing with Python.
 author-email: joel@csh.rit.edu
