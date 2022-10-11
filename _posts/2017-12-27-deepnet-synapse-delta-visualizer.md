@@ -5,8 +5,8 @@ date: 2017-12-27
 categories:
   - projects
 description: Four Layer Deep-Learning Neural Network with OpenGL Visualization
-image: https://assets.csh.rit.edu/pubsite/projects/neuralNetwork.png
-image-sm: https://assets.csh.rit.edu/pubsite/projects/neuralNetwork.png
+image: /projects/neuralNetwork.png
+image-sm: /projects/neuralNetwork.png
 author: Jacob Potter
 author-image: https://csh.rit.edu/~jpotter/jpotter.jpg
 author-bio: Second year Computer Science major.

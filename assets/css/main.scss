@@ -3,10 +3,10 @@
 # only Main files contain this front matter, not partials.
 ---
 
+$CSHPUBSITE_ASSETS_URL: "{{site.env.CSHPUBSITE_ASSETS_URL}}";
 $blue: #404b69;
 $gray: #f4f4f6;
 $csh-pink: #b0197e;
-
 
 body {
   width: 100%;

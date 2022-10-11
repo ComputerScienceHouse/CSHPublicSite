@@ -5,8 +5,8 @@ date:   2017-11-02 21:25:00
 categories: projects
 description: Audiophiler, a neat python web app for serving music
 author: Stephen Greene
-image: https://assets.csh.rit.edu/pubsite/projects/Audiophiler.png
-image-sm: https://assets.csh.rit.edu/pubsite/projects/Audiophiler.png
+image: /projects/Audiophiler.png
+image-sm: /projects/Audiophiler.png
 author-image: https://avatars0.githubusercontent.com/u/17414243?s=460&v=4
 author-bio: Second Year Computer Science Student at Rochester Institute of Technology and a System Administrator for CSH as well as KGCOE
 author-email: purple@csh.rit.edu

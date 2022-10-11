@@ -5,8 +5,8 @@ date: 2019-11-28
 categories:
   - projects
 description: A display to jumpstart your day!
-image: https://assets.csh.rit.edu/pubsite/projects/Jumpstart.png
-image-sm: https://assets.csh.rit.edu/pubsite/projects/Jumpstart.png
+image: /projects/Jumpstart.png
+image-sm: /projects/Jumpstart.png
 author: Beckett Jenen
 author-image: https://www.csh.rit.edu/~mom/drno/me.jpg
 author-bio: First year Computer Science major.

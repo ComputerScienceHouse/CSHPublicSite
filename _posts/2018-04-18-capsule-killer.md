@@ -5,8 +5,8 @@ date: 2018-04-18
 categories:
   - projects
 description: A first-person shooter developed using Unity and C#.
-image: https://assets.csh.rit.edu/pubsite/projects/capsuleKiller.png
-image-sm: https://assets.csh.rit.edu/pubsite/projects/capsuleKiller.png
+image: /projects/capsuleKiller.png
+image-sm: /projects/capsuleKiller.png
 author: Zack Yenchik
 author-image: https://avatars0.githubusercontent.com/u/34044719?s=460&amp;v=4
 author-bio: First Year Computer Science Student at Rochester Institute of Technology
