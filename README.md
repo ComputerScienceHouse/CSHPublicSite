@@ -14,7 +14,10 @@ This site is written using [Jekyll](https://jekyllrb.com/), a static site genera
 
 #### Instructions
 1. `bundle install`
-2. `bundle exec jekyll serve`
+2. Add necessary environment variables (they MUST be defined!!!):
+	* `export CSHPUBSITE_ASSETS_URL="https://assets.csh.rit.edu/pubsite"`
+	* `export CSHPUBSITE_S3_URL="https://s3.csh.rit.edu"`
+3. `bundle exec jekyll serve`
 
 The site should now serve locally at `localhost:4000`, and auto-build when you change/create files in the repo!
 
