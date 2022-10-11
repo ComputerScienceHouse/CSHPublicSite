@@ -11,22 +11,26 @@ active: blog
         <div class="col">
             <h2 id="details">
                 {% if page.author-image %}
-                <img src="{{ page.author-image }}" />
+                    <img src="{{ page.author-image }}" />
                 {% endif %}
                 {{ page.author }}
 
                 {% for social in page.author-social %}
+                    {% if social[0] != 'website' %}
                     <a class="fab fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noopener"></a>
+                    {% else %}
+                    <a class="fa fa-globe" href="{{ social[1] }}" target="_blank" rel="noopener"></a>
+                    {% endif %}
                 {% endfor %}
                 <span id="date">{{ page.date | date: "%B %-d, %Y" }}</span>
             </h2>
             <hr />
             {% if page.image %}
-                <img src="{{ page.image }}" />
+                <img src="{{ page.image | prepend: site.env.CSHPUBSITE_ASSETS_URL }}" />
             {% endif %}
             {{ content }}
             <hr />
-            <a class="btn btn-primary" href="/blog/">More blog posts</a>
+            <a class="btn btn-primary" href="{{ '/blog/' | relative_url }}">More blog posts</a>
         </div>
     </div>
 </div>

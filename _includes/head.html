@@ -1,21 +1,22 @@
+
 <head>
     <title>{{ site.title }}</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Favicon configs -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/assets/images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/assets/images/favicon/safari-pinned-tab.svg" color="#B0197E">
-    <link rel="shortcut icon" href="/assets/images/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/favicon-16x16.png">
+    <link rel="manifest" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/site.webmanifest">
+    <link rel="mask-icon" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/safari-pinned-tab.svg" color="#B0197E">
+    <link rel="shortcut icon" href="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/favicon.ico">
     <meta name="msapplication-TileColor" content="#B0197E">
-    <meta name="msapplication-config" content="/assets/images/favicon/browserconfig.xml">
+    <meta name="msapplication-config" content="{{site.env.CSHPUBSITE_ASSETS_URL}}/favicon/browserconfig.xml">
     <meta name="theme-color" content="#B0197E">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="https://s3.csh.rit.edu/csh-material-bootstrap/4.0.0/dist/csh-material-bootstrap.min.css">
+    <link rel="stylesheet" href="{{site.env.CSHPUBSITE_S3_URL}}/csh-material-bootstrap/4.0.0/dist/csh-material-bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,500i,600,700,900">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
@@ -31,8 +32,7 @@
     <script src="/assets/js/slider.js"></script>
     <script src="/assets/js/nav.js"></script>
     <script src="/assets/js/footer.js"></script>
-    <script src="/assets/js/sponsors.js"></script>
+    <script type="module" src="/assets/js/sponsors.js"></script>
     <script src="/assets/js/tour.js"></script>
-
     <!-- Getting more done after 2am than most people do all day! -->
 </head>

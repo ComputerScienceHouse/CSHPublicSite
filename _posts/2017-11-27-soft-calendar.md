@@ -5,8 +5,8 @@ date: 2017-11-27
 categories:
   - projects
 description: A Calendar Event Manager!
-image: /assets/images/projects/softCalendar.jpg
-image-sm: /assets/images/projects/softCalendar.jpg
+image: /projects/softCalendar.jpg
+image-sm: /projects/softCalendar.jpg
 author: Skyler Clark
 author-image: https://avatars0.githubusercontent.com/u/4897492?s=400&v=4
 author-bio: A freshman computer science student!

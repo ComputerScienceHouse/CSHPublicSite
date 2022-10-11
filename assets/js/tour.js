@@ -1,37 +1,39 @@
+---
+---
 const content = {
     'dorm': {
         'title': 'Dorm Room',
-        'photos': ['/assets/images/tour/dorm/1'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/dorm/1'],
         'description': 'Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.',
     },
     'user-center': {
         'title': 'User Center',
-        'photos': ['/assets/images/tour/usercenter/1', '/assets/images/tour/usercenter/2'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/usercenter/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/usercenter/2'],
         'description': 'The User Center is a productive social room. It is often sought out as a place for members to socialize and get work done. It also serves as a meeting place, a project work room, and a technical seminar room.',
     },
     'lounge': {
         'title': 'Lounge',
-        'photos': ['/assets/images/tour/lounge/1', '/assets/images/tour/lounge/2'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/lounge/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/lounge/2'],
         'description': 'The Lounge is CSH\'s main social hub. This room is used to host movie nights, social events, technical seminars, company visits, and E-Board meetings.',
     },
     'server-room': {
         'title': 'Server Room',
-        'photos': ['/assets/images/tour/server/1', '/assets/images/tour/server/2'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/server/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/server/2'],
         'description': 'CSH\'s server room serves as a place for members to learn and practice their networking skills. It also serves as a place to host the variety of network services provided to our members.',
     },
     'software-room': {
         'title': 'Software Room',
-        'photos': ['/assets/images/tour/software/1', '/assets/images/tour/software/2'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/software/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/software/2'],
         'description': 'The Software Room is the perfect place for small group tasks. It is a quiet room that is away from the normal hustle and bustle of floor which makes it great for taking phone calls, playing board games, and working on group assignments. The Software Room also houses CSH\'s book collection as well as a variety of board games.',
     },
     'research-room': {
         'title': 'Research Room',
-        'photos': ['/assets/images/tour/research/1', '/assets/images/tour/research/2', '/assets/images/tour/research/3', '/assets/images/tour/research/4'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/research/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/research/2', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/research/3', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/research/4'],
         'description': 'The Research Room is CSH\'s workshop. It houses our two 3D Printers, as well as the tools and materials for members\' electronics projects.',
     },
     'library': {
         'title': 'Library',
-        'photos': ['/assets/images/tour/library/1', '/assets/images/tour/library/2'],
+        'photos': ['{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/library/1', '{{site.env.CSHPUBSITE_ASSETS_URL}}/tour/library/2'],
         'description': 'The Library is CSH\'s multi-function archive and arcade. It serves as a storage place for all of our historical records and keepsakes as well as a variety of arcade machines, both vintage and custom-built.',
     },
 };
