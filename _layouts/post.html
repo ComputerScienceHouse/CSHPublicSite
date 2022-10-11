@@ -16,7 +16,11 @@ active: blog
                 {{ page.author }}
 
                 {% for social in page.author-social %}
+                    {% if social[0] != 'website' %}
                     <a class="fab fa-{{ social[0] }}" href="{{ social[1] }}" target="_blank" rel="noopener"></a>
+                    {% else %}
+                    <a class="fa fa-globe" href="{{ social[1] }}" target="_blank" rel="noopener"></a>
+                    {% endif %}
                 {% endfor %}
                 <span id="date">{{ page.date | date: "%B %-d, %Y" }}</span>
             </h2>
