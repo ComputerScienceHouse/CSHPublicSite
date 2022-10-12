@@ -1,5 +1,11 @@
 # require 'html-proofer'
 
+# Add environment variables below
+envvars = {
+  CSHPUBSITE_ASSETS_URL: "https://assets.csh.rit.edu/pubsite",
+  CSHPUBSITE_S3_URL: "https://s3.csh.rit.edu"
+}.map { |k,v| ["#{k}=#{v}"]}.join(" ") 
+
 $outputDir = "./_site"
 $testOpts = {
   # An array of Strings containing domains that will be treated as internal urls
@@ -30,12 +36,12 @@ namespace :build do
 
   desc "build development site"
   task :development => [:clean] do
-    sh "jekyll build --drafts"
+    sh "#{envvars} jekyll build --drafts"
   end
 
   desc "build production site"
   task :production => [:clean] do
-    sh "JEKYLL_ENV=production jekyll build --config=_config.yml"
+    sh "#{envvars} JEKYLL_ENV=production jekyll build --config=_config.yml"
   end
 end
 
@@ -43,12 +49,12 @@ namespace :serve do
 
   desc "serve development site"
   task :development => [:clean] do
-    sh "jekyll serve --drafts"
+    sh "#{envvars} jekyll serve --drafts"
   end
 
   desc "serve production site"
   task :production => [:clean] do
-    sh "JEKYLL_ENV=production jekyll serve --config=_config.yml"
+    sh "#{envvars} JEKYLL_ENV=production jekyll serve --config=_config.yml"
   end
 end
 
