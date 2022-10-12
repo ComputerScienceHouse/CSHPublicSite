@@ -6,8 +6,8 @@ categories:
     - projects
 description: A functional version of Go in Swift, using SpriteKit
 author: Zachary Williams
-image: /projects/nikhedonia.png
-image-sm: /projects/nikhedonia.png
+image: /assets/images/projects/nikhedonia.png
+image-sm: /assets/images/projects/nikhedonia.png
 author-image: https://avatars0.githubusercontent.com/u/5004737?s=460&v=4
 author-bio: Undergraduate student studying computer science at the Rochester Institute of Technology. I specialize in web & app development, as well as user experience design.
 author-email: zachwilliams.me@gmail.com

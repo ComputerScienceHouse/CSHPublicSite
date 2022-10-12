@@ -5,8 +5,8 @@ date:   2019-08-26 21:25:00
 categories: intro
 description: An explanation of CSH's intro process and the motivations behind it.
 author: Nick Mosher
-image: /projects/envelope.jpg
-image-sm: /projects/envelope.jpg
+image: /assets/images/projects/envelope.jpg
+image-sm: /assets/images/projects/envelope.jpg
 author-image: https://2.gravatar.com/avatar/82615a3c73fe853714af7b51337a4fac?s=400
 author-bio: Software Engineering '20 at RIT and R&D Director at CSH
 author-email: nicholastmosher@gmail.com

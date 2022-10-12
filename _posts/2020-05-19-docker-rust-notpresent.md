@@ -3,8 +3,8 @@ title: "Debugging Error: NotPresent with Rust in Docker"
 description: "A friend's Docker container was exiting with Error: NotPresent and no other information. I embarked on a deep dive for an ultimately simple cause."
 layout: post
 date: 2020-05-19
-image: /projects/carbon.png
-image-sm: /projects/carbon.png
+image: /assets/images/projects/carbon.png
+image-sm: /assets/images/projects/carbon.png
 author: Galen Guyer
 author-image: https://cdn.galenguyer.com/img/avatars/headshot.jpg
 author-email: chef@csh.rit.edu
