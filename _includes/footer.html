@@ -28,14 +28,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center spaced">
-                    <img src="/assets/images/rit_csh.png" />
+                    <img src="{{site.env.CSHPUBSITE_ASSETS_URL}}/rit_csh.png" />
                 </div>
                 <div class="text-center spaced col-12"><i>Getting more done after 2am than most people do all day.</i></div>
                 <div class="text-md-left col-12 col-lg-4">
                     <a href="mailto:webmaster@csh.rit.edu">webmaster@csh.rit.edu</a>
                 </div>
                 <div class="col-12 col-lg-4">
-                    &copy; 2020 Computer Science House
+                    &copy; {{ site.time | date: '%Y' }} Computer Science House
                 </div>
                 <div class="text-md-right col-12 col-lg-4">
                     <a href="https://github.com/computersciencehouse/cshpublicsite">

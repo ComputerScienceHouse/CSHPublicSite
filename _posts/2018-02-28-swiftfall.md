@@ -5,8 +5,8 @@ date:   2018-02-28 21:25:00
 categories: projects
 description: A wrapper for an API called Scryfall.
 author: Braden Bowdish
-image: /assets/images/projects/swiftfall_screenshot.png
-image-sm: /assets/images/projects/swiftfall_screenshot.png
+image: /projects/swiftfall_screenshot.png
+image-sm: /projects/swiftfall_screenshot.png
 author-image: https://avatars2.githubusercontent.com/u/15185628?s=460&v=4
 author-bio: Lover of Swift and Magic. 3rd year member of Computer Science House.
 author-email: bmbowdish@csh.rit.edu

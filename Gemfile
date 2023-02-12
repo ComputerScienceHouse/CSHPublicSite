@@ -22,6 +22,7 @@ group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.6"
   gem "liquid-md5"
   gem "jekyll-regex-replace"
+  gem 'jekyll-environment-variables'
   gem "webrick"
 end
 

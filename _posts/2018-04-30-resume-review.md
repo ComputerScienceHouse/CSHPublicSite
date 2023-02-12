@@ -6,8 +6,8 @@ date: 2018-04-30
 categories:
     - projects
 description: A webapp to upload resumes and review those of your peers
-image: /assets/images/projects/resume.png
-image-sm: /assets/images/projects/resume.png
+image: /projects/resume.png
+image-sm: /projects/resume.png
 author: Ram Zallan
 author-image: https://avatars3.githubusercontent.com/u/5818258
 author-bio: Second year Computer Science major, full stack software engineer. ramzallan.me
