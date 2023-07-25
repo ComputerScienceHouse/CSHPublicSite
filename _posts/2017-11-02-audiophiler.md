@@ -16,7 +16,7 @@ author-social:
 [Audiophiler](https://github.com/sgreene570/audiophiler) is a Python Flask web app that serves audio files.
 Audiophiler uses CSH's Ceph storage cluster to hold audio files and serves them through an easy to use API.
 The Audiophiler API allows other house services to quickly retrieve a member's uploaded audio files.
-When members come off of the NRH elevators and walk onto floor, they can tap their iButton against one of the
+When members come off of the DSP elevators and walk onto floor, they can tap their iButton against one of the
 readers in the elevator lobby to load up songs on Audiophiler and play them aloud.
 
 Audiophiler is the first web app that I've written entirely by myself.  While working on the project, I learned _a lot_ about
