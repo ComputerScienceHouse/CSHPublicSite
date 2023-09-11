@@ -1,4 +1,4 @@
-FROM jekyll/builder as builder
+FROM docker.io/jekyll/builder as builder
 
 RUN gem install bundler:2.2.3
 
@@ -13,9 +13,12 @@ COPY . /site/
 
 RUN bundle exec rake build:production 
 
-FROM docker.io/galenguyer/nginx:1.21.6-alpine-spa
+FROM docker.io/httpd:2.4
 
-RUN rm -rf /usr/share/nginx/html/*
-COPY --from=builder /site/_site/ /usr/share/nginx/html/
+RUN apt update && apt install -y sssd
 
-
+RUN rm -rf /usr/local/apache2/htdocs/*
+COPY --from=builder /site/_site/ /usr/local/apache2/htdocs/
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/usr/bin/bash", "/entrypoint.sh"]
+CMD ["httpd-foreground"]
