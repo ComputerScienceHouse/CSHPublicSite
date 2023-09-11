@@ -19,6 +19,8 @@ RUN apt update && apt install -y sssd
 
 RUN rm -rf /usr/local/apache2/htdocs/*
 COPY --from=builder /site/_site/ /usr/local/apache2/htdocs/
+COPY httpd-suffix.conf httpd-suffix.conf
+RUN cat httpd-suffix.conf >> /usr/local/apache2/conf/httpd.conf
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/usr/bin/bash", "/entrypoint.sh"]
 CMD ["httpd-foreground"]
