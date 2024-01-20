@@ -9,33 +9,39 @@ This site is written using [Jekyll](https://jekyllrb.com/), a static site genera
 ## Local Development
 
 #### Prerequisites:
-
-1. [Docker](https://docker.com) or [Podman](https://podman.io)
+1. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
+2. [Bundler](https://bundler.io/) (`gem install bundler`)
 
 #### Instructions
+1. `bundle install`
+2. Add necessary environment variables (they MUST be defined!!!):
+	* `export CSHPUBSITE_ASSETS_URL="https://assets.csh.rit.edu/pubsite"`
+	* `export CSHPUBSITE_S3_URL="https://s3.csh.rit.edu"`
+3. `bundle exec jekyll serve`
 
-First, run the following command in the directory containing the Dockerfile to build the container
+The site should now serve locally at `localhost:8080`, and auto-build when you change/create files in the repo!
 
+### Running in a container
+
+To run this site in a container, make sure you have either [Podman](https://podman.io) or [Docker](https://docker.com) installed.
+
+First, build the container with the following command
 ```
 podman build -t public-site .
 ```
 
-Next, run the following command to start the container
-
+Then, run the container with the following command
 ```
 podman run -p 8080:80 public-site:latest
 ```
-
-The site should now serve locally at `localhost:8080`.
-
-**Note**: If you are using Docker instead of Podman, replace `podman` in each command with `docker`
+The site should now serve locally at `localhost:8080`. Note that it will not update when you make changes. You will have to stop the container and rebuild it to see your changes
 
 ## Contributing
 
 1. [Fork](https://help.github.com/en/articles/fork-a-repo) this repository
-   - Optionally create a new [git branch](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) if your change is more than a small tweak (`git checkout -b BRANCH-NAME-HERE`)
-2. Make your changes locally, commit, and push to your fork
-3. Create a [Pull Request](https://help.github.com/en/articles/about-pull-requests) on this repo for our Webmasters to review
+    - Optionally create a new [git branch](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) if your change is more than a small tweak (`git checkout -b BRANCH-NAME-HERE`)
+3. Make your changes locally, commit, and push to your fork
+4. Create a [Pull Request](https://help.github.com/en/articles/about-pull-requests) on this repo for our Webmasters to review
 
 ## Questions/Concerns
 
