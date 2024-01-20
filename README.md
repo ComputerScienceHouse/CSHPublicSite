@@ -9,17 +9,22 @@ This site is written using [Jekyll](https://jekyllrb.com/), a static site genera
 ## Local Development
 
 #### Prerequisites:
-1. [Ruby](https://www.ruby-lang.org/en/documentation/installation/)
-2. [Bundler](https://bundler.io/) (`gem install bundler`)
+1. [Docker](https://docker.com) or [Podman](https://podman.io)
 
 #### Instructions
-1. `bundle install`
-2. Add necessary environment variables (they MUST be defined!!!):
-	* `export CSHPUBSITE_ASSETS_URL="https://assets.csh.rit.edu/pubsite"`
-	* `export CSHPUBSITE_S3_URL="https://s3.csh.rit.edu"`
-3. `bundle exec jekyll serve`
+First, run the following command in the directory containing the Dockerfile to build the container
+```
+podman build -t public-site .
+```
 
-The site should now serve locally at `localhost:4000`, and auto-build when you change/create files in the repo!
+Next, use the following command to run the container
+```
+podman run -p 8080:80 public-site:latest
+```
+
+The site should now be accessible locally at `localhost:8080`.
+
+**Note**: If you are using docker instead of podman, simply replace the word `podman` with `docker` in each of the above commands
 
 ## Contributing
 
