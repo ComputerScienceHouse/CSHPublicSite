@@ -36,7 +36,7 @@ podman build -t public-site .
 Then, run the container with the following command
 
 ```
-podman run -p 8080:80 public-site:latest
+podman run -p 8080:80 -it public-site:latest
 ```
 
 The site should now serve locally at `localhost:8080`. Note that it will not update when you make changes. You will have to stop the container and rebuild it to see your changes
