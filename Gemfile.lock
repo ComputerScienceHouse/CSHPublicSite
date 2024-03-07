@@ -80,6 +80,7 @@ DEPENDENCIES
   jekyll-environment-variables
   jekyll-feed (~> 0.6)
   jekyll-regex-replace
+  json (~> 2.7)
   liquid-md5
   minima (~> 2.5)
   rake (~> 12.3)
