@@ -28,7 +28,6 @@ $(document).ready(() => {
             new Sponsor('/sponsors/lourdesindustries.png', 'http://lourdesinc.com', 'Lourdres Industries'),
             new Sponsor('/sponsors/mooreresearchcenter.png', 'http://mrci.com', 'Moore Research Center'),
             new Sponsor('/sponsors/intergraph.png', 'http://intergraph.com', 'Intergraph'),
-            new Sponsor('/sponsors/nortel.png', 'http://nortel-us.com', 'Nortel'),
             new Sponsor('/sponsors/janestreet.png', 'http://janestreet.com', 'Jane Street'),
             new Sponsor('/sponsors/northropgrumman.png', 'http://northropgrumman.com', 'Northrop Grumman'),
             new Sponsor('/sponsors/sonus.png', 'http://sonus.net', 'Sonus'),
