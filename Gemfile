@@ -24,6 +24,7 @@ group :jekyll_plugins do
   gem "jekyll-regex-replace"
   gem 'jekyll-environment-variables'
   gem "webrick"
+  gem "jekyll-polyglot"
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem

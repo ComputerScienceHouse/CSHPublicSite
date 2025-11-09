@@ -4,8 +4,12 @@ RUN mkdir /site; \
     chown -R jekyll:jekyll /site
 WORKDIR /site
 COPY Gemfile Gemfile.lock /site/
-RUN bundle install
+USER root
 COPY . /site/
+RUN chown -R jekyll:jekyll /site
+USER jekyll
+RUN bundle config set --local path 'vendor/bundle'
+RUN bundle install
 RUN bundle exec rake build:production 
 
 FROM docker.io/httpd:2.4
