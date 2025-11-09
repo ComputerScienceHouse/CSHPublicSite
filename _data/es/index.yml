@@ -1,12 +1,12 @@
 slogan: "Logrando más <span style=\"color: #b0197e;\">después de las 2 a.m.</span> de lo que la mayoría de la gente hacen todo el día."
 slogan-plain: "Logrando más después de las 2 a.m. de lo que la mayoría de la gente hacen todo el día."
 
-about: "Acerca de nosotros"
+about: "Sobre nosotros"
 projects: "Nuestros proyectos"
 visit: "Visita CSH"
 
 summary: "Desde 1976, <strong>Computer Science House</strong> ha proveído un entorno revolucionario de viviendo y creciendo para sus miembros. Con facilidades únicas, un énfasis en el aprendizaje prátctico, y un firme ambiente social, CSH ayuda sus miembros a crecer como profesionales y más."
-summary-button: "MÁS ACERCA DE CSH"
+summary-button: "MÁS SOBRE CSH"
 
 # As of 2025-11-09, some of these project names are proper nouns and should not
 # be translated. This may not always be the case in the future, though, so they
@@ -21,7 +21,7 @@ project-3-desc: "Un sistema de visualización de información"
 project-4: "LETMEIN"
 project-4-desc: "Un sistema físico de notificaciones para miembros"
 
-facts: "Unos factos acerca de nosotros..."
+facts: "Unos factos sobre nosotros..."
 fact-1: "Miembros activos"
 fact-1-desc: "Que componen el corazón de nuestro comunidad."
 fact-2: "Mayor hackeo"
