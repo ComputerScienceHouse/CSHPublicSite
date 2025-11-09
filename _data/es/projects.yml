@@ -1,0 +1,18 @@
+title: "Proyectos"
+intro: "Los proyectos son una parte integral de la experiencia de vivir y crecer en Computer Science House. Esta es una muestra pequeña de proyectos notables que nuestros miembros han creado:"
+
+# As of 2025-11-09, most of these project names are proper nouns and should not
+# be translated. This may not always be the case in the future, though, so they
+# are stored here just in case.
+project-1: "Drink/Snack"
+project-1-desc: "Drink (Bebida) y Snack (Aperitivo) son dos de los proyectos más antiguos de CSH. Estas máquinas expendedoras conectadas a la red permiten a los miembros pedir artículos desde cualquier navegador web usando un sistema de créditos."
+project-2: "Schedule Maker"
+project-2-desc: "Schedule Maker (Creador de horarios) permite a los estudiantes de RIT planificar su horario para los próximos semestres. Los usuarios simplemente ingresan sus números de curso y eventos personalizados y se mostrará una lista de todos los horarios que coínciden con sus parámetros. Porque es tan fácil y simple, Schedule Maker ahora es usado por más del 90% de los estudiantes de RIT."
+project-3: "Devcade"
+project-3-desc: "Devcade (\"developer\" + \"arcade\" en inglés) es una máquina arcade completamente personalizada por un equipo de más de una docena de miembros de CSH. Devcade es un arcade construido para desarrolladores, por desarrolladores. El gabinete arcade, el software, y los juegos para Devcade fueron principalmente construidos durante el semestre del otoño de 2022 y el proyecto todavía está siendo mantenido y actualizado."
+project-4: "HAROLD"
+project-4-desc: "Con HAROLD, cada miembro de CSH consegue su propia canción. Después de que un usuario sube su canción(es) a una app web, todo lo que tiene que hacer es tocar su iButton o etiqueta RFID (recibida al comienzo de la afiliación) al lector apropiado."
+project-5: "Arcade de CSH" # This should be translated!
+project-5-desc: "Dos miembros de CSH construyeron este gabinete arcade desde cero. Emula muchos juegos arcade clásicos de varias consolas y soporta multijugador. También se construyó un segundo gabinete con un juego de plataformas hecho a medida. Ambas máquinas, junto con otros gabinetes arcade que CSH ha adquirido, están alojados en nuestra Biblioteca."
+project-6: "Infosys"
+project-6-desc: "Infosys en un pantalla de visualización multipropósito ubicada en nuestro Centro de Usuarios. Es capaz de mostrar estadísticas del tiempo, mensajes personalizados, e incluso datos sobre jugadores de videojuegos en tiempo real."
