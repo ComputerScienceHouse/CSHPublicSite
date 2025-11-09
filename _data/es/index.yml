@@ -1,0 +1,36 @@
+slogan: "Logrando más <span style=\"color: #b0197e;\">después de las 2 a.m.</span> de lo que la mayoría de la gente hacen todo el día."
+slogan_plain: "Logrando más después de las 2 a.m. de lo que la mayoría de la gente hacen todo el día."
+
+about: "Acerca de nosotros"
+projects: "Nuestros proyectos"
+visit: "Visita CSH"
+
+summary: "Desde 1976, <strong>Computer Science House</strong> ha proveído un entorno revolucionario de viviendo y creciendo para sus miembros. Con facilidades únicas, un énfasis en el aprendizaje prátctico, y un firme ambiente social, CSH ayuda sus miembros a crecer como profesionales y más."
+summary_button: "MÁS ACERCA DE CSH"
+
+# As of 2025-11-09, some of these project names are proper nouns and should not
+# be translated. This may not always be the case in the future, though, so they
+# are stored here just in case.
+working: "Cosas estamos trabajando en..."
+project_1: "ACTUALIZACIÓN DE LOS SERVIDORES"
+project_1_desc: "Haciendo nuestros servidores al corriente con la ayuda de Wayfair"
+project_2: "TUNES"
+project_2_desc: "Modernizando una máquina de discos"
+project_3: "INFOSYS"
+project_3_desc: "Un sistema de visualización de información"
+project_4: "LETMEIN"
+project_4_desc: "Un sistema físico de notificaciones para miembros"
+
+facts: "Unos factos acerca de nosotros..."
+fact_1: "Miembros activos"
+fact_1_desc: "Que componen el corazón de nuestro comunidad."
+fact_2: "Mayor hackeo"
+fact_2_desc: "De todos los tiempos (como clasificado por PCMAG en 2008) fue la creación de las máquinas de bebidas conectados a Internet de CSH."
+fact_3: "Exalumnos"
+fact_3_desc: "Proveen miembros actuales de CSH con una gran red de conocimientos y conexiones profesionales."
+fact_4: "dormitorios en el piso"
+fact_4_desc: "En el Edificio de Fredericka Douglass Sprague Perry de RIT, un centro de la vida del campus."
+fact_5: "Salas especiales"
+fact_5_desc: "Que proveen a los miembros espacios para trabajar en proyectos, pasar el rato, o estudiar."
+
+sponsors: "Patrocinadores"

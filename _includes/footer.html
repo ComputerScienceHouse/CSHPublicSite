@@ -3,11 +3,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <a href="/about/faq.html">FAQ</a>
-                    <a href="/membership/intro-process.html">How to Apply</a>
+                    <a href="/about/faq.html">{{ site.data[site.active_lang].nav-footer.FAQ }}</a>
+                    <a href="/membership/intro-process.html">{{ site.data[site.active_lang].nav-footer.apply }}</a>
                     <a href="https://schedule.csh.rit.edu/">RIT ScheduleMaker</a>
-                    <a href="/blog/">Blog</a>
-                    <a href="https://constitution.csh.rit.edu/">Constitution</a>
+                    <a href="/blog/">{{ site.data[site.active_lang].nav-footer.blog }}</a>
+                    <a href="https://constitution.csh.rit.edu/">{{ site.data[site.active_lang].nav-footer.constitution }}</a>
                 </div>
             </div>
             <div class = "row">
@@ -30,7 +30,7 @@
                 <div class="col-12 text-center spaced">
                     <img src="{{site.env.CSHPUBSITE_ASSETS_URL}}/rit_csh.png" />
                 </div>
-                <div class="text-center spaced col-12"><i>Getting more done after 2am than most people do all day.</i></div>
+                <div class="text-center spaced col-12"><i>{{ site.data[site.active_lang].nav-footer.slogan_plain }}</i></div>
                 <div class="text-md-left col-12 col-lg-4">
                     <a href="mailto:webmaster@csh.rit.edu">webmaster@csh.rit.edu</a>
                 </div>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="text-md-right col-12 col-lg-4">
                     <a href="https://github.com/computersciencehouse/cshpublicsite">
-                        Website on GitHub
+                        {{ site.data[site.active_lang].nav-footer.gh }}
                     </a>
                 </div>
             </div>

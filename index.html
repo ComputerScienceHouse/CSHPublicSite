@@ -68,7 +68,7 @@ lang: en
     </div>
 </div>
 
-<h2 style="text-align: center;" id="headline">Getting more done <span style="color: #b0197e;">after 2am</span> than most people do all day.</h2>
+<h2 style="text-align: center;" id="headline">{{ site.data[site.active_lang].index.slogan }}</h2>
 
 <!-- Triple image set -->
 <div class="width_capped">
@@ -77,7 +77,7 @@ lang: en
         <article class="card" role="article">
             <a class="triple_a" href="/about/">
             <div class="card-text">
-                <h2 class="card-title">About us</h2>
+                <h2 class="card-title">{{ site.data[site.active_lang].index.about }}</h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/disk.webp" />
             </a>
@@ -88,7 +88,7 @@ lang: en
         <article class="card" role="article">
             <a class="triple_a" href="/about/projects.html">
             <div class="card-text">
-                <h2 class="card-title">Our projects</h2>
+                <h2 class="card-title">{{ site.data[site.active_lang].index.projects }}</h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/drink.webp" />
             </a>
@@ -99,7 +99,7 @@ lang: en
         <article class="card" role="article">
             <a class="triple_a" href="/about/tour.html">
             <div class="card-text">
-                <h2 class="card-title">Visit CSH</h2>
+                <h2 class="card-title">{{ site.data[site.active_lang].index.visit }} </h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/project_room.webp" />
             </a>
@@ -119,22 +119,22 @@ lang: en
                 </picture>
             </div>
             <div class="col-12 col-lg-6">
-                <p>Since 1976, <strong>Computer Science House</strong> has provided a revolutionary living and learning environment for its members. With unique facilities, an emphasis on hands-on learning, and a strong social atmosphere, CSH helps its members grow as professionals and more.</p>
-                <a class="btn btn-primary" href="/about/">More about CSH</a>
+                <p>{{ site.data[site.active_lang].index.summary }}</p>
+                <a class="btn btn-primary" href="/about/">{{ site.data[site.active_lang].index.summary_button }}</a>
             </div>
         </div>
     </div>
 </div>
 
-<h2 style="text-align: center;" id="headline">Things we're working on ...</h2>
+<h2 style="text-align: center;" id="headline">{{ site.data[site.active_lang].index.working }}</h2>
 <div class="quad_image">
     <div class="content">
         
             <div class="content-overlay"></div>
             <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/server.webp" style="width: 100%;" alt="A picture of CSH's server racks"/>
             <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">Server room upgrade</h3>
-              <p>Bringing our servers up to date with the help of Wayfair.</p>
+                <h3 class="content-title">{{ site.data[site.active_lang].index.project_1 }}</h3>
+              <p>{{ site.data[site.active_lang].index.project_1_desc }}</p>
 		<!-- <p>Done in collaboration with wayfair</p> -->
             </div>
         
@@ -143,8 +143,8 @@ lang: en
             <div class="content-overlay"></div>
             <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/TUNES.webp" style="width: 100%;" alt="TUNES, an old jukebox that's being made digital"/>
             <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">TUNES</h3>
-                <p>Modernizing a jukebox</p>
+                <h3 class="content-title">{{ site.data[site.active_lang].index.project_2 }}</h3>
+                <p>{{ site.data[site.active_lang].index.project_2_desc }}</p>
             </div>
        
     </div>
@@ -152,49 +152,49 @@ lang: en
         <div class="content-overlay"></div>
         <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/infosys.webp" style="width: 100%;" alt="A LED matrix that makes up CSH's Infosys"/>
         <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">Infosys</h3>
-            <p>An information display system</p>
+            <h3 class="content-title">{{ site.data[site.active_lang].index.project_3 }}</h3>
+            <p>{{ site.data[site.active_lang].index.project_3_desc }}</p>
         </div>
     </div>
     <div class="content">
         <div class="content-overlay"></div>
         <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/letmein.webp" style="width: 100%;" alt="A raspberry pi and pencil sharpener on the wall, CSH's letmein system"/>
         <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">Letmein</h3>
-            <p>A physical notification system for members</p>
+            <h3 class="content-title">{{ site.data[site.active_lang].index.project_4 }}</h3>
+            <p>{{ site.data[site.active_lang].index.project_4 }}</p>
         </div>
     </div>
 </div>
 
 <div  style="padding-top: 0.5em; padding-bottom: 0.5em; margin-bottom: 0%;" id="stats">
-    <h2 class="left_offset" style="padding-top: 0.6em; margin-top: 0em; text-align: center;">Some facts about us ...</h2>
+    <h2 class="left_offset" style="padding-top: 0.6em; margin-top: 0em; text-align: center;">{{ site.data[site.active_lang].index.facts }}</h2>
     <div class="width_capped">
         
         <div class="container_stat">
             <div class="stat_card">
                 <p class="stat_big">91</p>
-                <p class="stat_tag">Active Members</p>
-                <p class="stat_desc">Who make up the heart of our community. </p>
+                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_1 }}</p>
+                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_1_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">3<sup style="font-size: 0.5em;">rd</sup></p>
-                <p class="stat_tag">Greatest Hack</p>
-                <p class="stat_desc">Of all time (as ranked by PCMAG in 2008) was the creation of CSH's internet-connected drink machines.</p>
+                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_2 }}</p>
+                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_2_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">1388</p>
-                <p class="stat_tag">Alumni</p>
-                <p class="stat_desc">Provide current CSH members with a large network of knowledge and professional connections. </p>
+                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_3 }}</p>
+                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_3_desc }} </p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">38</p>
-                <p class="stat_tag">Rooms on-floor</p>
-                <p class="stat_desc">In RIT's Fredericka Douglass Sprague Perry Hall, a hub of campus life.</p>
+                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_4 }}</p>
+                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_4_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">9</p>
-                <p class="stat_tag">Special-purpose rooms</p>
-                <p class="stat_desc">That provide members with spaces to work on projects, hang out, or study. </p>
+                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_5 }}</p>
+                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_5_desc }}</p>
             </div>
         </div>                     
     </div>
@@ -205,7 +205,7 @@ lang: en
         <div class="row">
             <div class="col-12">
                 <a href="/about/sponsors.html">
-                    <h2 class="header">Sponsors</h2>
+                    <h2 class="header">{{ site.data[site.active_lang].index.sponsors }}</h2>
                 </a>
             </div>
             <div class="col-4 col-lg-2" id="sponsor-1">

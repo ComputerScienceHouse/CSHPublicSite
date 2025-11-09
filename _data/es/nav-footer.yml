@@ -1,0 +1,29 @@
+# nav
+home: "Inicio"
+
+about: "Acerca de"
+about-csh: "Acerca de CSH"
+FAQ: "FAQ"
+projects: "Proyectos"
+alumni: "Exalumnos"
+eboard: "Eboard"
+sponsors: "Patrocinadores"
+tour: "Recorrido"
+
+membership: "Afiliación"
+overview: "Resumen"
+new-members: "Miembros nuevos"
+traditions: "Tradiciones"
+# rip insights lol
+
+blog: "Blog"
+donate: "Dona"
+contact: "Contacto"
+
+# footer
+# FAQ: "FAQ"
+apply: "Como presentarse"
+# blog: "Blog"
+consitution: "Constitución"
+
+gh: "El sitio de web en GitHub"
