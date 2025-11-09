@@ -2,17 +2,19 @@
 layout: page
 title: About CSH
 active: about
+strings: "about"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div class="gray-wrapper" id="about-page">
     <div class="container spaced">
         <div class="row">
             <div class="col-12 col-lg-8">
                 <p class="long-form">
-                    {{ site.data[site.active_lang].about.pg-1 }}
+                    {{ strings.pg-1 }}
                 </p>
                 <p class="long-form">
-                    {{ site.data[site.active_lang].about.pg-2 }}
+                    {{ strings.pg-2 }}
                 </p>
             </div>
             <div class="col-12 col-lg-4 text-center">
@@ -22,7 +24,7 @@ active: about
         <div class="row">
             <div class="col-12">
                 <p class="long-form">
-                    {{ site.data[site.active_lang].about.pg-3 }}
+                    {{ strings.pg-3 }}
                 </p>
             </div>
         </div>
@@ -32,12 +34,12 @@ active: about
             </div>
             <div class="col-12 col-lg-8">
                 <p class="long-form">
-                    {{ site.data[site.active_lang].about.pg-4 }}
+                    {{ strings.pg-4 }}
                 </p>
                 <p class="long-form">
-                    {{ site.data[site.active_lang].about.pg-5 }}
+                    {{ strings.pg-5 }}
                 </p>
-                <a class="btn btn-primary" href="/membership/traditions.html">{{ site.data[site.active_lang].about.button }}</a>
+                <a class="btn btn-primary" href="/membership/traditions.html">{{ strings.button }}</a>
             </div>
         </div>
     </div>

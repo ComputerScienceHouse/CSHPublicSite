@@ -1,7 +1,9 @@
 ---
 layout: default
 active: home
+strings: "index"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div style="top:0;position:absolute;display: inline;">
 <!-- Floating scroll-down button -->
@@ -67,7 +69,7 @@ active: home
     </div>
 </div>
 
-<h2 style="text-align: center;" id="headline">{{ site.data[site.active_lang].index.slogan }}</h2>
+<h2 style="text-align: center;" id="headline">{{ strings.slogan }}</h2>
 
 <!-- Triple image set -->
 <div class="width_capped">
@@ -76,7 +78,7 @@ active: home
         <article class="card" role="article">
             <a class="triple_a" href="/about/">
             <div class="card-text">
-                <h2 class="card-title">{{ site.data[site.active_lang].index.about }}</h2>
+                <h2 class="card-title">{{ strings.about }}</h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/disk.webp" />
             </a>
@@ -87,7 +89,7 @@ active: home
         <article class="card" role="article">
             <a class="triple_a" href="/about/projects.html">
             <div class="card-text">
-                <h2 class="card-title">{{ site.data[site.active_lang].index.projects }}</h2>
+                <h2 class="card-title">{{ strings.projects }}</h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/drink.webp" />
             </a>
@@ -98,7 +100,7 @@ active: home
         <article class="card" role="article">
             <a class="triple_a" href="/about/tour.html">
             <div class="card-text">
-                <h2 class="card-title">{{ site.data[site.active_lang].index.visit }} </h2>
+                <h2 class="card-title">{{ strings.visit }} </h2>
             </div>
             <img class="card-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/project_room.webp" />
             </a>
@@ -118,22 +120,22 @@ active: home
                 </picture>
             </div>
             <div class="col-12 col-lg-6">
-                <p>{{ site.data[site.active_lang].index.summary }}</p>
-                <a class="btn btn-primary" href="/about/">{{ site.data[site.active_lang].index.summary_button }}</a>
+                <p>{{ strings.summary }}</p>
+                <a class="btn btn-primary" href="/about/">{{ strings.summary_button }}</a>
             </div>
         </div>
     </div>
 </div>
 
-<h2 style="text-align: center;" id="headline">{{ site.data[site.active_lang].index.working }}</h2>
+<h2 style="text-align: center;" id="headline">{{ strings.working }}</h2>
 <div class="quad_image">
     <div class="content">
         
             <div class="content-overlay"></div>
             <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/server.webp" style="width: 100%;" alt="A picture of CSH's server racks"/>
             <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">{{ site.data[site.active_lang].index.project_1 }}</h3>
-              <p>{{ site.data[site.active_lang].index.project_1_desc }}</p>
+                <h3 class="content-title">{{ strings.project_1 }}</h3>
+              <p>{{ strings.project_1_desc }}</p>
 		<!-- <p>Done in collaboration with wayfair</p> -->
             </div>
         
@@ -142,8 +144,8 @@ active: home
             <div class="content-overlay"></div>
             <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/TUNES.webp" style="width: 100%;" alt="TUNES, an old jukebox that's being made digital"/>
             <div class="content-details fadeIn-bottom">
-                <h3 class="content-title">{{ site.data[site.active_lang].index.project_2 }}</h3>
-                <p>{{ site.data[site.active_lang].index.project_2_desc }}</p>
+                <h3 class="content-title">{{ strings.project_2 }}</h3>
+                <p>{{ strings.project_2_desc }}</p>
             </div>
        
     </div>
@@ -151,49 +153,49 @@ active: home
         <div class="content-overlay"></div>
         <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/infosys.webp" style="width: 100%;" alt="A LED matrix that makes up CSH's Infosys"/>
         <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">{{ site.data[site.active_lang].index.project_3 }}</h3>
-            <p>{{ site.data[site.active_lang].index.project_3_desc }}</p>
+            <h3 class="content-title">{{ strings.project_3 }}</h3>
+            <p>{{ strings.project_3_desc }}</p>
         </div>
     </div>
     <div class="content">
         <div class="content-overlay"></div>
         <img class="content-image" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/letmein.webp" style="width: 100%;" alt="A raspberry pi and pencil sharpener on the wall, CSH's letmein system"/>
         <div class="content-details fadeIn-bottom">
-            <h3 class="content-title">{{ site.data[site.active_lang].index.project_4 }}</h3>
-            <p>{{ site.data[site.active_lang].index.project_4_desc }}</p>
+            <h3 class="content-title">{{ strings.project_4 }}</h3>
+            <p>{{ strings.project_4_desc }}</p>
         </div>
     </div>
 </div>
 
 <div  style="padding-top: 0.5em; padding-bottom: 0.5em; margin-bottom: 0%;" id="stats">
-    <h2 class="left_offset" style="padding-top: 0.6em; margin-top: 0em; text-align: center;">{{ site.data[site.active_lang].index.facts }}</h2>
+    <h2 class="left_offset" style="padding-top: 0.6em; margin-top: 0em; text-align: center;">{{ strings.facts }}</h2>
     <div class="width_capped">
         
         <div class="container_stat">
             <div class="stat_card">
                 <p class="stat_big">91</p>
-                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_1 }}</p>
-                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_1_desc }}</p>
+                <p class="stat_tag">{{ strings.fact_1 }}</p>
+                <p class="stat_desc">{{ strings.fact_1_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">3<sup style="font-size: 0.5em;">rd</sup></p>
-                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_2 }}</p>
-                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_2_desc }}</p>
+                <p class="stat_tag">{{ strings.fact_2 }}</p>
+                <p class="stat_desc">{{ strings.fact_2_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">1388</p>
-                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_3 }}</p>
-                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_3_desc }} </p>
+                <p class="stat_tag">{{ strings.fact_3 }}</p>
+                <p class="stat_desc">{{ strings.fact_3_desc }} </p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">38</p>
-                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_4 }}</p>
-                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_4_desc }}</p>
+                <p class="stat_tag">{{ strings.fact_4 }}</p>
+                <p class="stat_desc">{{ strings.fact_4_desc }}</p>
             </div>
             <div class="stat_card">
                 <p class="stat_big">9</p>
-                <p class="stat_tag">{{ site.data[site.active_lang].index.fact_5 }}</p>
-                <p class="stat_desc">{{ site.data[site.active_lang].index.fact_5_desc }}</p>
+                <p class="stat_tag">{{ strings.fact_5 }}</p>
+                <p class="stat_desc">{{ strings.fact_5_desc }}</p>
             </div>
         </div>                     
     </div>
@@ -204,7 +206,7 @@ active: home
         <div class="row">
             <div class="col-12">
                 <a href="/about/sponsors.html">
-                    <h2 class="header">{{ site.data[site.active_lang].index.sponsors }}</h2>
+                    <h2 class="header">{{ strings.sponsors }}</h2>
                 </a>
             </div>
             <div class="col-4 col-lg-2" id="sponsor-1">

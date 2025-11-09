@@ -1,13 +1,16 @@
 ---
 layout: page
 title: "Error 404"
+strings: "404"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
+
 <div class="gray-wrapper">
     <div class="container spaced">
         <div class="row">
             <div class="col">
-                <h2>{{ site.data[site.active_lang].404.short }}</h2>
-                <p>{{ site.data[site.active_lang].404.long }}</p>
+                <h2>{{ strings.short }}</h2>
+                <p>{{ strings.long }}</p>
             </div>
             <div>
                 <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/t3otBjVZzT0?autoplay=1" frameborder="0" allowfullscreen></iframe>

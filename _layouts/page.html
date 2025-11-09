@@ -1,8 +1,10 @@
 ---
 layout: default
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
+
 <div class="splash">
-    <h1>{{ page.title }}</h1>
+    <h1>{{ strings.title }}</h1>
 </div>
 
 {{ content }}
