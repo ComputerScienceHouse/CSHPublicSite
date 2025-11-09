@@ -36,7 +36,10 @@ plugins:
 # Polyglot settings (translation)
 languages: ["en", "es"]
 default_lang: "en"
-exclude_from_localizations: ["assets"]
+exclude_from_localizations: ["assets", "_config", ".dockerignore",
+  ".firebaserc", ".gitattributes", ".gitignore", ".travis.yml", "Dockerfile",
+  "entrypoint.sh", "firebase.json", "Gemfile", "Gemfile.lock",
+  "httpd-suffix.conf", "LICENSE", "package.json", "Rakefile", "README.md"]
 parallel_localization: true
 
 # Exclude from processing.
