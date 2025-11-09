@@ -1,7 +1,7 @@
 slogan: "Getting more done <span style=\"color: #b0197e;\">after 2am</span> than most people do all day."
 slogan_plain: "Getting more done after 2am than most people do all day."
 
-about: "Sobre nosotros"
+about: "About us"
 projects: "Our projects"
 visit: "Visit CSH"
 
@@ -13,7 +13,7 @@ summary_button: "MORE ABOUT CSH"
 # are stored here just in case.
 working: "Things we're working on..."
 project_1: "SERVER ROOM UPGRADE"
-project_1_desc: "Bringing our servers up to date with the help of Wayfair."
+project_1_desc: "Bringing our servers up to date with the help of Wayfair"
 project_2: "TUNES"
 project_2_desc: "Modernizing a jukebox"
 project_3: "INFOSYS"
