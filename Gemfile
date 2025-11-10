@@ -33,4 +33,4 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 
-gem "rake", "~> 12.3"
+gem "rake", "~> 13.3"
