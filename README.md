@@ -1,4 +1,4 @@
-# CSHPublicSite - [csh.rit.edu](https://csh.rit.edu)
+# Pubsite - [csh.rit.edu](https://csh.rit.edu)
 
 The public facing website for [Rochester Institute of Technology](https://rit.edu/)'s [Computer Science House](https://csh.rit.edu).
 
@@ -8,8 +8,8 @@ This site is written using [Jekyll](https://jekyllrb.com/), a static site genera
 
 ## Local Development
 
-Build the container:  `docker build -t cshpublicsite .`  
-Run the container: `docker run -p 4000:80 cshpublicsite`  
+Build the container:  `docker build -t pubsite .`  
+Run the container: `docker run -p 4000:80 pubsite` or pick your favorite port
 You will be able to access the site at http://localhost:4000.
 
 You can either edit files in the container, or rebuild the container when you want to test changes.
@@ -23,4 +23,4 @@ You can either edit files in the container, or rebuild the container when you wa
 
 ## Questions/Concerns
 
-Please file an [Issue](https://github.com/ComputerScienceHouse/CSHPublicSite/issues/new) on this repository or contact [webmaster@csh.rit.edu](mailto:webmaster@csh.rit.edu) with inquiries about the site.
+Please file an [Issue](https://github.com/ComputerScienceHouse/pubsite/issues/new) on this repository or contact [webmaster@csh.rit.edu](mailto:webmaster@csh.rit.edu) with inquiries about the site.

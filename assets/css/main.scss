@@ -154,33 +154,53 @@ a.btn {
   }  
 }
 
-#navigation .navbar-nav {
+// CSS For 50th Info Banner
+#info-banner {
+  background-color: #B0197E;
+  color: #fff;
+  text-align: center;
+  padding: 10px 40px;
   width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (min-width: 992px) {
-  #navigation .navbar-nav {
-    align-items: center;
-  }
-  #nav-right {
-    margin-left: auto;
-  }
+#info-banner p {
+  margin: 0;
+  display: inline-block;
+
+  position: relative;
 }
 
-#lang-toggle {
+#close-banner {
   background: none;
-  border: 2px solid white;
-  color: white;
-  border-radius: 9999px;
-  transition: 0.5s;
-  padding: 0rem 0.3rem;
+  border: none;
+  font-size: 16px;
   cursor: pointer;
+  margin-left: 10px;
+  color: #fff;
+
+
+  position: fixed;
+  top: 10px;
+  right: 20px;
 }
 
-#lang-toggle:hover {
-  background: white;
-  color: $csh-pink;
+#info-banner a {
+  color: white;
+  text-decoration: underline;
 }
+
+#info-banner a:visited {
+  color: white;
+}
+
+@media screen and (min-width: 1100px) {
+  #close-banner {
+    top: 20px;
+    right: 30px;
+  }
+}
+
 
 @import "typography";
 @import "nav";
