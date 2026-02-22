@@ -1,10 +1,16 @@
 ---
 layout: page
-title: Blog
 active: blog
+strings: "blog"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div class="container spaced" id="post-list">
+    <div class="row">
+        <p>
+            {{ strings.no-es-warning }}
+        </p>
+    </div>
     <div class="row">
         {% for post in site.posts %}
             {% include post.html post=post %}
