@@ -1,32 +1,38 @@
 ---
 layout: page
-title: Tour
 active: about-tour
+strings: "tour"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div class="gray-wrapper" id="tour-page">
     <div class="container spaced">
+        <div class="row">
+            <p class="long-form">
+                {{ strings.no-es-warning }}
+            </p>
+        </div>
         <div class="row" style="width: 100%;">
             <div class="col-12 col-sm-8 offset-sm-2">
                 <div class="dropdown">
                     <a href="#" class="btn btn-sm dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Select a Room
+                        {{ strings.dropdown }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a id="dorm" class="dropdown-item active" href="#">Dorm Room</a>
-                        <a id="research-room" class="dropdown-item" href="#">Research Room</a>
-                        <a id="user-center" class="dropdown-item" href="#">User Center</a>
-                        <a id="lounge" class="dropdown-item" href="#">Lounge</a>
-                        <a id="server-room" class="dropdown-item" href="#">Server Room</a>
-                        <a id="software-room" class="dropdown-item" href="#">Software Room</a>
-                        <a id="library" class="dropdown-item" href="#">Library</a>
+                        <a id="dorm" class="dropdown-item active" href="#">{{ strings.dorm }}</a>
+                        <a id="research-room" class="dropdown-item" href="#">{{ strings.research }}</a>
+                        <a id="user-center" class="dropdown-item" href="#">{{ strings.user }}</a>
+                        <a id="lounge" class="dropdown-item" href="#">{{ strings.lounge }}</a>
+                        <a id="server-room" class="dropdown-item" href="#">{{ strings.server }}</a>
+                        <a id="software-room" class="dropdown-item" href="#">{{ strings.swoom }}</a>
+                        <a id="library" class="dropdown-item" href="#">{{ strings.library }}</a>
                     </div>
                 </div>
             </div>
         </div>
         <div class="row spaced" style="width: 100%;">
             <div class="col-12">
-                <h2 class="header" id="tour-title">Dorm Room</h2>
+                <h2 class="header" id="tour-title">{{ strings.dorm }}</h2>
                 <p class="long-form" id="tour-description">
                     Though the walls are the same as regular dorm rooms, our rooms usually look rather different than the standard RIT room layout.
                 </p>
