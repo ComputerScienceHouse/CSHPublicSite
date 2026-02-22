@@ -27,3 +27,7 @@ apply: "Como presentarse"
 consitution: "Constitución"
 
 gh: "El sitio de web en GitHub"
+
+# why is 50th?
+50th-line-1: "ATENCIÓN EXALUMNOS Y MIEMBROS: ¡El 50 aniversario se llevará a cabo del 10 al 12 de abril de 2026!"
+50th-line-2: "Averigua más en <a href=\"https://50th.csh.rit.edu\">50th.csh.rit.edu</a>"

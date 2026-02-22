@@ -27,3 +27,7 @@ apply: "How to Apply"
 consitution: "Constitution"
 
 gh: "Website on GitHub"
+
+# why is 50th?
+50th-line-1: "ATTENTION ALUMNI & MEMBERS: The 50th Anniversary will be held from April 10th-12th, 2026!"
+50th-line-2: "Find out more at <a href=\"https://50th.csh.rit.edu\">50th.csh.rit.edu</a>"
