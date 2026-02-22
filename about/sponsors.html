@@ -1,15 +1,16 @@
 ---
 layout: page
-title: Sponsors
 active: about-sponsors
+strings: "sponsors"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div class="gray-wrapper logo-grid">
     <div class="container spaced">
         <div class="row">
             <div class="col">
                 <p class="long-form">
-                    Computer Science House has been fortunate enough to have a myriad of very generous sponsors. Without their support it would be impossible to learn, grow, and innovate as we do.
+                    {{ strings.content }}
                 </p>
             </div>
         </div>
