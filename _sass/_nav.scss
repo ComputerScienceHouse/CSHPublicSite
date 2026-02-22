@@ -80,10 +80,40 @@ nav {
             max-height: 50px;
         }
         .navbar-toggler-icon {
-          width: 30px;
-          height: 30px;
+            width: 30px;
+            height: 30px;
         }
     }
+}
+
+// navbar lang switcher stuff that will make you hate me probably
+// note: the vs code ai suggested "that will make you want to cry" and "that will make you hate your life" while i was typing that lmao
+#navigation .navbar-nav {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  #navigation .navbar-nav {
+    align-items: center;
+  }
+  #nav-right {
+    margin-left: auto;
+  }
+}
+
+#lang-toggle {
+  background: none;
+  border: 2px solid white;
+  color: white;
+  border-radius: 9999px;
+  transition: 0.5s;
+  padding: 0rem 0.3rem;
+  cursor: pointer;
+}
+
+#lang-toggle:hover {
+  background: white;
+  color: $csh-pink;
 }
 
 .btn.dropdown-toggle:before {
