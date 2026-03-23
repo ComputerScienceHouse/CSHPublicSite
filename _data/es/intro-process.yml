@@ -1,0 +1,30 @@
+title: "Miembros nuevos"
+
+apply-title: "Aplicando a CSH"
+apply-1: "Los estudiantes de primer año pueden aplicar a través de su solicitud de vivienda de RIT, cuando se les pregunte sobre las Special Interest Houses (Casas de interés especial). Los estudiantes actuales pueden visitarnos en el tercer piso de Douglass Sprague Perry Hall, o enviar una <a href=\"https://application.csh.rit.edu\">solicitud</a> completa a nuestro <a href=\"/contact/\">Director de Evaluaciones</a> por correo electrónico a <a href=\"mailto:evals@csh.rit.edu\">evals@csh.rit.edu</a>."
+apply-2: "Tenga en cuenta que RIT nos limita a 50 aceptaciones cada verano, así que si no fuiste aceptado al principio, ¡no dudes en volver a aplicar en cualquier momento! Las solicitudes se revisan durante la primera semana de cada semestre."
+
+intro-title: "Proceso de introducción"
+intro-1: "Una vez aceptado en Computer Science House después de la etapa de solicitud, se le considera un miembro introductorio. Esto significa que estás invitado a todos nuestros eventos, involucrado en nuestro proceso y considerado un miembro en casi todos los casos."
+intro-2: "Sin embargo, para convertirse en un miembro de pleno derecho con derecho a voto, debes completar nuestro proceso de introducción de 6 semanas. El proceso no debería tomar más de unas pocas horas cada semana para completar. Nuestro proceso de introducción se define en nuestra <a href=\"https://constitution.csh.rit.edu\" target=\"_blank\" referel=\"noopener\">Constitución</a> y describe el cumplimiento de algunos requisitos:"
+
+directorships-title: "Reuniones de dirección"
+directorships-text: "Debes asistir a un promedio de one reunión de dirección por cada semana del proceso de introducción. Esto significa que debes asistir a seis reuniones de dirección antes del final del período introductorio de seis semanas. Hay entre siete y diez reuniones de dirección que ocurren cada semana, cada una dura aproximadamente media hora. Durante una, un <a href=\"/about/eboard.html\">miembro de la junta ejecutiva</a> transmite a la casa lo que han hecho en su rol recientemente y lo que planean hacer en las próximas semanas."
+
+# Packet is a proper noun and should not be translated. It is stored here for consistency.
+packet-title: "Packet (Paquete)"
+packet-text: "Para mantener a CSH como una comunidad unida, queremos que cada miembro conozca a todos los demás miembros. Para hacer esto, le damos a cada miembro introductorio un Packet &mdash; una lista de todos los miembros. Tu trabajo como miembro introductorio es buscar y conocer a tantos de los superiores como puedas, y a cambio, ellos firmarán tu packet. El proceso del packet tiene lugar durante las primeras dos semanas del semestre, después de lo cual contaremos todas las firmas que has recopilado. Si obtienes un porcentaje de firmas aprobado, ¡felicidades! Recibirás una cuenta de CSH y tendrás acceso a todos nuestros servicios informáticos de la casa. Si no, ¡todavía hay esperanza! Todavía hay más tiempo en el proceso de introducción para que continúes conociendo gente, asistiendo a eventos y aprendiendo en seminarios."
+
+house-meetings-title: "Reuniones de la casa"
+house-meetings-text: "Hay una reunión de la casa todos los domingos a las 7:15 pm. Se requiere que asistas a todas ellas, al igual que todos los superiores activos. Durante estas, repasamos los eventos próximos y recientes, votamos para gastar dinero en proyectos de miembros y discutimos cambios a nuestra Constitución."
+
+seminars-title: "Seminarios técnicos"
+seminars-text: "Durante el proceso de introducción de seis semanas, debes asistir a al menos dos seminarios técnicos. Estos seminarios son presentados en el piso y cubren una variedad de temas desde Git y Python hasta conceptos más complejos como OpenGL o OpenShift."
+
+events-title: "Eventos sociales"
+events-text: "Se espera que todos los miembros asistan a algunos eventos sociales, incluyendo viajes de campamento, torneos de videojuegos, noches de películas y mucho más; solo participa en los eventos en el piso."
+
+evals-title: "Evaluaciones"
+evals-text: "En la marca de las seis semanas, todos los superiores se reúnen y toman una decisión basada en qué tan bien has cumplido con los requisitos de introducción. Los miembros tienen en cuenta tus otras responsabilidades, como otras reuniones de clubes o clases, así que no te preocupes si estás justo por debajo de un requisito. Si eres votado en esta reunión, ¡te conviertes en un miembro completo!"
+
+evals-contact: "¿Preguntas o preocupaciones? <a href=\"/contact/\">Comunícate con nuestro director de evaluaciones</a>"
