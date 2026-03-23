@@ -1,17 +1,16 @@
 ---
 layout: page
-title: Traditions
 active: membership-traditions
+strings: "traditions"
 ---
+{% assign strings = site.data[site.active_lang][page.strings] %}
 
 <div class="gray-wrapper padded">
     <div class="container">
         <div class="row spaced">
             <div class="col-12">
                 <p class="long-form">
-                    CSH isn’t just about working on projects. Our members love to engage
-                    in a variety of social activities. Many of these activities have
-                    persisted through the years to become traditions.
+                    {{ strings.intro }}
                 </p>
             </div>
         </div>
@@ -20,13 +19,9 @@ active: membership-traditions
                 <img class="rounded" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/welcome-back.jpg" alt="CSHers hanging out at Welcome Back" />
             </div>
             <div class="col-12 col-lg-9">
-                <h2 class="header">Welcome Back</h2>
+                <h2 class="header">{{ strings.welcome-back-title }}</h2>
                 <p class="long-form">
-                    Welcome Back is a barbecue held at the beginning of each year to
-                    welcome the incoming freshman class. Traditionally, alumni come from
-                    far and wide to visit current floor members. We cook way too much
-                    food, tell stories, and participate in a variety of outdoor
-                    activities.
+                    {{ strings.welcome-back-text }}
                 </p>
             </div>
         </div>
@@ -35,42 +30,20 @@ active: membership-traditions
                 <img class="rounded" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/camping.jpg" alt="An aerial shot of the cabin we camp at for Fall Camping" />
             </div>
             <div class="col-12 col-lg-9">
-                <h2 class="header">Camping</h2>
+                <h2 class="header">{{ strings.camping-title }}</h2>
                 <p class="long-form">
-                    Every year, CSH goes out on an adventure to see if we can survive for
-                    a weekend in the wild. Surprisingly, a bunch of computer nerds can
-                    thrive without electricity for a few days.
+                    {{ strings.camping-text }}
                 </p>
             </div>
         </div>
-        <!--
-        <div class="row spaced">
-          <div class="col-12 col-lg-3">
-            <img
-              class="rounded"
-              src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/freshmen-proj.jpg"
-            />
-          </div>
-          <div class="col-12 col-lg-9">
-            <h2 class="header">Freshman Project</h2>
-            <p class="long-form">
-              Every year, the introductory members of CSH plan and host a charity
-              event. The events range from simple bake sales to video game
-              tournaments and are always a blast to put on.
-            </p>
-          </div>
-        </div>
-        -->
         <div class="row spaced">
             <div class="col-12 col-lg-3">
                 <img class="rounded" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/holiday-dinner.jpg" alt="A group of CSHers dressed formally for Holiday Dinner" />
             </div>
             <div class="col-12 col-lg-9">
-                <h2 class="header">Holiday Dinner</h2>
+                <h2 class="header">{{ strings.holiday-dinner-title }}</h2>
                 <p class="long-form">
-                    Holiday Dinner is our annual formal dinner that takes place right
-                    before Winter Break. All of CSH gets dressed up and has dinner at a
-                    classy restaurant.
+                    {{ strings.holiday-dinner-text }}
                 </p>
             </div>
         </div>
@@ -79,11 +52,9 @@ active: membership-traditions
                 <img class="rounded" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/seminar.jpg" alt="CSHers in our User Center watching a member give a seminar" />
             </div>
             <div class="col-12 col-lg-9">
-                <h2 class="header">Seminars</h2>
+                <h2 class="header">{{ strings.seminars-title }}</h2>
                 <p class="long-form">
-                    Any member can hold a seminar to teach others a bit about a topic of
-                    their choosing. Subjects can range from programming to juggling and
-                    everything in between, and anyone can give one at any time.
+                    {{ strings.seminars-text }}
                 </p>
             </div>
         </div>
@@ -92,14 +63,9 @@ active: membership-traditions
                 <img class="rounded" src="{{site.env.CSHPUBSITE_ASSETS_URL}}/traditions/intramurals.jpg" alt="A CSHer playing intramural Broomball" />
             </div>
             <div class="col-12 col-lg-9">
-                <h2 class="header">Intramural Sports</h2>
+                <h2 class="header">{{ strings.intramural-sports-title }}</h2>
                 <p class="long-form">
-                    We participate in most of the intramural sports RIT offers, including
-                    broomball, hockey, soccer, basketball, softball, dodgeball, and volleyball. While
-                    we aren’t always the best team out there, we’re always the
-                    best-looking (with our CSH jerseys) and have the most fans cheering us
-                    on! We’ve even won quite an impressive number of trophies in the past,
-                    which are proudly displayed in our library.
+                    {{ strings.intramural-sports-text }}
                 </p>
             </div>
         </div>
