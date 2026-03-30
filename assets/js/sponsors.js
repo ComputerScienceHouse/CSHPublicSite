@@ -51,6 +51,7 @@ $(document).ready(() => {
             new Sponsor('/sponsors/tenable.png', 'https://tenable.com/', 'Tenable'),
             new Sponsor('/sponsors/wayfair.png', 'https://wayfair.com/', 'Wayfair'),
             new Sponsor('/sponsors/johonnot.png', 'https://johonnottechnologies.com/', 'Johonnot'),
+            new Sponsor('/sponsors/veridise.png', 'http://www.veridise.com/', 'Veridise'),
 
         ];
 
