@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Improving the Major Project Submission Form
+title: Major Project Form Updates
 date: 2026-04-30
 categories:
   - projects
@@ -42,7 +42,7 @@ The backend logic was not super complicated, but due to it being my first time u
 
 ### Frontend UI
 
-Adding the new form fields to the frontend was by far the most tedious part of this endeavor. While the form changes were not super complicated, making sure that everything looked and functioned as expected was a very slow process. Because I was running the application in a docker compose, I had to fully rebuild the container every time I made any changes, which made the process really slow and annoying. That, combined with the fact that I had to fight with CSS that wanted to not do what I wanted it to do, and it ended up just being many hours being spent on trial and error.
+Adding the new form fields to the frontend was by far the most tedious part of this endeavor. I was not the first person to attempt to make these form changes, and I actually was able to use a frontend design made by [Tyler Allen](https://github.com/tallen42) in September of 2024 as a starting point. Their previous work had a nearly complete frontend, but never updated the backend to support the new frontend. With this as my starting point, and then made some tweaks and quality of life improvements to make the overall user experience smoother. The biggest roadblock I encountered here was how tedious the trial and error process was. Since I was running the application in a Docker compose, every time I made any changes, I had to fully rebuild the container, leading to a lot of time spent sitting and waiting. Not to mention the frustration that comes with CSS not doing what it is theoretically supposed to be doing.
 
 
 ## Challenges
