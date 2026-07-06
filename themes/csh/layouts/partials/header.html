@@ -1,0 +1,46 @@
+{{- $page := . -}}
+<header class="site-header" id="site-header">
+  <nav class="container nav" aria-label="Primary">
+    <a class="nav__brand" href="/" aria-label="Computer Science House — home">
+      <img src="{{ partial "asset-url.html" "/csh_logo_square.svg" }}" alt="" width="34" height="34">
+      <span>Computer Science House</span>
+    </a>
+
+    <ul class="nav__menu" id="nav-menu">
+      {{- $rel := $page.RelPermalink -}}
+      {{- range site.Menus.main }}
+        {{- if .Params.button }}
+          <li class="nav__item nav__cta">
+            <a class="btn btn--primary btn--sm" href="{{ .URL }}"{{ if .Params.external }} target="_blank" rel="noopener"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{- else if .HasChildren }}
+          {{- $active := hasPrefix $rel .URL -}}
+          <li class="nav__item has-dropdown">
+            <a class="nav__link{{ if $active }} is-active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+            <button class="dropdown__toggle" aria-expanded="false" aria-label="Toggle {{ .Name }} submenu">{{ partial "icon.html" "caret" }}</button>
+            <ul class="dropdown__menu">
+              {{- range .Children }}
+                <li><a href="{{ .URL }}"{{ if eq $rel .URL }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+              {{- end }}
+            </ul>
+          </li>
+        {{- else }}
+          {{- $active := cond (eq .URL "/") $page.IsHome (hasPrefix $rel .URL) -}}
+          <li class="nav__item">
+            <a class="nav__link{{ if $active }} is-active{{ end }}" href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+          </li>
+        {{- end }}
+      {{- end }}
+    </ul>
+
+    <div class="nav__actions">
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle dark mode">
+        <span class="icon-moon">{{ partial "icon.html" "moon" }}</span>
+        <span class="icon-sun">{{ partial "icon.html" "sun" }}</span>
+      </button>
+      <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation menu">
+        <span></span>
+      </button>
+    </div>
+  </nav>
+</header>

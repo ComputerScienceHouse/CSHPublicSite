@@ -1,0 +1,101 @@
+{{ define "main" }}
+{{- $d := hugo.Data.homepage -}}
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero__media">
+    <img src="{{ partial "asset-url.html" $d.hero.image }}" alt="{{ $d.hero.imageAlt }}" loading="eager" fetchpriority="high" decoding="async">
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+  <div class="container hero__inner">
+    <h1 class="hero__title">{{ $d.hero.title }}</h1>
+    <p class="hero__subtitle">{{ $d.hero.subtitle }}</p>
+    <div class="hero__actions">
+      {{- range $d.hero.ctas }}
+      <a class="btn {{ if eq .style "primary" }}btn--primary{{ else }}btn--on-dark{{ end }}" href="{{ .url }}">{{ .text }}</a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Wayfinding feature cards -->
+<section class="section">
+  <div class="container">
+    <div class="grid grid--3">
+      {{- range $d.features }}
+      <a class="feature-card" href="{{ .url }}">
+        {{ partial "img.html" (dict "path" .image "alt" "") }}
+        <span class="feature-card__title">{{ .title }}</span>
+      </a>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- About -->
+<section class="section section--muted">
+  <div class="container">
+    <div class="split">
+      <div class="split__media">
+        {{ partial "img.html" (dict "path" $d.about.image "alt" $d.about.imageAlt) }}
+      </div>
+      <div class="split__body">
+        <p class="section-kicker">Since {{ site.Params.foundedYear }}</p>
+        <p class="lead lead--strong">{{ $d.about.body }}</p>
+        <p><a class="btn btn--primary" href="{{ $d.about.cta.url }}">{{ $d.about.cta.text }}</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Things we're working on -->
+<section class="section">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <h2 class="section-title">{{ $d.workingOn.heading }}</h2>
+    </div>
+    <div class="grid grid--4">
+      {{- range $d.workingOn.items }}
+      <article class="project-tile">
+        {{ partial "img.html" (dict "path" .image "alt" .alt "class" "project-tile__img") }}
+        <div class="project-tile__body">
+          <h3>{{ .title }}</h3>
+          <p>{{ .description }}</p>
+        </div>
+      </article>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="section section--muted">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <h2 class="section-title">{{ $d.statsHeading }}</h2>
+    </div>
+    <div class="stats">
+      {{- range hugo.Data.stats.items }}
+      <div class="stat">
+        <div class="stat__value">{{ .value | safeHTML }}</div>
+        <div class="stat__label">{{ .label }}</div>
+        <p class="stat__desc">{{ .description }}</p>
+      </div>
+      {{- end }}
+    </div>
+  </div>
+</section>
+
+<!-- Sponsors preview -->
+<section class="section">
+  <div class="container">
+    <div class="section__head section__head--center">
+      <h2 class="section-title"><a href="/about/sponsors/">{{ $d.sponsorsHeading }}</a></h2>
+    </div>
+    {{ partial "logo-grid.html" (first 12 hugo.Data.sponsors.items) }}
+    <p class="text-center" style="margin-top:2rem">
+      <a class="btn btn--ghost" href="/about/sponsors/">See all sponsors</a>
+    </p>
+  </div>
+</section>
+{{ end }}

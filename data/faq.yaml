@@ -1,0 +1,18 @@
+# Answers support Markdown (links preserved from original wording).
+items:
+  - q: "Do I need to be a Computer Science major to join?"
+    a: "Nope, CSH accepts students from any program at RIT!"
+
+  - q: "Do I need to be a 1st year to join?"
+    a: "Also no! You can join our introductory process at any point of your RIT academic career! [Learn more about applying](/membership/intro-process/)."
+
+  - q: "How do I join?"
+    a: "Check out our page on [New Members](/membership/intro-process/) to learn more about applying and joining CSH."
+
+  - q: "Does being a member cost anything?"
+    a: "Our active membership dues are $80/semester. Our operating budget is formed every year from dues paid by members in addition to sponsorships, and helps fund improvements to our floor, member projects, and social events! Members unable to afford their dues can speak to our Financial Director and have their dues waived or adjusted."
+
+  - q: "Is CSH a fraternity?"
+    a: "No, we're a Special Interest House: a space in RIT's dorms designed for students who share common interests to live together. Read more here about SIHs [here](https://www.rit.edu/fa/housing/housing-option/special-interest-lifestyle-floors), and more about RIT Fraternity and Sorority Life [here](https://campusgroups.rit.edu/fsl/about/)."
+
+footer: "Can't find your question here? [Contact us](/contact/)."

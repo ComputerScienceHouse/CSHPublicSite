@@ -1,0 +1,14 @@
+{{- /* Interior page header with breadcrumb + title + optional lead */ -}}
+<div class="page-header">
+  <div class="container page-header__inner">
+    <ol class="breadcrumb">
+      <li><a href="/">Home</a></li>
+      {{- range .Ancestors.Reverse }}
+        {{- if not .IsHome }}<li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>{{ end }}
+      {{- end }}
+      <li aria-current="page">{{ .Title }}</li>
+    </ol>
+    <h1 class="page-header__title">{{ .Title }}</h1>
+    {{- with .Params.lead }}<p class="lead page-header__lead">{{ . }}</p>{{ end }}
+  </div>
+</div>

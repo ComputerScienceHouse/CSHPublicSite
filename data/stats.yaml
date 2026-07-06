@@ -1,0 +1,17 @@
+# Homepage "Some facts about us ..." — value rendered as raw HTML to allow <sup>
+items:
+  - value: "75"
+    label: "Active Members"
+    description: "Who make up the heart of our community."
+  - value: "3<sup>rd</sup>"
+    label: "Greatest Hack"
+    description: "Of all time (as ranked by PCMAG in 2008) was the creation of CSH's internet-connected drink machines."
+  - value: "1,475"
+    label: "Alumni"
+    description: "Provide current CSH members with a large network of knowledge and professional connections."
+  - value: "38"
+    label: "Rooms on-floor"
+    description: "In RIT's Fredericka Douglass Sprague Perry Hall, a hub of campus life."
+  - value: "9"
+    label: "Special-purpose rooms"
+    description: "That provide members with spaces to work on projects, hang out, or study."

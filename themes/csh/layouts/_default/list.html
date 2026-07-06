@@ -1,0 +1,30 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+
+{{ with .Content }}
+<section class="section{{ if $.Pages }} section--tight{{ end }}">
+  <div class="container container--narrow">
+    <div class="prose">{{ . }}</div>
+  </div>
+</section>
+{{ end }}
+
+{{ with .Pages }}
+<section class="section{{ if $.Content }} section--muted{{ end }}">
+  <div class="container">
+    <div class="section__head"><h2 class="section-title">Explore</h2></div>
+    <div class="grid grid--3">
+      {{ range . }}
+      <a class="post-card" href="{{ .RelPermalink }}">
+        <div class="post-card__body">
+          <h3 class="post-card__title">{{ .Title }}</h3>
+          {{ with .Description }}<p class="post-card__desc">{{ . }}</p>{{ end }}
+          <span class="post-card__cat">View →</span>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}

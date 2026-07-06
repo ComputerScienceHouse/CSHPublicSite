@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section section--muted">
+  <div class="container">
+    {{ with hugo.Data.traditions.intro }}
+    <div class="section__head section__head--wide"><p class="lead">{{ . }}</p></div>
+    {{ end }}
+    {{ partial "media-list.html" hugo.Data.traditions.items }}
+  </div>
+</section>
+{{ end }}

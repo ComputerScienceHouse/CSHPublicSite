@@ -1,0 +1,18 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section section--muted">
+  <div class="container">
+    <div class="faq">
+      {{ range hugo.Data.faq.items }}
+      <details class="faq__item">
+        <summary class="faq__q">{{ .q }}</summary>
+        <div class="faq__a">{{ .a | markdownify }}</div>
+      </details>
+      {{ end }}
+    </div>
+    {{ with hugo.Data.faq.footer }}
+    <div class="faq__footer">{{ . | markdownify }}</div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}

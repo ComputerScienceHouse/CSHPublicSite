@@ -1,0 +1,9 @@
+{{- /* Uniform grayscale logo grid. Pass a slice of {name, url, logo}.
+       Used by: sponsors, alumni, and the homepage sponsors preview. */ -}}
+<div class="logo-grid">
+  {{- range . }}
+  <a class="logo-tile" href="{{ .url }}" target="_blank" rel="noopener" title="{{ .name }}">
+    {{ partial "img.html" (dict "path" .logo "alt" .name) }}
+  </a>
+  {{- end }}
+</div>

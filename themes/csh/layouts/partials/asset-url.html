@@ -1,0 +1,2 @@
+{{- /* Returns an absolute asset URL. Usage: {{ partial "asset-url.html" "/foo.png" }} */ -}}
+{{- return (printf "%s%s" (site.Params.assetsURL | default "") .) -}}

@@ -1,0 +1,36 @@
+<footer class="site-footer">
+  <div class="site-footer__top">
+    <div class="container site-footer__grid">
+      <div class="site-footer__brand">
+        <img class="site-footer__brand-logo" src="{{ partial "asset-url.html" "/rit_csh.png" }}" alt="Computer Science House at RIT" loading="lazy">
+        <p class="site-footer__tagline">{{ site.Params.tagline }}</p>
+      </div>
+
+      <div>
+        <h2>Explore</h2>
+        <ul class="site-footer__links">
+          {{- range site.Params.footerLinks }}
+          <li><a href="{{ .url }}"{{ if strings.HasPrefix .url "http" }} target="_blank" rel="noopener"{{ end }}>{{ .name }}</a></li>
+          {{- end }}
+        </ul>
+      </div>
+
+      <div>
+        <h2>Connect</h2>
+        <ul class="site-footer__social">
+          {{- with site.Params.social.github }}<li><a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "github" }} GitHub</a></li>{{ end }}
+          {{- with site.Params.social.facebook }}<li><a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "facebook" }} Facebook</a></li>{{ end }}
+          {{- with site.Params.social.instagram }}<li><a href="{{ . }}" target="_blank" rel="noopener">{{ partial "icon.html" "instagram" }} Instagram</a></li>{{ end }}
+          {{- with site.Params.email }}<li><a href="mailto:{{ . }}">{{ partial "icon.html" "envelope" }} {{ . }}</a></li>{{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="site-footer__bottom">
+    <div class="container site-footer__bottom-inner">
+      <span>&copy; {{ now.Year }} Computer Science House</span>
+      <span><a href="https://github.com/computersciencehouse/cshpublicsite" target="_blank" rel="noopener">Website on GitHub</a></span>
+    </div>
+  </div>
+</footer>

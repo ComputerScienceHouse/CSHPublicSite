@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<article class="article">
+  <div class="container container--narrow">
+    <div class="article__byline">
+      {{ with .Params.authorImage }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+      <div>
+        {{ with .Params.author }}<div class="article__author-name">{{ . }}</div>{{ end }}
+        <div class="article__meta">
+          {{ .Date.Format "January 2, 2006" }}{{ with .Params.authorBio }} · {{ . }}{{ end }}
+        </div>
+      </div>
+      {{ with .Params.authorSocial }}
+      <span class="article__socials">
+        {{ with .github }}<a class="icon-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="GitHub">{{ partial "icon.html" "github" }}</a>{{ end }}
+        {{ with .linkedin }}<a class="icon-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end }}
+        {{ with .website }}<a class="icon-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="Website">{{ partial "icon.html" "globe" }}</a>{{ end }}
+      </span>
+      {{ end }}
+    </div>
+
+    {{ with .Params.image }}
+      {{ partial "img.html" (dict "path" . "alt" $.Title "class" "article__cover" "loading" "eager") }}
+    {{ end }}
+
+    <div class="prose">
+      {{ .Content }}
+    </div>
+
+    <div class="article__footer">
+      <a class="btn btn--ghost" href="/blog/">← More blog posts</a>
+    </div>
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,28 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container">
+    {{ with .Content }}<div class="prose" style="margin-bottom:2.5rem">{{ . }}</div>{{ end }}
+    <div class="post-grid">
+      {{ range .Pages.ByDate.Reverse }}
+      <a class="post-card" href="{{ .RelPermalink }}">
+        {{ with .Params.image }}
+          {{ partial "img.html" (dict "path" . "alt" "" "class" "post-card__media") }}
+        {{ else }}
+          <div class="post-card__media" aria-hidden="true"></div>
+        {{ end }}
+        <div class="post-card__body">
+          {{ with .Params.categories }}<span class="post-card__cat">{{ index . 0 }}</span>{{ end }}
+          <h2 class="post-card__title">{{ .Title }}</h2>
+          {{ with .Params.description }}<p class="post-card__desc">{{ . }}</p>{{ end }}
+          <div class="post-card__meta">
+            {{ with .Params.authorImage }}<img src="{{ . }}" alt="" loading="lazy">{{ end }}
+            <span>{{ with .Params.author }}{{ . }} · {{ end }}{{ .Date.Format "Jan 2, 2006" }}</span>
+          </div>
+        </div>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

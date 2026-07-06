@@ -1,0 +1,33 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section section--muted">
+  <div class="container">
+    <div class="tour">
+      <div class="tour__tabs" role="tablist" aria-label="Rooms at Computer Science House">
+        {{ range $i, $room := hugo.Data.tour.rooms }}
+        <button class="tour__tab" type="button" role="tab" id="tab-{{ $room.id }}" aria-controls="panel-{{ $room.id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}" tabindex="{{ if eq $i 0 }}0{{ else }}-1{{ end }}">{{ $room.title }}</button>
+        {{ end }}
+      </div>
+
+      {{ range $i, $room := hugo.Data.tour.rooms }}
+      <div class="tour__panel" role="tabpanel" id="panel-{{ $room.id }}" aria-labelledby="tab-{{ $room.id }}"{{ if ne $i 0 }} hidden{{ end }}>
+        <div class="tour__gallery{{ if gt (len $room.photos) 1 }} tour__gallery--multi{{ end }}">
+          {{ range $room.photos }}
+          {{ partial "img.html" (dict "path" . "alt" (printf "CSH %s" $room.title)) }}
+          {{ end }}
+        </div>
+        <div class="tour__info">
+          <h2>{{ $room.title }}</h2>
+          <p>{{ $room.description }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ define "scripts" }}
+{{ $tour := resources.Get "js/tour.js" | minify | fingerprint }}
+<script src="{{ $tour.RelPermalink }}" defer></script>
+{{ end }}

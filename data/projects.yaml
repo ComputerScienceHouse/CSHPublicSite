@@ -1,0 +1,35 @@
+intro: "Projects are an integral part of the living, learning experience at Computer Science House. This is a small sample of notable projects that our members have created:"
+
+# image paths are relative to params.assetsURL
+items:
+  - title: "Drink/Snack"
+    image: "/projects/drink.webp"
+    alt: "Two of CSH's networked vending machines, Drink and Snack."
+    description: "Drink and Snack are two of CSH's oldest projects. Networked vending machines allow members to order items from any internet browser using a credits system. A timer can also be specified to delay the release of a purchased item."
+
+  - title: "Schedule Maker"
+    url: "https://schedulemaker.csh.rit.edu"
+    image: "/projects/schedulemaker.webp"
+    alt: "The logo for CSH Schedule Maker"
+    description: "Schedule Maker allows RIT students to plan their schedule for upcoming semesters. Users simply enter their course numbers and custom events and a list of all schedules that match their parameters will be shown. Because it is so easy and simple, Schedule Maker is now used by over 90% of RIT students."
+
+  - title: "Devcade"
+    url: "https://devcade.csh.rit.edu"
+    image: "/projects/devcade.webp"
+    alt: "CSH's custom built arcade cabinet, Devcade."
+    description: "Devcade is a fully custom arcade machine made by a team of over a dozen CSH members. Devcade is an arcade built for developers, by developers. The arcade cabinet, software, and games for Devcade were mainly built during the Fall 2022 semester and the project is still being maintained and updated."
+
+  - title: "Harold"
+    image: "/projects/harold.webp"
+    alt: "Harold, a box with a sensor on it, that plays members' music"
+    description: "With Harold, every member of CSH gets their own theme song. After a user uploads either their song or playlist to a web app, all they have to do is touch their iButton or RFID tag (received upon membership) to the appropriate reader."
+
+  - title: "CSH Arcade"
+    image: "/projects/arcade.webp"
+    alt: "Two custom arcade machines in the CSH library"
+    description: "Two CSH members built this arcade cabinet from scratch. It emulates many classic arcade games from varying consoles and supports multiplayer. A second cabinet featuring a custom-made platforming game was also built. Both machines, along with other arcade cabinets CSH has acquired, are housed in our Library."
+
+  - title: "InfoSys"
+    image: "/projects/infosys.webp"
+    alt: "An automated display in our User Center displaying the weather, high scores, and more"
+    description: "InfoSys is a multi-purpose display board located in our User Center. It is capable of displaying weather statistics, custom messages, and even real-time player data from video games."

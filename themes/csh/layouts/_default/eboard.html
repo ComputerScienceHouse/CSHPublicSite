@@ -1,0 +1,35 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section section--muted">
+  <div class="container">
+    {{ with hugo.Data.eboard.intro }}
+    <div class="section__head section__head--wide"><p class="lead">{{ . }}</p></div>
+    {{ end }}
+    <div class="members">
+      {{ range $m := hugo.Data.eboard.members }}
+      <article class="member-card">
+        <div class="member-card__media">
+          {{ partial "img.html" (dict "path" $m.photo "alt" (printf "CSH %s Director" $m.role) "class" "member-card__photo member-card__photo--real") }}
+          {{ with $m.silly }}<img class="member-card__photo member-card__silly" src="{{ partial "asset-url.html" . }}" alt="" aria-hidden="true" loading="lazy" decoding="async">{{ end }}
+        </div>
+        <div class="member-card__body">
+          <p class="member-card__role">{{ $m.role }}</p>
+          {{ range $p := $m.people }}
+          <div class="member-card__person">
+            <span class="member-card__name">{{ $p.name }}</span>
+            <span class="member-card__links">
+              {{ with $p.linkedin }}<a class="icon-link" href="{{ . }}" target="_blank" rel="noopener" aria-label="{{ $p.name }} on LinkedIn">{{ partial "icon.html" "linkedin" }}</a>{{ end }}
+            </span>
+          </div>
+          {{ end }}
+          <div class="member-card__desc">{{ $m.description | markdownify }}</div>
+          {{ with $m.email }}
+          <div class="member-card__contact"><a class="btn btn--ghost btn--sm" href="mailto:{{ . }}">{{ partial "icon.html" "envelope" }} Email</a></div>
+          {{ end }}
+        </div>
+      </article>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}

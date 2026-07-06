@@ -1,0 +1,5 @@
+{{- /* Asset image. Params: path (required, incl. extension), alt, class, loading, fetchpriority */ -}}
+{{- $path := .path -}}
+{{- $alt := .alt | default "" -}}
+{{- $loading := .loading | default "lazy" -}}
+<img src="{{ partial "asset-url.html" $path }}" alt="{{ $alt }}"{{ with .class }} class="{{ . }}"{{ end }} loading="{{ $loading }}" decoding="async"{{ with .fetchpriority }} fetchpriority="{{ . }}"{{ end }}>

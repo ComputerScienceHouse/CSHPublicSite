@@ -1,0 +1,17 @@
+{{- /* Alternating image + text rows. Pass a slice of {title, image, alt, description, url?}.
+       When an item has a url, its title links out. Used by: projects, traditions. */ -}}
+<div class="media-list">
+  {{- range . }}
+  <article class="media-row">
+    <div class="media-row__media">
+      {{ partial "img.html" (dict "path" .image "alt" .alt) }}
+    </div>
+    <div class="media-row__body">
+      <h2 class="media-row__title">
+        {{- if .url }}<a href="{{ .url }}" target="_blank" rel="noopener">{{ .title }}</a>{{ else }}{{ .title }}{{ end -}}
+      </h2>
+      <p>{{ .description }}</p>
+    </div>
+  </article>
+  {{- end }}
+</div>

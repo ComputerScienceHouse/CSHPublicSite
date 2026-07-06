@@ -1,0 +1,4 @@
+{{- /* {{< button href="/about/" >}}Label{{< /button >}} */ -}}
+{{- $style := .Get "style" | default "primary" -}}
+{{- $ext := hasPrefix (.Get "href") "http" -}}
+<a class="btn btn--{{ $style }}" href="{{ .Get "href" }}"{{ if $ext }} target="_blank" rel="noopener"{{ end }}>{{ .Inner }}</a>

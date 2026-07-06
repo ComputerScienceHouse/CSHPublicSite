@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ partial "page-header.html" . }}
+<section class="section section--muted">
+  <div class="container">
+    {{ with .Content }}
+    <div class="section__head section__head--wide"><div class="prose">{{ . }}</div></div>
+    {{ end }}
+    {{ partial "logo-grid.html" hugo.Data.alumni.items }}
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,139 @@
+baseURL = "https://csh.rit.edu/"
+locale = "en-us"
+title = "Computer Science House"
+theme = "csh"
+enableRobotsTXT = true
+enableEmoji = true
+
+[params]
+  assetsURL = "https://assets.csh.rit.edu/pubsite"
+  # Existing brand tagline (see content-critique.md for notes on this wording)
+  tagline = "Getting more done after 2am than most people do all day."
+  # Meta description uses existing on-site copy (first sentence of the About page)
+  description = "Since 1976, Computer Science House has provided a revolutionary living and learning environment for its members."
+  foundedYear = 1976
+  email = "webmaster@csh.rit.edu"
+  donateURL = "https://www.rit.edu/giving/ComputerScienceHouse"
+  brandColors = ["#B0197E", "#E11C52"]
+
+  [params.social]
+    github = "https://github.com/computersciencehouse/"
+    facebook = "https://www.facebook.com/RITCSH/"
+    instagram = "https://www.instagram.com/computersciencehouse/"
+    twitter = "https://twitter.com/RITCSH"
+
+# Footer utility links (mirrors the old footer's "footer-top" row)
+[[params.footerLinks]]
+  name = "FAQ"
+  url = "/about/faq/"
+[[params.footerLinks]]
+  name = "How to Apply"
+  url = "/membership/intro-process/"
+[[params.footerLinks]]
+  name = "RIT ScheduleMaker"
+  url = "https://schedule.csh.rit.edu/"
+[[params.footerLinks]]
+  name = "Blog"
+  url = "/blog/"
+[[params.footerLinks]]
+  name = "Constitution"
+  url = "https://constitution.csh.rit.edu/"
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+  [markup.highlight]
+    noClasses = false
+    lineNos = false
+    tabWidth = 2
+
+[taxonomies]
+  category = "categories"
+
+# ---- Primary navigation (real links; nested items become accessible dropdowns) ----
+[menus]
+  [[menus.main]]
+    name = "Home"
+    url = "/"
+    weight = 10
+
+  [[menus.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 20
+  [[menus.main]]
+    name = "About CSH"
+    parent = "about"
+    url = "/about/"
+    weight = 1
+  [[menus.main]]
+    name = "FAQ"
+    parent = "about"
+    url = "/about/faq/"
+    weight = 2
+  [[menus.main]]
+    name = "Projects"
+    parent = "about"
+    url = "/about/projects/"
+    weight = 3
+  [[menus.main]]
+    name = "Alumni"
+    parent = "about"
+    url = "/about/alumni/"
+    weight = 4
+  [[menus.main]]
+    name = "E-Board"
+    parent = "about"
+    url = "/about/eboard/"
+    weight = 5
+  [[menus.main]]
+    name = "Sponsors"
+    parent = "about"
+    url = "/about/sponsors/"
+    weight = 6
+  [[menus.main]]
+    name = "Tour"
+    parent = "about"
+    url = "/about/tour/"
+    weight = 7
+
+  [[menus.main]]
+    identifier = "membership"
+    name = "Membership"
+    url = "/membership/"
+    weight = 30
+  [[menus.main]]
+    name = "Overview"
+    parent = "membership"
+    url = "/membership/"
+    weight = 1
+  [[menus.main]]
+    name = "New Members"
+    parent = "membership"
+    url = "/membership/intro-process/"
+    weight = 2
+  [[menus.main]]
+    name = "Traditions"
+    parent = "membership"
+    url = "/membership/traditions/"
+    weight = 3
+
+  [[menus.main]]
+    name = "Blog"
+    url = "/blog/"
+    weight = 40
+
+  [[menus.main]]
+    name = "Contact"
+    url = "/contact/"
+    weight = 50
+
+  [[menus.main]]
+    identifier = "donate"
+    name = "Donate"
+    url = "https://www.rit.edu/giving/ComputerScienceHouse"
+    weight = 60
+    [menus.main.params]
+      button = true
+      external = true

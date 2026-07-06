@@ -1,0 +1,12 @@
+{{- /* {{< asset-img src="/about/main.png" alt="..." caption="..." >}} */ -}}
+{{- $src := .Get "src" -}}
+{{- $alt := .Get "alt" | default "" -}}
+{{- $caption := .Get "caption" -}}
+{{- if $caption -}}
+<figure>
+  {{ partial "img.html" (dict "path" $src "alt" $alt) }}
+  <figcaption>{{ $caption }}</figcaption>
+</figure>
+{{- else -}}
+{{ partial "img.html" (dict "path" $src "alt" $alt) }}
+{{- end -}}

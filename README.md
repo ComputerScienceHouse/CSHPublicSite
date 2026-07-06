@@ -4,15 +4,23 @@ The public facing website for [Rochester Institute of Technology](https://rit.ed
 
 ## Overview
 
-This site is written using [Jekyll](https://jekyllrb.com/), a static site generator built with Ruby, and uses Sass and JavaScript ES6.
+This site is built with [Hugo](https://gohugo.io/), a static site generator written in Go. It uses a custom in-repo theme (`themes/csh/`) written in plain CSS and vanilla JavaScript. See [`themes/csh/README.md`](themes/csh/README.md) for the theme's structure, layouts, and where content lives.
 
 ## Local Development
 
-Build the container:  `docker build -t pubsite .`  
-Run the container: `docker run -p 4000:80 pubsite` or pick your favorite port
-You will be able to access the site at http://localhost:4000.
+Run the dev server with live reload:
 
-You can either edit files in the container, or rebuild the container when you want to test changes.
+```sh
+hugo server
+```
+
+The site is served at http://localhost:1313.
+
+Page content lives in `content/` (Markdown) and `data/*.yaml` (structured/repeated content). A production build outputs to `public/`:
+
+```sh
+hugo --gc --minify
+```
 
 ## Contributing
 

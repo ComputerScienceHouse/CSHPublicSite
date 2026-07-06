@@ -1,0 +1,27 @@
+intro: "CSH isn't just about working on projects. Our members love to engage in a variety of social activities. Many of these activities have persisted through the years to become traditions."
+
+items:
+  - title: "Welcome Back"
+    image: "/traditions/welcome-back.jpg"
+    alt: "CSHers hanging out at Welcome Back"
+    description: "Welcome Back is a barbecue held at the beginning of each year to welcome the incoming freshman class. Traditionally, alumni come from far and wide to visit current floor members. We cook way too much food, tell stories, and participate in a variety of outdoor activities."
+
+  - title: "Camping"
+    image: "/traditions/camping.jpg"
+    alt: "An aerial shot of the cabin we camp at for Fall Camping"
+    description: "Every year, CSH goes out on an adventure to see if we can survive for a weekend in the wild. Surprisingly, a bunch of computer nerds can thrive without electricity for a few days."
+
+  - title: "Holiday Dinner"
+    image: "/traditions/holiday-dinner.jpg"
+    alt: "A group of CSHers dressed formally for Holiday Dinner"
+    description: "Holiday Dinner is our annual formal dinner that takes place right before Winter Break. All of CSH gets dressed up and has dinner at a classy restaurant."
+
+  - title: "Seminars"
+    image: "/traditions/seminar.jpg"
+    alt: "CSHers in our User Center watching a member give a seminar"
+    description: "Any member can hold a seminar to teach others a bit about a topic of their choosing. Subjects can range from programming to juggling and everything in between, and anyone can give one at any time."
+
+  - title: "Intramural Sports"
+    image: "/traditions/intramurals.jpg"
+    alt: "A CSHer playing intramural Broomball"
+    description: "We participate in most of the intramural sports RIT offers, including broomball, hockey, soccer, basketball, softball, dodgeball, and volleyball. While we aren't always the best team out there, we're always the best-looking (with our CSH jerseys) and have the most fans cheering us on! We've even won quite an impressive number of trophies in the past, which are proudly displayed in our library."
