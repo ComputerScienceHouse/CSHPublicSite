@@ -1,7 +1,7 @@
-FROM docker.io/jekyll/builder as builder
+FROM docker.io/jekyll/builder:stable as builder
 RUN gem install bundler:2.2.3
 RUN mkdir /site; \
-    chown -R jekyll:jekyll /site
+ chown -R jekyll:jekyll /site
 WORKDIR /site
 COPY Gemfile Gemfile.lock /site/
 RUN bundle install
